@@ -1,0 +1,181 @@
+.Title {
+    background-color: #bad3de;
+}
+
+h1 {
+    color:black;
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px 50px 20px 50px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    background-image: url(../Images/Base/bases_banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px lightblue;
+}
+
+.textPres {
+    border-radius: 10px;
+    padding: 1px 10px 1px 10px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #c4ced2;
+    margin: 0px 0px 0px 10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+main {
+    background-color: #bad3de;
+    position: relative;
+    margin: 300px 0px 0px 0px;
+}
+
+.container {
+    margin: 0;
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.containerLI{
+    display: inline-flex;
+}
+
+#boxRiz {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 20% 30% 50%;
+    padding: 0px 20px 20px 0px;
+    background: rgb(250, 236, 211);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 20px black;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+}
+
+#TitleRiz {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 20px 0px 0px 0px;
+}
+
+#riz1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    margin: 20px 0px 0px 0px;
+    height: 200px;
+}
+
+#riz2 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: center;
+    margin: 20px 0px 0px 0px;
+    height: 200px;
+}
+
+#recetteRiz {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    padding: 20px 0px 0px 0px;
+    height: fit-content
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 250px 450px;
+    grid-template-rows: 20% 80%;
+    background: rgb(250, 236, 211);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 20px black;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+    align-self:center;
+}
+
+.box:hover,#boxRiz:hover, .imgFrais:hover, .imgFrais2:hover, #riz1:hover, #riz2:hover {
+    transform: scale(1.01);
+    border-radius:10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.box, #boxRiz, .imgFrais, #riz1, #riz2 {
+    transition: transform 0.3s ease;
+}
+
+.GridTitle {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.imgFrais {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: baseline;
+    height: 200px;
+}
+
+.recette {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    height: fit-content;
+    padding: 20px 20px 20px 0px;
+}
+
+.BoxTitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ulRec {
+    list-style: none;
+}
+
+.titleRecPart {
+    text-decoration: underline;
+    padding: 0px 0px 10px 0px;
+}
+
+.ulIng {
+    padding: 0px 0px 10px 0px;
+}
+
+.ulIng, .ulPrep {
+    padding: 0 0 0 0;
+}
+
+.liRec{
+    list-style: none;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.img {
+    height: 200px;
+    border-radius: 10px;
+}

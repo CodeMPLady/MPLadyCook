@@ -1,0 +1,179 @@
+body {
+    background-image:  url("../Images/Patisserie/BackPat.png");
+    background-size: cover;
+}
+
+* {
+    scroll-behavior:smooth;
+}
+
+h1 {
+    background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
+    width: fit-content;
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border: 3px black solid;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px black;
+    font-weight: 500;
+}
+
+#Tpat {
+    position: relative;
+    border-collapse: collapse; 
+    background:#e8e8e8;
+    border-radius:6px;
+    overflow:hidden;
+    max-width:600px; 
+    width:100%;
+    margin-left: 457px ;
+    background-size:cover;
+}   
+
+.tdpat, .thpat {
+    padding: 8px;
+}
+
+#theadpat .thpat{ 
+    height:40px;
+    background: #d6cfae;
+    font-size:16px;
+    text-align: left;
+}
+
+#tbodypat tr {
+    height:48px; 
+    border-bottom:1px solid rgba(196, 196, 196, 0.402) ;
+    &:last-child  { 
+        border:0; 
+    }
+}
+
+.titrePrep {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    height: fit-content;
+    gap: 5em;
+    margin: 10px 0px 0px 0px;
+}
+
+.ingredients {
+    display: flex;
+    margin: 0px 0px 0px 50px;
+    align-items: center;
+}
+
+.preparation {
+    vertical-align: center;
+    background-color: white;
+    height: fit-content;
+    padding: 0px 80px 30px 20px;
+    border-radius: 6px;
+    border: 2px black solid;
+    box-shadow: 6px 6px 20px;
+}
+
+.liPrep {
+    padding: 5px 5px 10px 5px;
+    list-style-image: url(../Images/Patisserie/cuiller_bois.png);
+}
+
+.TIng {
+    background-color: white;
+    border-radius: 6px;
+    border-collapse: collapse;
+    border-spacing: 1;
+    overflow: hidden;
+    height: 300px;
+    width: 250px;
+}
+
+.theadIng .thIng {
+    background-color: var(--thcolor);
+    padding: 8px;
+}
+
+.tdIng, .thIng {
+    text-align: center;
+}
+
+.tbodyIng tr {
+    border-bottom:1px solid #d5d5d5 ;
+    &:last-child  { 
+        border:0; 
+    }
+}
+
+.Eximg {
+    max-height: 100px;
+    border-radius: 20px
+}
+
+.olcards, .olcards {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.olcards {
+    margin: 20px 0px 0px 0px;
+    list-style: none;
+    counter-reset: cardCount;
+    display: flex;
+    flex-direction: column;
+    --cardsGap: 1rem;
+    gap: var(--cardsGap);
+    padding-bottom: var(--cardsGap);
+}
+
+.olcards .licard {
+    counter-increment: cardCount;
+    display: flex;
+    color: white;
+    --labelOffset: 5rem;
+    --arrowClipSize: 1.5rem;
+    margin-top: var(--labelOffset);
+    z-index: -1;
+}
+
+.olcards .licard .content {
+    position: relative;
+    display: grid;
+    background-color: var(--cardColor);
+    --inlinePadding: -3em;
+    --boxPadding: 0.5em;
+    padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+        var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+    grid-template-areas:
+        "icon title"
+        "icon text";
+    gap: 0.5em 1em;
+    clip-path: polygon(
+        0 0,
+        calc(100% - var(--arrowClipSize)) 0,
+        100% 50%,
+        calc(100% - var(--arrowClipSize)) 100%,
+        calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+        0 calc(100% + var(--cardsGap)));
+}
+
+.olcards .licard .icon {
+    grid-area: icon;
+    align-self: center;
+}
+
+.olcards .licard .content .title {
+    grid-area: title;
+    align-self: center;
+    font-size: 1.25em;
+}
+
+.olcards .licard .content .text {
+    grid-area: text;
+    width: 1200px;  
+}

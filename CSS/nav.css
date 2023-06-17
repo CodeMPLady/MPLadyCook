@@ -1,0 +1,72 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+:target{
+    scroll-margin-top: 64px;
+}
+
+nav {
+    float: left;
+    width : 220px; 
+    background: #d9d9d9;
+    opacity: 1;
+    margin: 10px 0px 0px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+span {
+    padding : 10px;
+    background : #232a30;
+    opacity: 1;
+    color : white;
+    cursor : pointer;
+    display: block;
+    text-align: center;
+}
+
+span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+.liNav .aNav {
+    text-decoration : none;
+    color : #2d2f31;
+    font-weight: 600;
+}
+
+.slide {
+    clear:both;
+    padding: 0px;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+    margin: 0;
+    font-size: 0.8em;
+
+}
+
+.slide .liNav {
+    padding : 5px;
+}
+
+#touch {
+    position: absolute; 
+    opacity: 0; 
+    height: 0;
+}    
+
+#touch:checked + .slide {
+    height: 280px;
+}
+
+a:hover {
+    font-size: 1.1em;
+}

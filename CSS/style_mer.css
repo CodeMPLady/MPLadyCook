@@ -1,0 +1,162 @@
+.Title {
+    background: linear-gradient(90deg, #02a66c, #2d76ff);
+}
+
+h1 {
+    color:black;
+    text-align: center;
+    border-radius: 3px;
+    background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
+    padding: 10px 50px 10px 50px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    background-image: url(../Images/Mer/seaBanner.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 300px;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px lightblue;
+}
+
+.textPres {
+    border-radius: 10px;
+    padding: 1px 10px 1px 10px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color:lightcyan;
+    margin-left: 10px;
+    box-shadow: 5px 5px 20px lightblue;
+}
+
+main {
+    display: grid;
+    background: linear-gradient(90deg, #02a66c, #2d76ff);
+    position: relative;
+    margin-top: 300px;
+}
+
+#mainUlMer {
+    --col-gap: 2rem;
+    --barH: 1rem;
+    --roleH: 2rem;
+    --flapH: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-inline: auto;
+    margin-top: 70px;
+    list-style: none;
+    width: min(90rem, 90%);
+    gap: var(--col-gap);
+    padding-inline: calc(var(--col-gap) / 2);
+}
+
+.imgMer {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightcyan;
+}
+
+.titreMer {
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.ulMer {
+    padding: 0px 15px 15px 15px;
+}
+
+.liIng {
+    list-style-type: none;
+}
+
+#mainUlMer .liMer {
+    display: grid;
+    width: fit-content;
+    grid-template:
+      "role"
+      "icon"
+      "title"
+      "descr";
+    align-items: flex-start;
+    gap: 1rem;
+    padding-block-end: calc(var(--flapH) + 1rem);
+    text-align: center;
+    background: var(--accent-color);
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6) var(--roleH),
+      rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+      rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+    clip-path: polygon(
+      calc(var(--col-gap) / -2 - 5px) 0,
+      calc(100% + var(--col-gap) / 2 + 5px) 0,
+      calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+      50% 100%,
+      calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
+}
+
+.liMer:hover, .imgMer:hover {
+    transform: scale(1.04);
+    --barH: 0;
+}
+
+.liMer, .imgMer {
+    transition: transform 0.4s ease;
+}
+
+#mainUlMer .liMer::before {
+    content: "";
+    grid-area: role;
+    height: var(--barH);
+    width: calc(100% + var(--col-gap));
+    margin-left: calc(var(--col-gap) / -2);
+    margin-top: calc(var(--roleH) / 2 - var(--barH) / 2);
+    background: grey;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.2) 30%,
+      rgba(255, 255, 255, 0.1) 40%,
+      rgba(0, 0, 0, 0.1) 60%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4));
+}
+  
+#mainUlMer .liMer::after {
+    content: "";
+    grid-area: role;
+    background: var(--accent-color);
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.2) 30%,
+      rgba(255, 255, 255, 0.1) 40%,
+      rgba(0, 0, 0, 0.1) 60%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4));
+    height: var(--roleH);
+}
+  
+#mainUlMer .liMer .icon, #mainUlMer .liMer .title, #mainUlMer .liMer .descr {
+    padding-inline: 1rem;
+    color: white;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+  
+#mainUlMer .liMer .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+  
+#mainUlMer .liMer .descr {
+    font-size: 0.9rem;
+}
