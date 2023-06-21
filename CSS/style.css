@@ -5,7 +5,7 @@ body {
 
 header {
     width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 footer {
@@ -16,8 +16,8 @@ footer {
 }
 
 .image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 #logo {
