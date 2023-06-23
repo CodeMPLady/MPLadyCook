@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link href="../CSS/style.css" rel="stylesheet">
+        <link href="../CSS/style_index.css" rel="stylesheet">
         <link href="../CSS/square.css" rel="stylesheet">
         <link href="../CSS/IndexGrid.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="../Images/mplady_logo.png" />
         <meta charset="utf-8">
-        <title>Les recettes de MPLady</title>
+        <title>MPLadyCook</title>
     </head>
     <body> 
         <header>
             <div id="title">
-                <h1>MPLady</h1>
+                <h1>MPLadyCook</h1>
             </div>
             <div id="HContainer">
                 <ul class="squares">
@@ -31,30 +31,44 @@
         <main>
             <div class="mainContainer">
                 <div class="grid">
-                    <div class="overlay"></div>
-                    <div class="titre"><a href="/HTML/Bases.html" target="_blank">Les bases culinaires</a></div> 
+                    <div class="overlay">
+                        <div class="titre"><a href="/HTML/Bases.html" target="_blank">Les bases culinaires</a></div>
+                    </div>
                     <div class="imgGrid base" style="--image: url(../Images/Base/pate_pizza.jpg);"></div>
                 </div>
                 <div class="grid">
-                    <div class="titre"><a href="/HTML/PlatsMer.html" target="_blank">Les plats de la mer</a></div> 
+                    <div class="overlay">
+                        <div class="titre"><a href="/HTML/PlatsMer.html" target="_blank">Les plats de la mer</a></div> 
+                    </div>
                     <div class="imgGrid" style="--image: url(../Images/Mer/pave_saumon.jpg);"></div>
                 </div>
                 <div class="grid">
-                    <div class="titre"><a href="/HTML/PlatsViande.html" target="_blank">Les plats à base de viande</a></div> 
+                    <div class="overlay">
+                        <div class="titre"><a href="/HTML/PlatsViande.html" target="_blank">Les plats à base de viande</a></div>
+                    </div>
                     <div class="imgGrid" style="--image: url(../Images/Viande/loklak2.jpg);"></div>
                 </div>
                 <div class="grid">
-                    <div class="titre"><a href="/HTML/PlatsTradi.html" target="_blank">Les plats traditionnels</a></div> 
+                    <div class="overlay">
+                        <div class="titre"><a href="/HTML/PlatsTradi.html" target="_blank">Les plats traditionnels</a></div>
+                    </div>
                     <div class="imgGrid" style="--image: url(../Images/Traditionnel/pizza.jpg);"></div>
                 </div>
                 <div class="grid">
-                    <div class="titre"><a href="/HTML/Patisseries.html" target="_blank">Les pâtisseries</a></div> 
+                    <div class="overlay">
+                        <div class="titre"><a href="/HTML/Patisseries.html" target="_blank">Les pâtisseries</a></div>
+                    </div>
                     <div class="imgGrid" style="--image: url(../Images/Patisserie/gateau_chocolat.jpg);"></div>
                 </div>
             </div>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Rechercher une recette...">
+                <button type="submit">Go !</button>
+            </form>
+            <script src="../Script/searchbar.js"></script>
         </main>
         <footer>
-            <p>Ce site a été fait par Lady grâce aux cours de Daddy</p>
+            <p>Répertoire de notre savoir ainsi que notre expérience dans ce domaine essentiel, délicieux et fastidieux </p>
         </footer>
     </body>
 </html>

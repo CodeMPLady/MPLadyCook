@@ -1,4 +1,4 @@
-.mainContainer {
+    .mainContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 100px;
@@ -8,8 +8,8 @@
 }
 
 body {
-    background-image: url(../Images/Accueil/bg_index.svg);
-    background-size: contain;
+    background-image: url(../Images/Accueil/fond.jpg);
+    background-size: cover;
 }
 
 .grid {
@@ -17,29 +17,19 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
-    border-radius: 8px;
     justify-items: center;
     align-items: center;
 }
 
-/* .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    z-index: 5;
-} */
 
 .titre {
-    position: absolute;
-    z-index: 10;
+    grid-row: 2 / 3;
     font-weight: bold;
     text-decoration: none;
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.567);
-    grid-row: 2 / 3;
+    background-color: rgb(255, 255, 255);
 }
 
 .imgGrid {
@@ -50,6 +40,24 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.overlay {
+    display: flex;
+    position: absolute;
+    height: 300px;
+    min-width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 34, 34);
+    opacity: 0;
+    border-radius: 5px;
+    transition: opacity 400ms ease-in-out;
+}
+
+.overlay:hover{
+    opacity: 0.7;
+}
+
 
 a {
     text-decoration: none;

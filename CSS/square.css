@@ -1,16 +1,18 @@
 #HContainer{
-    background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(240,105,105,1) 100%);
+    background: linear-gradient(180deg, rgb(174, 63, 63) 5%, rgba(240,105,105,1) 100%);
+    /* background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(240,105,105,1) 100%); */
+
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: absolute;
     z-index: -2;
-    box-shadow: 0 0 15px 15px rgb(117, 172, 191);
+    /* box-shadow: 0 0 15px 15px rgb(117, 172, 191); */
 }
 
 #title {
     width: 100%;
     position: absolute;
-    top: 100px;
+    top: 30px;
     text-align: center;
     color: #fff;
     font-size: 30px;
