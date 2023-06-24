@@ -15,10 +15,6 @@ footer {
     border-radius: 10px;
 }
 
-#logo {
-    width: 100px;
-}
-
 #search-form {
     display: flex;
     align-items: center;
@@ -38,22 +34,54 @@ footer {
     border-color: #0066cc;
 }
 
-#search-form button {
-    padding: 8px 16px;
+#search-input:focus {
+    transform: scale(1.5);
+}
+
+/* #search-form button {
+    padding: 2px 16px;
     background-color: #0066cc;
     color: #fff;
     border: none;
-    margin-left: -40px;
+    margin-left: -70px;
     border-radius: 30px;
     cursor: pointer;
-}
+} */
 
 #search-form button:hover {
     background-color: #004499;
 }
 
-/* .linkResult {
-    display: block;
-    height: 100px;
-    width: 100px;
-} */
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    place-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.linkResult {
+    border: 2px solid rgb(163, 80, 80);
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.linkResult:hover {
+    background-color: rgb(224, 243, 255);
+    transform: scale(1.1);
+}
+
+.C_erreur {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 4px; 
+    padding: 5px;
+    width: fit-content;
+    grid-column: 1 / 3;
+}

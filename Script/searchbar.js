@@ -1,10 +1,21 @@
+import { searchRecipes } from "./dbRecettes.js";
+
 document.getElementById('search-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêche l'envoi du formulaire
+    event.preventDefault();
 
-    var searchInput = document.getElementById('search-input').value.trim();
-    var matchingRecipes = searchRecipes(searchInput);
-
+    let searchInput = document.getElementById('search-input').value.trim();
+    let matchingRecipes = searchRecipes(searchInput);
     console.log(searchRecipes(searchInput));
+
+    const previousResults = document.querySelectorAll(".linkResult");
+    const previousError = document.querySelector(".C_erreur");
+    
+    if (previousError) {
+        previousError.remove();
+    }
+    previousResults.forEach(function(result) {
+        result.remove();
+    });
 
     if (searchRecipes(searchInput).length > 1) {
 
@@ -14,50 +25,31 @@ document.getElementById('search-form').addEventListener('submit', function (even
 
             let selectDiv = document.querySelector(".result");
             let createA = document.createElement("a");
-            let brToBreath = document.createElement("br");
             let recipeName = document.createTextNode(matchingRecipes[i].name);
 
             recipeUrl += '#' + anchor;
             createA.appendChild(recipeName);
             createA.classList.add("linkResult");
-
             createA.href = recipeUrl;
+            createA.target = "_blank";
             selectDiv.appendChild(createA);
-            selectDiv.appendChild(brToBreath);
-            
-            console.log(recipeUrl);
         }
+    } else if (matchingRecipes.length === 0) {
+        let selectDiv = document.querySelector(".result");
+        let erreur = document.createElement("p");
+        let texteErreur = document.createTextNode("Nous n'avons pas encore testé cette recette !")
 
-
+        erreur.classList.add("C_erreur");
+        erreur.appendChild(texteErreur);
+        selectDiv.appendChild(erreur);
     } else {
         if (matchingRecipes.length > 0) {
             var recipeUrl = matchingRecipes[0].url;
-            var anchor = matchingRecipes[0].anchor; // Identifiant de l'ancre spécifique
+            var anchor = matchingRecipes[0].anchor; 
     
-            recipeUrl += '#' + anchor; // Ajoute l'ancre à l'URL
-    
-            var newTab = window.open(recipeUrl, '_blank'); // Ouvre la page dans un nouvel onglet
+            recipeUrl += '#' + anchor;
+            var newTab = window.open(recipeUrl, '_blank');
             newTab.focus();
         }
-
     }
-
 });
-
-function searchRecipes(query) {
-    query = query.toLowerCase();
-
-    // Tableau d'exemple contenant les recettes avec leurs URL et ancres spécifiques
-    var recipes = [
-        { name: "brioche", url: "Patisseries.html", anchor: "brioche" },
-        { name: "boeuf lok lak", url: "PlatsViande.html", anchor: "loklak" },
-        { name: "saumon teriyaki", url: "PlatsMer.html", anchor: "saumonTeriyaki" },
-        { name: "pate a pizza", url: "Bases.html", anchor: "patePizza" },
-        { name: "gnocchis", url: "PlatsTradi.html", anchor: "gnocchis" },
-        { name: "pizza", url: "PlatsTradi.html", anchor: "pizza" }
-    ];
-
-    return recipes.filter(function (recipe) {
-        return recipe.name.toLowerCase().includes(query);
-    });
-}
