@@ -28,18 +28,18 @@
             <h1>Les bases culinaires</h1>
         </div>
         <div class="banner">
-            <div class="textPres">
-                <div><p>En cuisine, certaines bases sont indispensables afin de réussir et sublimer ses recettes.<br> Nous allons donc présenter ici les bases qui nous semblent fondamentales mais également <br>celles qui sont nécessaires à la réalisation des recettes proposées sur ce site.</p></div>
+            <div id="textPres">
+                <script src="../Script/adjustPres.js"></script>
             </div>
         </div>
         <main>
             <ul class="container">
                 <li class="containerLI">
-                    <div id="boxRiz">
-                        <div id="TitleRiz"><p class="BoxTitle">Le riz vinaigré</p></div>
-                        <div  id="riz1"><img src="../Images/Base/riz_vinaigre.jpg" class="img"></div>
-                        <div  id="riz2"><img src="../Images/Base/riz_vinaigre2.jpg" class="img"></div>
-                        <div id="recetteRiz">
+                    <div class="BigBox">
+                        <div class="BigTitle" id="rizVinaigre"><p class="BoxTitle">Le riz vinaigré</p></div>
+                        <div class="BigImgTop"><img src="../Images/Base/riz_vinaigre.jpg" class="BigImg"></div>
+                        <div class="BigImgBot"><img src="../Images/Base/riz_vinaigre2.jpg" class="BigImg"></div>
+                        <div class="BigRecette">
                             <ul class="ulRec">
                                 <li class="titleRecPart">Ingrédients :</li>
                                 <ul class="ulIng">
@@ -51,11 +51,11 @@
                                 <li class="titleRecPart">Préparation :</li>
                                 <ul class="ulPrep">
                                     <li class="liRec">- Bien rincer le riz</li>
-                                    <li class="liRec">- Le mettre dans une casserole avec<br> un peu plus d'eau froide que de riz</li>
-                                    <li class="liRec">- Mettre le feu fort et dès que l'eau bout,<br> couvrir et baisser le feu</li>
+                                    <li class="liRec">- Le mettre dans une casserole avec un peu plus d'eau froide que de riz</li>
+                                    <li class="liRec">- Mettre le feu fort et dès que l'eau bout, couvrir et baisser le feu</li>
                                     <li class="liRec">- Faire cuire à feu doux pendant 12 minutes</li>
                                     <li class="liRec">- Une fois le riz cuit, l'étaler sur une assiette</li>
-                                    <li class="liRec">- Mettre le vinaigre de riz et le sucre <br>dans une casserole sur un feu doux</li>
+                                    <li class="liRec">- Mettre le vinaigre de riz et le sucre dans une casserole sur un feu doux</li>
                                     <li class="liRec">- Une fois le sucre dissout, verser le mélange sur le riz</li>
                                     <li class="liRec">- Bien remuer le riz pour que la totalité soit vinaigrée</li>
                                 </ul>
@@ -64,24 +64,25 @@
                     </div>
                 </li>
                 <li class="containerLI">
-                    <div class="box">
-                        <div class="GridTitle" id="pateBrisee"><p class="BoxTitle">La pâte brisée</p></div>
-                        <div class="imgFrais"><img src="../Images/Base/pate_brisee.jpg" class="img"></div>
-                        <div class="recette">
+                    <div class="BigBox">
+                        <div class="BigTitle" id="pateBrisee"><p class="BoxTitle">La pâte brisée</p></div>
+                        <div class="BigImgTop"><img src="../Images/Base/pate_brisee.jpg" class="BigImg"></div>
+                        <div class="BigImgBot"><img src="../Images/Base/pate_brisee2.jpg" class="BigImg"></div>
+                        <div class="BigRecette">
                             <ul class="ulRec">
                                 <li class="titleRecPart">Ingrédients :</li>
                                 <ul class="ulIng">
                                     <li class="liRec">300g de farine</li>
                                     <li class="liRec">150g de beurre pommade</li>
-                                    <li class="liRec">0,5 cc de sel</li>
+                                    <li class="liRec">0,5 cuillère à café de sel</li>
                                     <li class="liRec">3 cs de sucre si pâte sucrée</li>
                                     <li class="liRec">80ml d'eau tiède</li>
                                 </ul>
                                 <li class="titleRecPart">Préparation :</li>
                                 <ul class="ulPrep">
-                                    <li class="liRec">- Mélanger la farine et le sel (et le sucre) <br>dans un saladier</li>
-                                    <li class="liRec">- Ajouter le beurre et l'incorporer en <br>pétrissant rapidement et légèrement</li>
-                                    <li class="liRec">- Au bout de 2/3 minutes, on doit obtenir <br>une sorte de semoule grossière</li>
+                                    <li class="liRec">- Mélanger la farine et le sel (et le sucre) dans un saladier</li>
+                                    <li class="liRec">- Ajouter le beurre et l'incorporer en pétrissant</li>
+                                    <li class="liRec">- Au bout de 2/3 minutes, on doit obtenir une texture semoule</li>
                                     <li class="liRec">- Incorporer rapidement l'eau</li>
                                     <li class="liRec">- Étaler la pâte sur du papier cuisson</li>
                                 </ul>
@@ -91,16 +92,17 @@
                    
                 </li>
                 <li class="containerLI">
-                    <div class="box">
-                        <div class="GridTitle" id="patePizza"><p class="BoxTitle">La pâte à pizza</p></div>
-                        <div class="imgFrais"><img src="../Images/Base/pate_pizza.jpg" class="img"></div>
-                        <div class="recette">
+                    <div class="BigBox">
+                        <div class="BigTitle" id="patePizza"><p class="BoxTitle">La pâte à pizza</p></div>
+                        <div class="BigImgTop"><img src="../Images/Base/pate_pizza.jpg" class="BigImg"></div>
+                        <div class="BigImgBot"><img src="../Images/Base/pate_pizza2.jpg" class="BigImg"></div>
+                        <div class="BigRecette">
                             <ul class="ulRec">
                                 <li class="titleRecPart">Ingrédients :</li>
                                 <ul class="ulIng">
                                     <li class="liRec">250g de farine à pizza</li>
                                     <li class="liRec">20g de levure fraîche</li>
-                                    <li class="liRec">2 cs d'huile d'olive</li>
+                                    <li class="liRec">2 cuillères à soupe d'huile d'olive</li>
                                     <li class="liRec">2 pincées de sel</li>
                                     <li class="liRec">150ml d'eau tiède</li>
                                 </ul>
@@ -108,25 +110,26 @@
                                 <ul class="ulPrep">
                                     <li class="liRec">- Mettre la farine dans un saladier</li>
                                     <li class="liRec">- Faire un puits et y mettre la levure</li>
-                                    <li class="liRec">- Ajouter le sel sur le tour du puits, sans le <br>mettre en contact avec la levure</li>
+                                    <li class="liRec">- Ajouter le sel autour du puits</li>
                                     <li class="liRec">- Ajouter l'huile d'olive sur le tour du puits</li>
                                     <li class="liRec">- Commencer à mélanger</li>
                                     <li class="liRec">- Ajouter la moitié de l'eau tiède et mélanger</li>
                                     <li class="liRec">- Ajouter le reste de l'eau et continuer à mélanger </li>
-                                    <li class="liRec">- Pétrir la pâte à la main jusqu'à obtenir<br> une pâte souple et légèrement collante</li>
+                                    <li class="liRec">- Pétrir la pâte à la main afin obtenir une pâte souple et légèrement collante</li>
                                     <li class="liRec">- Si la pâte est trop collante, ajouter de la farine</li>
                                     <li class="liRec">- Si la pâte ne colle pas, ajouter de l'eau</li>
-                                    <li class="liRec">- Laisser reposer la pâte pendant au moins une <br>heure dans un saladier recouvert d'un torchon humide</li>
+                                    <li class="liRec">- Faire reposer la pâte au moins 1h dans un saladier recouvert d'un torchon humide</li>
                                 </ul>
                             </ul>
                         </div>
                     </div>
                 </li>
                 <li class="containerLI">
-                    <div class="box">
-                        <div class="GridTitle" id="tortillas"><p class="BoxTitle">Les tortillas</p></div>
-                        <div class="imgFrais"><img src="../Images/Base/tortillas.jpg" class="img"></div>
-                        <div class="recette">
+                    <div class="BigBox">
+                        <div class="BigTitle" id="tortillas"><p class="BoxTitle">Les tortillas</p></div>
+                        <div class="BigImgTop"><img src="../Images/Base/tortillas.jpg" class="BigImg"></div>
+                        <div class="BigImgBot"><img src="../Images/Base/tortillas2.jpg" class="BigImg"></div>
+                        <div class="BigRecette">
                             <ul class="ulRec">
                                 <li class="titleRecPart">Ingrédients :</li>
                                 <ul class="ulIng">
@@ -139,13 +142,15 @@
                                 <li class="titleRecPart">Préparation :</li>
                                 <ul class="ulPrep">
                                     <li class="liRec">- Mélanger les farines et le sel dans un saladier</li>
-                                    <li class="liRec">- Porter l’eau et l’huile à ébullition <br>puis ajouter-les aux farines</li>
-                                    <li class="liRec">- Mélanger bien et pétrissez pour former <br>une boule de pâte lisse et homogène</li>
+                                    <li class="liRec">- Porter l’eau et l’huile à ébullition puis ajouter-les aux farines</li>
+                                    <li class="liRec">- Mélanger bien et pétrissez pour former une boule de pâte lisse et homogène</li>
                                     <li class="liRec">- Couvrir d’un ligne propre et laisser reposer 30 minutes</li>
                                     <li class="liRec">- Séparer la pâte et former 8 boules</li>
                                     <li class="liRec">- Sur un plan de travail fariné, les étaler en fines galettes</li>
-                                    <li class="liRec">- Faire cuire chaque galette à peine 1 minutes <br>de chaque côté dans une poêle anti-adhésive <br>bien chaude sans matière grasse</li>
-                                    <li class="liRec">- Déposer la tortillas dans une assiette puis recouvrir <br>immédiatement d’une autre assiette pour éviter qu’elle ne se dessèche</li>
+                                    <li class="liRec">- Faire chauffer une poêle anti-adhésive sans matière grasse</li>
+                                    <li class="liRec">- Faire cuire chaque galette à peine 1 minutes de chaque côté</li>
+                                    <li class="liRec">- Déposer la tortillas dans une assiette</li>
+                                    <li class="liRec">- Recouvrir immédiatement d’une autre assiette pour éviter qu’elle ne se dessèche</li>
                                 </ul>
                             </ul>
                         </div>
@@ -246,7 +251,7 @@
                     </div>
                 </li>
             </ul>
-            <img src="../Images/mplady_logo.png" id="logo" style="width: 70px;margin-top: 40px;">    
+            <img src="../Images/mplady_logo.png" id="logo">    
         </main>
     </body>
 </html>

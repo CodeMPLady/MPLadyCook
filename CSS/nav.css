@@ -6,19 +6,62 @@ body {
 :target{
     scroll-margin-top: 64px;
 }
+@media (min-width: 800px) {
+    nav {
+        float: left;
+        width : 220px; 
+        background: #d9d9d9;
+        opacity: 1;
+        margin: 10px 0px 0px 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: sticky;
+    }
 
-nav {
-    float: left;
-    width : 220px; 
-    background: #d9d9d9;
-    opacity: 1;
-    margin: 10px 0px 0px 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+    .slide {
+        clear:both;
+        padding: 0px;
+        height:0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    #touch:checked + .slide {
+        height: 280px;
+    }
 }
 
+@media (max-width: 800px) {
+    nav::before {
+        float: left;
+        width : 220px; 
+        background: #d9d9d9;
+        opacity: 1;
+        margin: 10px 0px 0px 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: sticky;
+    }
+
+    .slide {
+        clear: both;
+        padding: 0px;
+        height: 0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    #touch:checked + .slide {
+        height: 310px;
+    }
+    
+}
 span {
     padding : 10px;
     background : #232a30;
@@ -41,18 +84,6 @@ span::after {
     font-weight: 600;
 }
 
-.slide {
-    clear:both;
-    padding: 0px;
-    height:0px;
-    overflow: hidden;
-    text-align: center;
-    transition: height .4s ease;
-    margin: 0;
-    font-size: 0.8em;
-
-}
-
 .slide .liNav {
     padding : 5px;
 }
@@ -62,10 +93,6 @@ span::after {
     opacity: 0; 
     height: 0;
 }    
-
-#touch:checked + .slide {
-    height: 280px;
-}
 
 a:hover {
     font-size: 1.1em;

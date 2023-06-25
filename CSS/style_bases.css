@@ -2,15 +2,493 @@
     background-color: #bad3de;
 }
 
-h1 {
-    color:black;
-    text-align: center;
-    border-radius: 3px;
-    padding: 20px 50px 20px 50px;
-    width: fit-content;
-    margin: 0 auto;
+@media (min-width: 1500px) {
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        padding: 20px 50px 20px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #textPres {
+        border-radius: 10px;
+        padding: 1px 10px 1px 10px;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        background-color: #c4ced2;
+        margin: 0px 0px 0px 10px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .BigImg {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .BigBox {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 20% 30% 50%;
+        padding: 0px 20px 20px 0px;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        width: 95%;
+        align-items: center;
+    }
+
+    .BigImgTop {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;    
+        height: 200px;
+    }
+    
+    .BigImgBot {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;    
+        height: 200px;
+    }
+  
+    .BigTitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 20px;
+    }
+    
+    .BigRecette {
+        grid-column: 2 / 4;
+        grid-row: 1 / 4;
+        padding-top: 20px;
+        height: fit-content
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 60px;
+        gap: 30px;
+    }
+
+    .containerLI{
+        display: inline-flex;
+        width: fit-content;
+        padding-right: 10px;
+    }
+    
+    .box {
+        display: grid;
+        grid-template-columns: 250px 450px;
+        grid-template-rows: 20% 80%;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        align-self:center;
+    }
+
+    .GridTitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .imgFrais {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: baseline;
+        height: 200px;
+    }
+    
+    .recette {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        height: fit-content;
+        padding: 20px 20px 20px 0px;
+    }
+    
+    .BoxTitle {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .ulRec {
+        list-style: none;
+    }
+
+    .liRec{
+        list-style: none;
+        color: black;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .titleRecPart {
+        text-decoration: underline;
+        padding-bottom: 10px;
+    }
+
+    #logo {
+        height: 70px;
+        margin: 20px;
+    }
+
+    .box:hover,.BigBox:hover, .imgFrais:hover, .imgFrais2:hover, .BigImgTop:hover, .BigImgBot:hover {
+        transform: scale(1.01);
+        border-radius:10px;
+        box-shadow: 5px 5px 20px black;
+    }
+    
+    .box, .BigBox, .imgFrais, .BigImgTop, .BigImgBot {
+        transition: transform 0.3s ease;
+    }
+    
 }
 
+@media (max-width: 1500px) {
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        padding: 20px 50px 20px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #textPres {
+        border-radius: 10px;
+        padding: 1px 10px 1px 10px;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        background-color: #c4ced2;
+        margin: 0px 0px 0px 10px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .BigBox {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 20% 30% 50%;
+        padding: 0px 20px 20px 0px;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        width: 95%;
+        align-items: center;
+    }
+
+    .img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .BigImg {
+        height: 190px;
+        border-radius: 10px;
+    }
+
+    .BigImgTop {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;    
+        height: 200px;
+    }
+    
+    .BigImgBot {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;    
+        height: 200px;
+    }
+  
+    .BigTitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 20px;
+    }
+
+    .BigRecette {
+        grid-column: 2 / 4;
+        grid-row: 1 / 4;
+        padding-top: 20px;
+        height: fit-content
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        padding: 0px;
+        gap: 30px;
+        height: fit-content;
+    }
+
+    .containerLI{
+        display: inline-flex;
+        width: fit-content;
+        margin: 40px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 250px 450px;
+        grid-template-rows: 20% 80%;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        align-self:center;
+    }
+
+    .GridTitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .imgFrais {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: baseline;
+        height: 200px;
+    }
+    
+    .recette {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        height: fit-content;
+        padding: 20px 20px 20px 0px;
+    }
+    
+    .BoxTitle {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .ulRec {
+        list-style: none;
+    }
+
+    .liRec{
+        list-style: none;
+        color: black;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .titleRecPart {
+        text-decoration: underline;
+        padding-bottom: 10px;
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        padding: 20px 50px 20px 50px;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 1.7em;
+    }
+
+    #textPres {
+        border-radius: 10px;
+        padding: 1px 10px 1px 10px;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        background-color: #c4ced2;
+        margin: 0px 0px 0px 10px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .containerLI{
+        display: inline-flex;
+        width: fit-content;
+        height: fit-content;
+        margin: 40px 30px 0 30px;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .img {
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    .BigImg {
+        height: 130px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+
+    .BigBox {
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 20% 80%;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .BigImgTop {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;    
+        height: 100px;
+    }
+    
+    .BigImgBot {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;
+        height: 100px;
+    }
+
+    .BigTitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 10px 10px 0 10px;
+    }
+    
+    .BigRecette {
+        grid-column: 1 / 4;
+        grid-row: 2 / 4;
+        padding: 15px 0 15px 15px;
+        height: fit-content;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 75%;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        align-self:center;
+        grid-gap: 10px;
+    }
+
+    .GridTitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 10px 20px 0 10px ;
+    }
+    
+    .imgFrais {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: baseline;
+        margin-top: 20px;
+        height: 100px;
+    }
+    
+    .recette {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        padding: 10px 10px 20px 10px;
+    }
+    
+    .BoxTitle {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .ulRec {
+        list-style: none;
+        padding-left: 10px;
+        font-size: 0.8em;
+    }
+
+    .liRec{
+        list-style: none;
+        color: black;
+        font-size: 1em;
+        line-height: 18px;
+    }
+
+    .titleRecPart {
+        text-decoration: underline;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .img {
+        height: 90px;
+        border-radius: 10px;
+    }
+
+    .BigImg {
+        height: 75px;
+        margin-left: 20px;
+
+        border-radius: 10px;
+    }
+}
 .banner {
     display: flex;
     position: absolute;
@@ -25,157 +503,17 @@ h1 {
     box-shadow: 5px 5px 20px lightblue;
 }
 
-.textPres {
-    border-radius: 10px;
-    padding: 1px 10px 1px 10px;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    background-color: #c4ced2;
-    margin: 0px 0px 0px 10px;
-    box-shadow: 5px 5px 20px black;
-}
-
 main {
     background-color: #bad3de;
-    position: relative;
-    margin: 300px 0px 0px 0px;
-}
-
-.container {
-    margin: 0;
-    padding: 60px 0px 0px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    
-}
-
-.containerLI{
-    display: inline-flex;
-}
-
-#boxRiz {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 20% 30% 50%;
-    padding: 0px 20px 20px 0px;
-    background: rgb(250, 236, 211);
-    box-sizing: border-box;
-    box-shadow: 1px 1px 20px black;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    height: fit-content;
-}
-
-#TitleRiz {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin: 20px 0px 0px 0px;
-}
-
-#riz1 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: center;
-    align-self: center;
-    margin: 20px 0px 0px 0px;
-    height: 200px;
-}
-
-#riz2 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    justify-self: center;
-    align-self: center;
-    margin: 20px 0px 0px 0px;
-    height: 200px;
-}
-
-#recetteRiz {
-    grid-column: 2 / 4;
-    grid-row: 1 / 4;
-    padding: 20px 0px 0px 0px;
-    height: fit-content
-}
-
-.box {
-    display: grid;
-    grid-template-columns: 250px 450px;
-    grid-template-rows: 20% 80%;
-    background: rgb(250, 236, 211);
-    box-sizing: border-box;
-    box-shadow: 1px 1px 20px black;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    height: fit-content;
-    align-self:center;
-}
-
-.box:hover,#boxRiz:hover, .imgFrais:hover, .imgFrais2:hover, #riz1:hover, #riz2:hover {
-    transform: scale(1.01);
-    border-radius:10px;
-    box-shadow: 5px 5px 20px black;
-}
-
-.box, #boxRiz, .imgFrais, #riz1, #riz2 {
-    transition: transform 0.3s ease;
-}
-
-.GridTitle {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.imgFrais {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: center;
-    align-self: baseline;
-    height: 200px;
-}
-
-.recette {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    height: fit-content;
-    padding: 20px 20px 20px 0px;
-}
-
-.BoxTitle {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.ulRec {
-    list-style: none;
-}
-
-.titleRecPart {
-    text-decoration: underline;
-    padding: 0px 0px 10px 0px;
+    margin-top: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .ulIng {
-    padding: 0px 0px 10px 0px;
+    padding-bottom: 10px;
 }
 
 .ulIng, .ulPrep {
-    padding: 0 0 0 0;
-}
-
-.liRec{
-    list-style: none;
-    color: black;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.img {
-    height: 200px;
-    border-radius: 10px;
+    padding: 0;
 }
