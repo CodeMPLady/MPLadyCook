@@ -21,30 +21,26 @@ h1 {
 }
 
 #Tpat {
-    position: relative;
     border-collapse: collapse; 
     background:#e8e8e8;
     border-radius:6px;
-    overflow:hidden;
     max-width:600px; 
     width:100%;
-    margin-left: 457px ;
-    background-size:cover;
+    margin: auto ;
 }   
 
 .tdpat, .thpat {
-    padding: 8px;
+    padding: 10px 20px 10px 20px;
 }
 
 #theadpat .thpat{ 
-    height:40px;
     background: #d6cfae;
     font-size:16px;
     text-align: left;
+    padding: 15px;
 }
 
 #tbodypat tr {
-    height:48px; 
     border-bottom:1px solid rgba(196, 196, 196, 0.402) ;
     &:last-child  { 
         border:0; 
@@ -59,17 +55,16 @@ h1 {
     display: flex;
     height: fit-content;
     gap: 5em;
-    margin: 10px 0px 0px 0px;
+    margin-top: 10px;
 }
 
 .ingredients {
     display: flex;
-    margin: 0px 0px 0px 50px;
+    margin-left: 50px;
     align-items: center;
 }
 
 .preparation {
-    vertical-align: center;
     background-color: white;
     height: fit-content;
     padding: 0px 80px 30px 20px;
@@ -87,19 +82,20 @@ h1 {
     background-color: white;
     border-radius: 6px;
     border-collapse: collapse;
-    border-spacing: 1;
-    overflow: hidden;
-    height: 300px;
-    width: 250px;
+    height: fit-content;
+    min-height: 250px;
+    width: fit-content;
 }
 
 .theadIng .thIng {
     background-color: var(--thcolor);
-    padding: 8px;
+    padding: 15px;
 }
 
 .tdIng, .thIng {
     text-align: center;
+    padding: 10px 15px 10px 15px;
+    min-width: 220px;
 }
 
 .tbodyIng tr {
