@@ -9,7 +9,9 @@
         <link href="../CSS/nav.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="../Script/adjustTxtPat.js"></script>
+
     </head>
     <body>
         <nav>
@@ -32,65 +34,64 @@
                     <tr>
                         <th class="thpat">Recettes</th>
                         <th class="thpat">Difficulté</th>
-                        <th class="thpat">Coût</th>
+                        <th class="thpat">Temps de préparation</th>
                     </tr>
                 </thead>
                 <tbody id="tbodypat">
                     <tr>
                         <td class="tdpat"><a href="#gateauChoc">Gâteau au chocolat</a></td>
                         <td class="tdpat">Moyen</td>
-                        <td class="tdpat">€€</td>
+                        <td class="tdpat">⏳</td>
                     </tr>
                     <tr>
                         <td class="tdpat"><a href="#cookies">Cookies</a></td>
                         <td class="tdpat">Facile</td>
-                        <td class="tdpat">€</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><a href="#crepes">Crêpes</a></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">€</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><a href="#pancakes">Pancakes</a></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">€€</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><a href="#muffins">Muffins</a></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">€</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><a href="#brioche">Brioche</a></td>
-                        <td class="tdpat">Difficile</td>
-                        <td class="tdpat">€€</td>
+                        <td class="tdpat">⏳</td>
                     </tr>
                     <tr>
                         <td class="tdpat"><a href="#tiramisu">Tiramisu</a></td>
                         <td class="tdpat">Difficile</td>
-                        <td class="tdpat">€€€</td>
+                        <td class="tdpat">⏳⏳</td>
+                    </tr>
+                    <tr>
+                        <td class="tdpat"><a href="#muffins">Muffins</a></td>
+                        <td class="tdpat">Facile</td>
+                        <td class="tdpat">⏳</td>
                     </tr>
                     <tr>
                         <td class="tdpat"><a href="#meringues">Meringues</a></td>
                         <td class="tdpat">Moyen</td>
-                        <td class="tdpat">€</td>
+                        <td class="tdpat">⏳</td>
                     </tr>
                     <tr>
                         <td class="tdpat"><a href="#roule">Gâteau roulé</a></td>
                         <td class="tdpat">Facile</td>
-                        <td class="tdpat">€</td>
+                        <td class="tdpat">⏳⏳</td>
+                    </tr>
+                    <tr>
+                        <td class="tdpat"><a href="#crepes">Crêpes</a></td>
+                        <td class="tdpat">Facile</td>
+                        <td class="tdpat">⏳</td>
+                    </tr>
+                    <tr>
+                        <td class="tdpat"><a href="#pancakes">Pancakes</a></td>
+                        <td class="tdpat">Facile</td>
+                        <td class="tdpat">⏳</td>
+                    </tr>
+                    <tr>
+                        <td class="tdpat"><a href="#brioche">Brioche</a></td>
+                        <td class="tdpat">Difficile</td>
+                        <td class="tdpat">⏳⏳⏳</td>
                     </tr>
                 </tbody>
                 
         </table>
-        
         <ol class="olcards">
             <li style="--cardColor: #BA3C3C" class="licard">
                 <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/gateau_chocolat.jpg" class="Eximg"></div>
-                    <div class="title" id="gateauChoc">Gâteau au chocolat</div>
-                    <div class="text">Un gâteau gourmand, encore plus avec de la chantilly maison !</div>
+                    <div class="icon" id="gateauChoc"><img src="../Images/Patisserie/gateau_chocolat.jpg" class="Eximg"></div>
+                    <div class="title">Gâteau au chocolat</div>
+                    <div class="text" id="IDGateauChoc"></div>
                 </div>
             </li>
             <div class="container">
@@ -120,9 +121,9 @@
             </div>
             <li style="--cardColor:#36aeb3" class="licard">
                 <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/cookies.jpeg" class="Eximg"></div>
-                    <div class="title" id="cookies">Cookies</div>
-                    <div class="text">La recette idéale pour un encas sur place ou à emporter !</div>
+                    <div class="icon" id="cookies"><img src="../Images/Patisserie/cookies.jpeg" class="Eximg"></div>
+                    <div class="title">Cookies</div>
+                    <div class="text" id="IDCookies"></div>
                 </div>
             </li>
             <div class="container">
@@ -151,162 +152,11 @@
                     </ul>
                 </div>
             </div>
-            <li style="--cardColor:#2c5fbf" class="licard">
-                <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/crepes.jpg" class="Eximg"></div>
-                    <div class="title" id="crepes">Crêpes </div>
-                    <div class="text">Une recette simple et rapide parfaite pour les petits creux</div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#2c5fbf">
-                            <tr><th class="thIng">Ingrédients (nombre portions)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">125g de farine</td></tr>
-                            <tr><td class="tdIng">2 oeufs</td></tr>
-                            <tr><td class="tdIng">300ml de lait</td></tr>
-                            <tr><td class="tdIng">0,5 pincée de sel</td></tr>
-                            <tr><td class="tdIng">1 cuillière à soupe de sucre</td></tr>
-                            <tr><td class="tdIng">25g de beurre fondu</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Mettre la farine et le sel dans un saladier, mélanger et faire un puits</li>
-                        <li class="liPrep">Mettre les oeufs au centre et fouetter</li>
-                        <li class="liPrep">Mettre le sucre et le mélanger aux oeufs seulement</li>
-                        <li class="liPrep">Rajouter la farine au mélange</li>
-                        <li class="liPrep">Ajouter le lait froid petit à petit</li>
-                        <li class="liPrep">Ajouter le beurre fondu</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#2BA837" class="licard">
-                <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/pancakes.jpg" class="Eximg"></div>
-                    <div class="title" id="pancakes">Pancakes</div>
-                    <div class="text">Pour un petit déjeuner réussi !</div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#2BA837">
-                            <tr><th class="thIng">Ingrédients (nombre portions)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">250g de farine</td></tr>
-                            <tr><td class="tdIng">30g de sucre</td></tr>
-                            <tr><td class="tdIng">1 sachet de levure</td></tr>
-                            <tr><td class="tdIng">65g de beurre</td></tr>
-                            <tr><td class="tdIng">1 pincée de sel</td></tr>
-                            <tr><td class="tdIng">300ml de lait</td></tr>
-                            <tr><td class="tdIng">2 oeufs</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Faire fondre le beurre</li>
-                        <li class="liPrep">Mettre la farine, la levure et le sucre dans un saladier</li>
-                        <li class="liPrep">Mélanger et creuser un puits</li>
-                        <li class="liPrep">Ajouter les oeufs et mélanger</li>
-                        <li class="liPrep">Incorporer le beurre fondu</li>
-                        <li class="liPrep">Délayer progresivement avec le lait</li>
-                        <li class="liPrep">Laisser reposer une heure au frigo</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#A33C3C" class="licard">
-                <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/muffins.jpg" class="Eximg"></div>
-                    <div class="title" id="muffins">Muffins</div>
-                    <div class="text">Un dessert gourmand et moelleux pour bien finir le repas</div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#A33C3C">
-                            <tr><th class="thIng">Ingrédients (4 muffins)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">150g de farine</td></tr>
-                            <tr><td class="tdIng">75g de sucre</td></tr>
-                            <tr><td class="tdIng">0,5 sachet de levure</td></tr>
-                            <tr><td class="tdIng">50g de beurre</td></tr>
-                            <tr><td class="tdIng">1 pincée de sel</td></tr>
-                            <tr><td class="tdIng">4 cuillières à soupe de lait</td></tr>
-                            <tr><td class="tdIng">1 oeuf</td></tr>
-                            <tr><td class="tdIng">Chocolat pour les pépites</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Faire fondre le beurre</li>
-                        <li class="liPrep">Ajouter le lait et l'oeuf battu</li>
-                        <li class="liPrep">Mettre la farine, le sucre, le sel et la levure dans un saladier</li>
-                        <li class="liPrep">Incorporer la préparation liquide</li>
-                        <li class="liPrep">Bien mélanger jusqu'à l'obtention d'une pâte bien lisse</li>
-                        <li class="liPrep">Ajouter les pépites de chocolat</li>
-                        <li class="liPrep">Faire cuire 18 minutes à 200°C</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#C3AC3E" class="licard">
-                <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/brioche.jpg" class="Eximg"></div>
-                    <div class="title" id="brioche">Brioche</div>
-                    <div class="text">Pour un goûter copieux et moelleux</div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#C3AC3E">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">100ml de lait</td></tr>
-                            <tr><td class="tdIng">1 oeuf</td></tr>
-                            <tr><td class="tdIng">80g de sucre</td></tr>
-                            <tr><td class="tdIng">250g de farine</td></tr>
-                            <tr><td class="tdIng">0,5 cuillière à café de sel</td></tr>
-                            <tr><td class="tdIng">10g de levure fraîche</td></tr>
-                            <tr><td class="tdIng">40g de beurre</td></tr>
-                            <tr><td class="tdIng">1 oeuf pour dorer</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Battre l'oeuf, le lait, le sucre et le sel</li>
-                        <li class="liPrep">Ajouter la farine et la levure</li>
-                        <li class="liPrep">Pétrir pendant 20 minutes</li>
-                        <li class="liPrep">Incorporer le beurre mou</li>
-                        <li class="liPrep">Laisser lever 30 minutes à température ambiante</li>
-                        <li class="liPrep">Dégazer la pâte</li>
-                        <li class="liPrep">Laisser reposer 1h30 ou plus au frais dans un saladier filmé</li>
-                        <li class="liPrep">Rompre la pâte et façonner la brioche</li>
-                        <li class="liPrep">Laisser pousser à couvert pendant une heure à température ambiante</li>
-                        <li class="liPrep">Dorer et faire cuire 20 à 30 minutes à 180°C</li>
-                    </ul>
-                </div>
-            </div>
             <li style="--cardColor:#bfb78e" class="licard">
                 <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/tiramisu.jpg" class="Eximg"></div>
-                    <div class="title" id="tiramisu">Tiramisu</div>
-                    <div class="text">Un dessert onctueux et plein de douceur</div>
+                    <div class="icon" id="tiramisu"><img src="../Images/Patisserie/tiramisu.jpg" class="Eximg"></div>
+                    <div class="title">Tiramisu</div>
+                    <div class="text" id="IDTiramisu"></div>
                 </div>
             </li>
             <div class="container">
@@ -349,11 +199,49 @@
                     </ul>
                 </div>
             </div>
+            <li style="--cardColor:#A33C3C" class="licard">
+                <div class="content">
+                    <div class="icon" id="muffins"><img src="../Images/Patisserie/muffins.jpg" class="Eximg"></div>
+                    <div class="title">Muffins</div>
+                    <div class="text" id="IDMuffins"></div>
+                </div>
+            </li>
+            <div class="container">
+                <div class="ingredients">
+                    <table class="TIng">
+                        <thead class="theadIng" style="--thcolor:#A33C3C">
+                            <tr><th class="thIng">Ingrédients (4 muffins)</th></tr>
+                        </thead>
+                        <tbody class="tbodyIng">
+                            <tr><td class="tdIng">150g de farine</td></tr>
+                            <tr><td class="tdIng">75g de sucre</td></tr>
+                            <tr><td class="tdIng">0,5 sachet de levure</td></tr>
+                            <tr><td class="tdIng">50g de beurre</td></tr>
+                            <tr><td class="tdIng">1 pincée de sel</td></tr>
+                            <tr><td class="tdIng">4 cuillières à soupe de lait</td></tr>
+                            <tr><td class="tdIng">1 oeuf</td></tr>
+                            <tr><td class="tdIng">Chocolat pour les pépites</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="preparation">
+                    <p class="titrePrep">Préparation :</p>
+                    <ul class="ulPrep">
+                        <li class="liPrep">Faire fondre le beurre</li>
+                        <li class="liPrep">Ajouter le lait et l'oeuf battu</li>
+                        <li class="liPrep">Mettre la farine, le sucre, le sel et la levure dans un saladier</li>
+                        <li class="liPrep">Incorporer la préparation liquide</li>
+                        <li class="liPrep">Bien mélanger jusqu'à l'obtention d'une pâte bien lisse</li>
+                        <li class="liPrep">Ajouter les pépites de chocolat</li>
+                        <li class="liPrep">Faire cuire 18 minutes à 200°C</li>
+                    </ul>
+                </div>
+            </div>
             <li style="--cardColor:#489c70" class="licard">
                 <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/meringues.jpg" class="Eximg"></div>
-                    <div class="title" id="meringues">Meringues</div>
-                    <div class="text">Une recette à la fois gourmande et légère !</div>
+                    <div class="icon" id="meringues"><img src="../Images/Patisserie/meringues.jpg" class="Eximg"></div>
+                    <div class="title">Meringues</div>
+                    <div class="text" id="IDMeringues"></div>
                 </div>
             </li>
             <div class="container">
@@ -385,9 +273,9 @@
             </div>
             <li style="--cardColor:#c97947" class="licard">
                 <div class="content">
-                    <div class="icon"><img src="../Images/Patisserie/roule.jpeg" class="Eximg"></div>
-                    <div class="title" id="roule">Gâteau roulé</div>
-                    <div class="text">Un gâteau qui allie l'ultra moelleux du biscuit et la fraîcheur de la confiture de fraises</div>
+                    <div class="icon" id="roule"><img src="../Images/Patisserie/roule.jpeg" class="Eximg"></div>
+                    <div class="title">Gâteau roulé</div>
+                    <div class="text" id="IDRoule"></div>
                 </div>
             </li>
             <div class="container">
@@ -423,7 +311,120 @@
                     </ul>
                 </div>
             </div>
+            <li style="--cardColor:#2c5fbf" class="licard">
+                <div class="content">
+                    <div class="icon" id="crepes"><img src="../Images/Patisserie/crepes.jpg" class="Eximg"></div>
+                    <div class="title">Crêpes </div>
+                    <div class="text" id="IDCrepes"></div>
+                </div>
+            </li>
+            <div class="container">
+                <div class="ingredients">
+                    <table class="TIng">
+                        <thead class="theadIng" style="--thcolor:#2c5fbf">
+                            <tr><th class="thIng">Ingrédients (nombre portions)</th></tr>
+                        </thead>
+                        <tbody class="tbodyIng">
+                            <tr><td class="tdIng">125g de farine</td></tr>
+                            <tr><td class="tdIng">2 oeufs</td></tr>
+                            <tr><td class="tdIng">300ml de lait</td></tr>
+                            <tr><td class="tdIng">0,5 pincée de sel</td></tr>
+                            <tr><td class="tdIng">1 cuillière à soupe de sucre</td></tr>
+                            <tr><td class="tdIng">25g de beurre fondu</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="preparation">
+                    <p class="titrePrep">Préparation :</p>
+                    <ul class="ulPrep">
+                        <li class="liPrep">Mettre la farine et le sel dans un saladier, mélanger et faire un puits</li>
+                        <li class="liPrep">Mettre les oeufs au centre et fouetter</li>
+                        <li class="liPrep">Mettre le sucre et le mélanger aux oeufs seulement</li>
+                        <li class="liPrep">Rajouter la farine au mélange</li>
+                        <li class="liPrep">Ajouter le lait froid petit à petit</li>
+                        <li class="liPrep">Ajouter le beurre fondu</li>
+                    </ul>
+                </div>
+            </div>
+            <li style="--cardColor:#2BA837" class="licard">
+                <div class="content">
+                    <div class="icon" id="pancakes"><img src="../Images/Patisserie/pancakes.jpg" class="Eximg"></div>
+                    <div class="title">Pancakes</div>
+                    <div class="text" id="IDPancakes"></div>
+                </div>
+            </li>
+            <div class="container">
+                <div class="ingredients">
+                    <table class="TIng">
+                        <thead class="theadIng" style="--thcolor:#2BA837">
+                            <tr><th class="thIng">Ingrédients (nombre portions)</th></tr>
+                        </thead>
+                        <tbody class="tbodyIng">
+                            <tr><td class="tdIng">250g de farine</td></tr>
+                            <tr><td class="tdIng">30g de sucre</td></tr>
+                            <tr><td class="tdIng">1 sachet de levure</td></tr>
+                            <tr><td class="tdIng">65g de beurre</td></tr>
+                            <tr><td class="tdIng">1 pincée de sel</td></tr>
+                            <tr><td class="tdIng">300ml de lait</td></tr>
+                            <tr><td class="tdIng">2 oeufs</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="preparation">
+                    <p class="titrePrep">Préparation :</p>
+                    <ul class="ulPrep">
+                        <li class="liPrep">Faire fondre le beurre</li>
+                        <li class="liPrep">Mettre la farine, la levure et le sucre dans un saladier</li>
+                        <li class="liPrep">Mélanger et creuser un puits</li>
+                        <li class="liPrep">Ajouter les oeufs et mélanger</li>
+                        <li class="liPrep">Incorporer le beurre fondu</li>
+                        <li class="liPrep">Délayer progressivement avec le lait</li>
+                        <li class="liPrep">Laisser reposer une heure au frigo</li>
+                    </ul>
+                </div>
+            </div>
+            <li style="--cardColor:#C3AC3E" class="licard">
+                <div class="content">
+                    <div class="icon" id="brioche"><img src="../Images/Patisserie/brioche.jpg" class="Eximg"></div>
+                    <div class="title">Brioche</div>
+                    <div class="text" id="IDBrioche"></div>
+                </div>
+            </li>
+            <div class="container">
+                <div class="ingredients">
+                    <table class="TIng">
+                        <thead class="theadIng" style="--thcolor:#C3AC3E">
+                            <tr><th class="thIng">Ingrédients</th></tr>
+                        </thead>
+                        <tbody class="tbodyIng">
+                            <tr><td class="tdIng">100ml de lait</td></tr>
+                            <tr><td class="tdIng">1 oeuf</td></tr>
+                            <tr><td class="tdIng">80g de sucre</td></tr>
+                            <tr><td class="tdIng">250g de farine</td></tr>
+                            <tr><td class="tdIng">0,5 cuillière à café de sel</td></tr>
+                            <tr><td class="tdIng">10g de levure fraîche</td></tr>
+                            <tr><td class="tdIng">40g de beurre</td></tr>
+                            <tr><td class="tdIng">1 oeuf pour dorer</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="preparation">
+                    <p class="titrePrep">Préparation :</p>
+                    <ul class="ulPrep">
+                        <li class="liPrep">Battre l'oeuf, le lait, le sucre et le sel</li>
+                        <li class="liPrep">Ajouter la farine et la levure</li>
+                        <li class="liPrep">Pétrir pendant 20 minutes</li>
+                        <li class="liPrep">Incorporer le beurre mou</li>
+                        <li class="liPrep">Laisser lever 30 minutes à température ambiante</li>
+                        <li class="liPrep">Dégazer la pâte</li>
+                        <li class="liPrep">Laisser reposer 1h30 ou plus au frais dans un saladier filmé</li>
+                        <li class="liPrep">Rompre la pâte et façonner la brioche</li>
+                        <li class="liPrep">Laisser pousser à couvert pendant une heure à température ambiante</li>
+                        <li class="liPrep">Dorer et faire cuire 20 à 30 minutes à 180°C</li>
+                    </ul>
+                </div>
+            </div>
         </ol>
-        <img src="../Images/mplady_logo.png" id="logo" style="width: 70px;">
+        <img src="../Images/mplady_logo.png" id="logo">    
     </body>
 </html>

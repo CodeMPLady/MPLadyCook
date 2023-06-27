@@ -1,23 +1,278 @@
 body {
-    background-image:  url("../Images/Patisserie/BackPat.png");
+    background-image:  url("../Images/Patisserie/Shiny\ Overlay.svg");
     background-size: cover;
 }
 
-* {
-    scroll-behavior:smooth;
+@media (min-width: 700px) {
+    h1 {
+        background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
+        width: fit-content;
+        padding: 10px 30px 10px 30px;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        border: 3px black solid;
+        border-radius: 30px;
+        box-shadow: 3px 3px 5px black;
+        font-weight: 500;
+    }
+
+    .olcards, .olcards {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .olcards {
+        width: fit-content;
+        margin: 20px 0px 0px 0px;
+        list-style: none;
+        counter-reset: cardCount;
+        display: flex;
+        flex-direction: column;
+        --cardsGap: 1.5rem;
+        gap: var(--cardsGap);
+        padding-bottom: var(--cardsGap);
+        align-items: flex-start;
+    }
+
+    .container {
+        display: flex;
+        height: fit-content;
+        gap: 7em;
+        margin-top: 20px;
+    }
+
+    .TIng {
+        background-color: white;
+        border-radius: 6px;
+        border-collapse: collapse;
+        height: fit-content;
+        min-height: 250px;
+        width: fit-content;
+    }
+    .ingredients {
+        display: flex;
+        margin-left: 50px;
+        align-items: center;
+    }
+    
+    .preparation {
+        background-color: white;
+        height: fit-content;
+        padding: 0px 80px 30px 20px;
+        border-radius: 6px;
+        border: 2px black solid;
+        box-shadow: 6px 6px 20px;
+    }
+    
+    .content {
+        position: relative;
+        display: grid;
+        width: 100%;
+        background-color: var(--cardColor);
+        --inlinePadding: -5em;
+        --boxPadding: 0.5em;
+        padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+            var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+        grid-template-areas:
+            "icon title"
+            "icon text";
+        gap: 0.5em 1em;
+        clip-path: polygon(
+            0 0,
+            calc(100% - var(--arrowClipSize)) 0,
+            100% 50%,
+            calc(100% - var(--arrowClipSize)) 100%,
+            calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+            0 calc(100% + var(--cardsGap)));
+    }
+    
+    .licard {
+        counter-increment: cardCount;
+        display: flex;
+        color: white;
+        --labelOffset: 6rem;
+        --arrowClipSize: 1.5rem;
+        margin-top: var(--labelOffset);
+        z-index: -1;
+    }
+
+    .icon {
+        grid-area: icon;
+        align-self: center;
+    }
+    
+    .title {
+        font-family: 'Roboto', sans-serif;
+        grid-area: title;
+        align-self: center;
+        font-size: 1.25em;
+    }
+    
+    .text {
+        grid-area: text;
+        width: 1000px;
+        font-size: 1.1em;
+    }
+
+    .Eximg {
+        max-height: 120px;
+        border-radius: 20px
+    }
+
+    #logo {
+        height: 70px;
+        margin: 20px;
+    }
+
+    .titrePrep {
+        text-decoration: underline;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.6em;
+    }
 }
 
-h1 {
-    background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
-    width: fit-content;
-    padding: 10px 30px 10px 30px;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    border: 3px black solid;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px black;
-    font-weight: 500;
+@media (max-width: 700px) {
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        * {
+            font-size: small;
+        }
+    }
+    h1 {
+        background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
+        width: fit-content;
+        padding: 10px 30px 10px 30px;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        border: 3px black solid;
+        border-radius: 30px;
+        box-shadow: 3px 3px 5px black;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
+    .olcards, .olcards {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .olcards {
+        margin: 20px 0px 0px 0px;
+        list-style: none;
+        counter-reset: cardCount;
+        display: flex;
+        flex-direction: column;
+        --cardsGap: 1.5rem;
+        gap: var(--cardsGap);
+        padding-bottom: var(--cardsGap);
+        align-items: flex-start;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 2em;
+        margin-top: 10px;
+    }
+
+    .TIng {
+        background: rgb(225,225,225);
+        background: radial-gradient(circle, rgba(225,225,225,1) 0%, rgba(232,232,232,1) 100%);
+        border-radius: 6px;
+        border-collapse: collapse;
+        height: fit-content;
+        min-height: 250px;
+        width: fit-content;
+    }
+    .ingredients {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .preparation {
+        background: rgb(225,225,225);
+        background: radial-gradient(circle, rgba(225,225,225,1) 0%, rgba(232,232,232,1) 100%);
+        height: fit-content;
+        padding: 0px 80px 30px 20px;
+        border-radius: 6px;
+        border: 2px black solid;
+        box-shadow: 6px 6px 20px;
+    }
+    
+    .content {
+        position: relative;
+        display: grid;
+        width: 100%;
+        background-color: var(--cardColor);
+        --inlinePadding: -4.5em;
+        --boxPadding: 0.5em;
+        padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+            var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+        grid-template-areas:
+            "icon title"
+            "icon text";
+        gap: 0.5em 1em;
+        clip-path: polygon(
+            0 0,
+            calc(100% - var(--arrowClipSize)) 0,
+            100% 50%,
+            calc(100% - var(--arrowClipSize)) 100%,
+            calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+            0 calc(100% + var(--cardsGap)));
+        justify-content: start;
+    }
+
+    .licard {
+        counter-increment: cardCount;
+        display: flex;
+        color: white;
+        --labelOffset: 5rem;
+        --arrowClipSize: 1.5rem;
+        margin-top: var(--labelOffset);
+        z-index: -1;
+        width: 100%;
+    }
+
+    .icon {
+        grid-area: icon;
+        align-self: center;
+    }
+    
+    .title {
+        grid-area: title;
+        align-self: center;
+        font-size: 1.25em;
+    }
+    
+    .text {
+        grid-area: text;
+        width: fit-content;
+        padding-right: 15px;
+        font-size: 0.9em;
+    }
+
+    .Eximg {
+        max-height: 110px;
+        border-radius: 20px
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .titrePrep {
+        text-decoration: underline;
+        padding-top: 5px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.6em;
+    }
 }
 
 #Tpat {
@@ -26,11 +281,11 @@ h1 {
     border-radius:6px;
     max-width:600px; 
     width:100%;
-    margin: auto ;
+    margin: auto;
 }   
 
 .tdpat, .thpat {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
 }
 
 #theadpat .thpat{ 
@@ -47,44 +302,9 @@ h1 {
     }
 }
 
-.titrePrep {
-    text-decoration: underline;
-}
-
-.container {
-    display: flex;
-    height: fit-content;
-    gap: 5em;
-    margin-top: 10px;
-}
-
-.ingredients {
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-}
-
-.preparation {
-    background-color: white;
-    height: fit-content;
-    padding: 0px 80px 30px 20px;
-    border-radius: 6px;
-    border: 2px black solid;
-    box-shadow: 6px 6px 20px;
-}
-
 .liPrep {
     padding: 5px 5px 10px 5px;
     list-style-image: url(../Images/Patisserie/cuiller_bois.png);
-}
-
-.TIng {
-    background-color: white;
-    border-radius: 6px;
-    border-collapse: collapse;
-    height: fit-content;
-    min-height: 250px;
-    width: fit-content;
 }
 
 .theadIng .thIng {
@@ -105,71 +325,19 @@ h1 {
     }
 }
 
-.Eximg {
-    max-height: 100px;
-    border-radius: 20px
+#Tpat a:link, a:visited {
+    text-decoration: none;
+    color: rgb(82, 27, 27);
+    background-color: rgb(241, 241, 254);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
 }
 
-.olcards, .olcards {
+#Tpat a:visited {
+    border: 1px solid white;
+}
+
+.text p {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.olcards {
-    margin: 20px 0px 0px 0px;
-    list-style: none;
-    counter-reset: cardCount;
-    display: flex;
-    flex-direction: column;
-    --cardsGap: 1rem;
-    gap: var(--cardsGap);
-    padding-bottom: var(--cardsGap);
-}
-
-.olcards .licard {
-    counter-increment: cardCount;
-    display: flex;
-    color: white;
-    --labelOffset: 5rem;
-    --arrowClipSize: 1.5rem;
-    margin-top: var(--labelOffset);
-    z-index: -1;
-}
-
-.olcards .licard .content {
-    position: relative;
-    display: grid;
-    background-color: var(--cardColor);
-    --inlinePadding: -3em;
-    --boxPadding: 0.5em;
-    padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
-        var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
-    grid-template-areas:
-        "icon title"
-        "icon text";
-    gap: 0.5em 1em;
-    clip-path: polygon(
-        0 0,
-        calc(100% - var(--arrowClipSize)) 0,
-        100% 50%,
-        calc(100% - var(--arrowClipSize)) 100%,
-        calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
-        0 calc(100% + var(--cardsGap)));
-}
-
-.olcards .licard .icon {
-    grid-area: icon;
-    align-self: center;
-}
-
-.olcards .licard .content .title {
-    grid-area: title;
-    align-self: center;
-    font-size: 1.25em;
-}
-
-.olcards .licard .content .text {
-    grid-area: text;
-    width: 1200px;  
 }

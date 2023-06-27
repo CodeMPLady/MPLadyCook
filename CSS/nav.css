@@ -3,9 +3,14 @@ body {
     margin: 0;
 }
 
+* {
+    scroll-behavior:smooth;
+}
+
 :target{
     scroll-margin-top: 64px;
 }
+
 @media (min-width: 800px) {
     nav {
         float: left;
@@ -15,11 +20,12 @@ body {
         margin: 10px 0px 0px 20px;
         border-radius: 10px;
         overflow: hidden;
-        position: sticky;
+        position: absolute;
+        z-index: 10;
     }
 
     .slide {
-        clear:both;
+        clear: both;
         padding: 0px;
         height:0px;
         overflow: hidden;
@@ -35,7 +41,7 @@ body {
 }
 
 @media (max-width: 800px) {
-    nav::before {
+    nav::after {
         float: left;
         width : 220px; 
         background: #d9d9d9;
@@ -47,6 +53,7 @@ body {
     }
 
     .slide {
+        background: #d9d9d9;
         clear: both;
         padding: 0px;
         height: 0px;
@@ -97,3 +104,4 @@ span::after {
 a:hover {
     font-size: 1.1em;
 }
+
