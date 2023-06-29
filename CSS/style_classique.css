@@ -16,7 +16,7 @@ h1 {
     display: flex;
     position: absolute;
     z-index: -1;
-    background-image: url(../Images/Traditionnel/pizza.jpg);
+    background-image: url(../Images/Classique/pizza.jpg);
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -43,7 +43,7 @@ main {
     margin-top: 300px;
 }
 
-#mainUlTradi {
+#mainUlClass {
     --col-gap: 2rem;
     --barH: 1rem;
     --roleH: 2rem;
@@ -60,19 +60,19 @@ main {
     list-style: none;
 }
 
-.imgTradi {
+.imgClass {
     width: 140px;
     height: 140px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px lightcyan;
 }
 
-.titreTradi {
+.titreClass {
     text-decoration: underline;
     font-size: 1.1em;
 }
 
-.ulTradi {
+.ulClass {
     padding: 0px 15px 15px 15px;
 }
 
@@ -80,7 +80,7 @@ main {
     list-style-type: none;
 }
 
-#mainUlTradi .liTradi {
+#mainUlClass .liClass {
     width: fit-content;
     display: grid;
     grid-template:
@@ -107,16 +107,16 @@ main {
     );
 }
 
-.liTradi:hover, .imgDiv:hover {
+.liClass:hover, .imgDiv:hover {
     transform: scale(1.04);
     --barH: 0;
 }
 
-.liTradi, .imgDiv {
+.liClass, .imgDiv {
     transition: transform 0.4s ease;
 }
 
-#mainUlTradi .liTradi::before {
+#mainUlClass .liClass::before {
     content: "";
     grid-area: role;
     height: var(--barH);
@@ -133,7 +133,7 @@ main {
       rgba(0, 0, 0, 0.4));
 }
   
-#mainUlTradi .liTradi::after {
+#mainUlClass .liClass::after {
     content: "";
     grid-area: role;
     background: var(--accent-color);
@@ -147,22 +147,22 @@ main {
     height: var(--roleH);
 }
   
-#mainUlTradi .liTradi .icon, #mainUlTradi .liTradi .title, #mainUlTradi .liTradi .descr {
+#mainUlClass .liClass .icon, #mainUlClass .liClass .title, #mainUlClass .liClass .descr {
     padding-inline: 1rem;
     color: white;
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);   
 }
   
-#mainUlTradi .liTradi .icon {
+#mainUlClass .liClass .icon {
     font-size: 3rem;
 }
 
-#mainUlTradi .liTradi .title {
+#mainUlClass .liClass .title {
     font-size: 1.25rem;
     font-weight: 700;
 }
   
-#mainUlTradi .liTradi .descr {
+#mainUlClass .liClass .descr {
     font-size: 0.9rem;
 }
 
