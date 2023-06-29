@@ -1,15 +1,203 @@
-.Title {
-    background: linear-gradient(90deg, #bfa44d, #ba4a30);
+@media (min-width: 1000px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background: linear-gradient(270deg, #bfa44d, #b8614d);
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #mainUlClass .liClass {
+        width: 30%;
+        display: grid;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
+        );
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
+        );
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.1em;
+        line-height: 25px;
+    }
+    
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 10px;
+        list-style-type: none;
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .liClass:hover{
+        transform: scale(1.04);
+        --barH: 0;
+    }
 }
 
-h1 {
-    color:black;
-    text-align: center;
-    border-radius: 3px;
-    background: linear-gradient(270deg, #bfa44d, #b8614d);
-    padding: 10px 50px 10px 50px;
-    width: fit-content;
-    margin: 0 auto;
+@media (max-width: 1000px) {
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background: linear-gradient(270deg, #bfa44d, #b8614d);
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #mainUlClass .liClass {
+        width: 100%;
+        display: grid;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
+        );
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
+        );
+    }
+
+    .liIng {
+        list-style-type: none;
+        text-align: center;
+        font-size: 1.3em;
+        line-height: 25px;
+    }
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 20px;
+        list-style-type: none;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .liClass:hover {
+        transform: scale(1.04);
+        --barH: 0;
+    }
+}
+
+@media (max-width: 500px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background: linear-gradient(270deg, #bfa44d, #b8614d);
+        padding: 10px 50px 15px 50px;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 1.7em;
+    }
+
+    #mainUlClass .liClass {
+        width: fit-content;
+        display: grid;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
+        );
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
+        );
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 25px;
+    }    
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 15px;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .liClass:hover{
+        transform: scale(1);
+        --barH: 1rem;
+    }
+}
+
+/* .divprep {
+    display: grid;
+    grid-template-columns: 90% 10%;
+} */
+
+.titreClass {
+    text-decoration: underline;
+    font-size: 1.8em;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* .btnPrep::after {
+    padding: 10px;
+    background : #232a30;
+    opacity: 1;
+    color : white;
+    cursor : pointer;
+    content: "+";
+} */
+
+
+.Title {
+    background: linear-gradient(90deg, #bfa44d, #ba4a30);
 }
 
 .banner {
@@ -67,49 +255,8 @@ main {
     box-shadow: 1px 1px 10px lightcyan;
 }
 
-.titreClass {
-    text-decoration: underline;
-    font-size: 1.1em;
-}
-
 .ulClass {
     padding: 0px 15px 15px 15px;
-}
-
-.liIng {
-    list-style-type: none;
-}
-
-#mainUlClass .liClass {
-    width: fit-content;
-    display: grid;
-    grid-template:
-      "role"
-      "icon"
-      "title"
-      "descr";
-    align-items: flex-start;
-    gap: 1rem;
-    padding-block-end: calc(var(--flapH) + 1rem);
-    text-align: center;
-    background: var(--accent-color);
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6) var(--roleH),
-      rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
-      rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
-    );
-    clip-path: polygon(
-      calc(var(--col-gap) / -2 - 5px) 0,
-      calc(100% + var(--col-gap) / 2 + 5px) 0,
-      calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
-      50% 100%,
-      calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
-    );
-}
-
-.liClass:hover, .imgDiv:hover {
-    transform: scale(1.04);
-    --barH: 0;
 }
 
 .liClass, .imgDiv {
@@ -158,8 +305,9 @@ main {
 }
 
 #mainUlClass .liClass .title {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+
 }
   
 #mainUlClass .liClass .descr {

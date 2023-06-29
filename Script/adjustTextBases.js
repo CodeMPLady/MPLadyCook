@@ -8,9 +8,9 @@ function genererBaliseP() {
     if (activateur) {
         activateur = false;
         if (largeurEcran < 770) {
-        nouvelElementP.textContent = "Nous allons présenter ici les bases qui sont nécessaires à la réalisation des recettes proposées sur ce site.";
+        nouvelElementP.textContent = "Vous trouverez ici les bases qui sont nécessaires à la réalisation des recettes proposées sur ce site.";
         } else {
-        nouvelElementP.textContent = "En cuisine, certaines bases sont indispensables afin de réussir et sublimer ses recettes. Nous allons donc présenter ici les bases qui sont nécessaires à la réalisation des recettes proposées sur ce site.";
+        nouvelElementP.textContent = "En cuisine, certaines bases sont indispensables afin de réussir et sublimer ses recettes. Vous trouverez ici les bases qui sont nécessaires à la réalisation des recettes proposées sur ce site.";
         }
         nouvelElementP.setAttribute('id', 'pres');
         parentElement.appendChild(nouvelElementP);

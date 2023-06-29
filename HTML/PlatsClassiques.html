@@ -9,7 +9,8 @@
     <link rel="shortcut icon" type="image/png" href="../Images/mplady_logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="../Script/BoutonPrep.js"></script>
 </head>
 <body>
     <nav>
@@ -29,7 +30,9 @@
     </div>
     <div class="banner">
         <div class="textPres">
-            <div><p>Nous allons présenter les plats que nous qualifions de traditionnels : ce sont des plats que <br>nous faisons régulièrement et qui sont à la fois simples et délicieux ! Pour réaliser certaines recettes, des bases sont à maîtriser. <br> Nous vous donnons donc rendez-vous sur la page "Les bases culinaires" !</p></div>
+            <div id="textPres">
+                <script src="../Script/adjustTextClassique.js"></script>
+            </div>
         </div>
     </div>
     <main>
@@ -52,24 +55,27 @@
                         <li class="liIng">1 pincée de sel</li>
                         <li class="liIng">1 pincée de poivre</li>
                     </ul>
-                    <p class="titreClass">Préparation</p>
+                    <!-- <div class="divprep"> -->
+                        <p class="titreClass">Préparation</p>
+                        <!-- <input type="checkbox" class="btnPrep"> -->
+                    <!-- </div> -->
                     <ul class="ulClass">
-                        <li class="liIng">- Pour la pâte, rendez-vous sur la page "Les bases culinaires" !</li>
-                        <li class="liIng">- Mettre la pâte dans un moule à tarte</li>
-                        <li class="liIng">- Piquer le fond avec une fourchette</li>
-                        <li class="liIng">- Laver les courgettes et les couper en rondelles très fines</li>
-                        <li class="liIng">- Faire chauffer l'huile d'olive dans une poêle</li>
-                        <li class="liIng">- Ajouter les courgettes, les herbes de Provence, le sel et le poivre</li>
-                        <li class="liIng">- Faire revenir à feu moyen pendant 8 minutes en remuant souvent</li>
-                        <li class="liIng">- Couper le chèvre en petits morceaux</li>
-                        <li class="liIng">- Casser les oeufs dans un saladier</li>
-                        <li class="liIng">- Ajouter la crème, du sel et du poivre</li>
-                        <li class="liIng">- Mélanger avec une fourchette</li>
-                        <li class="liIng">- Ajouter le chèvre et mélanger</li>
-                        <li class="liIng">- Verser le mélange dans le fond de tarte</li>
-                        <li class="liIng">- Ajouter les courgettes</li>
-                        <li class="liIng">- Parsemer de gruyère râpé</li>
-                        <li class="liIng">- Faire cuire à 200°C pendant 30 minutes environ</li>
+                        <li class="liPrep">- Pour la pâte, rendez-vous sur la page "Les bases culinaires" !</li>
+                        <li class="liPrep">- Mettre la pâte dans un moule à tarte</li>
+                        <li class="liPrep">- Piquer le fond avec une fourchette</li>
+                        <li class="liPrep">- Laver les courgettes et les couper en rondelles très fines</li>
+                        <li class="liPrep">- Faire chauffer l'huile d'olive dans une poêle</li>
+                        <li class="liPrep">- Ajouter les courgettes, les herbes de Provence, le sel et le poivre</li>
+                        <li class="liPrep">- Faire revenir à feu moyen pendant 8 minutes en remuant souvent</li>
+                        <li class="liPrep">- Couper le chèvre en petits morceaux</li>
+                        <li class="liPrep">- Casser les oeufs dans un saladier</li>
+                        <li class="liPrep">- Ajouter la crème, du sel et du poivre</li>
+                        <li class="liPrep">- Mélanger avec une fourchette</li>
+                        <li class="liPrep">- Ajouter le chèvre et mélanger</li>
+                        <li class="liPrep">- Verser le mélange dans le fond de tarte</li>
+                        <li class="liPrep">- Ajouter les courgettes</li>
+                        <li class="liPrep">- Parsemer de gruyère râpé</li>
+                        <li class="liPrep">- Faire cuire à 200°C pendant 30 minutes environ</li>
                     </ul>
                 </div>
             </li>
@@ -87,12 +93,12 @@
                     </ul>
                     <p class="titreClass">Préparation</p>
                     <ul class="ulClass">
-                        <li class="liIng">- Pour la pâte, rendez-vous sur la page "Les bases culinaires" !</li>
-                        <li class="liIng">- Fleurer le plan de travail et étaler la pâte dessus</li>
-                        <li class="liIng">- Étaler la sauce ou la crème sur la pâte</li>
-                        <li class="liIng">- Mettre le chèvre (et/ou la mozzarella)</li>
-                        <li class="liIng">- Mettre le gruyère puis le jambon cru</li>
-                        <li class="liIng">- Ne pas oublier de faire les croûtes !</li>
+                        <li class="liPrep">- Pour la pâte, rendez-vous sur la page "Les bases culinaires" !</li>
+                        <li class="liPrep">- Fleurer le plan de travail et étaler la pâte dessus</li>
+                        <li class="liPrep">- Étaler la sauce ou la crème sur la pâte</li>
+                        <li class="liPrep">- Mettre le chèvre (et/ou la mozzarella)</li>
+                        <li class="liPrep">- Mettre le gruyère puis le jambon cru</li>
+                        <li class="liPrep">- Replier les bords pour faire les croûtes</li>
                     </ul>
                 </div>
             </li>
@@ -110,20 +116,20 @@
                     </ul>
                     <p class="titreClass">Préparation</p>
                     <ul class="ulClass">
-                        <li class="liIng">- Faire cuire les pommes de terre dans l'eau bouillante pendant 40 minutes</li>
-                        <li class="liIng">- Mettre la farine sur le plan de travail et faire un puits</li>
-                        <li class="liIng">- Presser les pommes de terre encore chaudes au centre du puits</li>
-                        <li class="liIng">- Ajouter l'oeuf légèrement battu</li>
-                        <li class="liIng">- Mélanger avec les mains jusqu'à obtenir une pâte molle et compacte</li>
-                        <li class="liIng">- Ne pas trop pétrir la pâte</li>
-                        <li class="liIng">- Couper un morceau de pâte et le rouler pour en faire un boudin</li>
-                        <li class="liIng">- Couper des petits morceaux d'environ 2cm d'épaisseur</li>
-                        <li class="liIng">- Façonner les gnocchis avec la planche à gnocchis ou une fourchette</li>
-                        <li class="liIng">(en appuyant légèrement avec le pouce, faire glisser le gnocchi)</li>
-                        <li class="liIng">- Déposer les gnocchis sur une planche en les espaçant</li>
-                        <li class="liIng">- Pour la cuisson : mettre les gnocchis dans l'eau bouillante</li>
-                        <li class="liIng">- Dès qu'ils remontent, ils sont cuits !</li>
-                        <li class="liIng">- Faire griller les gnocchis dans une poêle avec un peu d'huile d'olive</li>
+                        <li class="liPrep">- Faire cuire les pommes de terre dans l'eau bouillante pendant 40 minutes</li>
+                        <li class="liPrep">- Mettre la farine sur le plan de travail et faire un puits</li>
+                        <li class="liPrep">- Presser les pommes de terre encore chaudes au centre du puits</li>
+                        <li class="liPrep">- Ajouter l'oeuf légèrement battu</li>
+                        <li class="liPrep">- Mélanger avec les mains jusqu'à obtenir une pâte molle et compacte</li>
+                        <li class="liPrep">- Ne pas trop pétrir la pâte</li>
+                        <li class="liPrep">- Couper un morceau de pâte et le rouler pour en faire un boudin</li>
+                        <li class="liPrep">- Couper des petits morceaux d'environ 2cm d'épaisseur</li>
+                        <li class="liPrep">- Façonner les gnocchis avec la planche à gnocchis ou une fourchette</li>
+                        <li class="liPrep">(en appuyant légèrement avec le pouce, faire glisser le gnocchi)</li>
+                        <li class="liPrep">- Déposer les gnocchis sur une planche en les espaçant</li>
+                        <li class="liPrep">- Pour la cuisson : mettre les gnocchis dans l'eau bouillante</li>
+                        <li class="liPrep">- Dès qu'ils remontent, ils sont cuits</li>
+                        <li class="liPrep">- Faire griller les gnocchis dans une poêle avec un peu d'huile d'olive</li>
                     </ul>
                 </div>
             </li>
@@ -136,24 +142,24 @@
                     <ul class="ulClass">
                         <li class="liIng">Riz japonais (quantité à déterminer)</li>
                         <li class="liIng">Feuilles d'algue nori</li>
-                        <li class="liIng">Thon émietté (quantité à déterminer)</li>
+                        <li class="liIng">Garniture (thon, crevettes, saumon etc)</li>
                     </ul>
                     <p class="titreClass">Préparation</p>
                     <ul class="ulClass">
-                        <li class="liIng">- Faire cuire le riz à la japonaise</li>
-                        <li class="liIng">- Une fois le riz cuit, l'étaler sur une assiette pour qu'il tiédisse</li>
-                        <li class="liIng">- Prendre une petite quantité de riz</li>
-                        <li class="liIng">- Commencer à former une boule</li>
-                        <li class="liIng">- Mettre du thon au centre</li>
-                        <li class="liIng">- Façonner l'onigiri en sorte de montagne</li>
-                        <li class="liIng">- Couper un rectangle de feuille de nori</li>
-                        <li class="liIng">- L'humidifier et entourer partiellement l'onigiri par le dessous</li>
+                        <li class="liPrep">- Faire cuire le riz à la japonaise</li>
+                        <li class="liPrep">- Une fois le riz cuit, l'étaler sur une assiette pour qu'il tiédisse</li>
+                        <li class="liPrep">- Prendre une petite quantité de riz</li>
+                        <li class="liPrep">- Commencer à former une boule</li>
+                        <li class="liPrep">- Mettre du thon au centre</li>
+                        <li class="liPrep">- Façonner l'onigiri en sorte de montagne</li>
+                        <li class="liPrep">- Couper un rectangle de feuille de nori</li>
+                        <li class="liPrep">- L'humidifier et entourer partiellement l'onigiri par le dessous</li>
                     </ul>
                 </div>
             </li>
             <li class="liClass" style="--accent-color:#0B374D">
                 <div class="icon"><i class="fa-brands fa-github"></i></div>
-                <div class="title">Crocchette di patate</div>
+                <div class="title" id="croquettes">Crocchette di patate</div>
                 <div class="imgDiv"><img src="../Images/Classique/crocchette.jpg" class="imgClass"></div>
                 <div class="descr">
                     <p class="titreClass">Ingrédients (nombre portions à déterminer)</p>
@@ -175,23 +181,23 @@
                     </ul>   
                     <p class="titreClass">Préparation</p>
                     <ul class="ulClass">
-                        <li class="liIng">- Faire cuire les pommes de terre dans l'eau bouillante pendant 40 minutes</li>
-                        <li class="liIng">- Mettre la chapelure et les herbes de Provence dans un plat</li>
-                        <li class="liIng">- Couper l'emmental (ou le fromage) en petits bâtonnets</li>
-                        <li class="liIng">- Presser les pommes de terre encore chaudes</li>
-                        <li class="liIng">- Ajouter le parmesan, les jaunes d'oeuf, le sel et la muscade</li>
-                        <li class="liIng">- Mélanger le tout</li>
-                        <li class="liIng">- Prendre une petite portion de pâte et l'applatir</li>
-                        <li class="liIng">- Placer un morceau de fromage au centre</li>
-                        <li class="liIng">- Refermer le tout en formant une croquette</li>
-                        <li class="liIng">- Bien refermer pour que l'huile ne rentre pas pendant la cuisson</li>
-                        <li class="liIng">- Battre les 2 oeufs dans un bol</li>
-                        <li class="liIng">- Tremper une croquette dedans puis la paner</li>
-                        <li class="liIng">- Paner toutes les croquettes</li>
-                        <li class="liIng">- Faire chauffer l'huile dans une poêle jusqu'à 170°C</li>
-                        <li class="liIng">- Faire cuire 3 croquettes à la fois</li>
-                        <li class="liIng">- Une fois cuites, bien les égoutter</li>
-                        <li class="liIng">- Mettre les croquettes dans une assiette recouverte d'essui-tout</li>
+                        <li class="liPrep">- Faire cuire les pommes de terre dans l'eau bouillante pendant 40 minutes</li>
+                        <li class="liPrep">- Mettre la chapelure et les herbes de Provence dans un plat</li>
+                        <li class="liPrep">- Couper l'emmental (ou le fromage) en petits bâtonnets</li>
+                        <li class="liPrep">- Presser les pommes de terre encore chaudes</li>
+                        <li class="liPrep">- Ajouter le parmesan, les jaunes d'oeuf, le sel et la muscade</li>
+                        <li class="liPrep">- Mélanger le tout</li>
+                        <li class="liPrep">- Prendre une petite portion de pâte et l'applatir</li>
+                        <li class="liPrep">- Placer un morceau de fromage au centre</li>
+                        <li class="liPrep">- Refermer le tout en formant une croquette</li>
+                        <li class="liPrep">- Bien refermer pour que l'huile ne rentre pas pendant la cuisson</li>
+                        <li class="liPrep">- Battre les 2 oeufs dans un bol</li>
+                        <li class="liPrep">- Tremper une croquette dedans puis la paner</li>
+                        <li class="liPrep">- Paner toutes les croquettes</li>
+                        <li class="liPrep">- Faire chauffer l'huile dans une poêle jusqu'à 170°C</li>
+                        <li class="liPrep">- Faire cuire 3 croquettes à la fois</li>
+                        <li class="liPrep">- Une fois cuites, bien les égoutter</li>
+                        <li class="liPrep">- Mettre les croquettes dans une assiette recouverte d'essui-tout</li>
                     </ul>
                 </div>
             </li>

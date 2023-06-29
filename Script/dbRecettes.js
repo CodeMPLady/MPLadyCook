@@ -28,10 +28,11 @@ export function searchRecipes(query) {
         { name: "Herbes de Provence", url: "Bases.html", anchor:"herbesPro"},
         { name: "Sauce teriyaki", url: "Bases.html", anchor: "teriyaki"},
         { name: "Sauce lok lak", url: "Bases.html", anchor: "sauceLoklak"},
-        { name: "Gnocchis", url: "PlatsTradi.html", anchor: "gnocchis" },
-        { name: "Pizza", url: "PlatsTradi.html", anchor: "pizza" },
-        { name: "Quiche courgettes chèvre", url: "PlatsTradi.html", anchor: "quicheCC"},
-        { name: "Onigiri", url: "PlatsTradi.html", anchor: "onigiri"}
+        { name: "Gnocchis", url: "PlatsClassiques.html", anchor: "gnocchis" },
+        { name: "Pizza", url: "PlatsClassiques.html", anchor: "pizza" },
+        { name: "Quiche courgettes chèvre", url: "PlatsClassiques.html", anchor: "quicheCC"},
+        { name: "Onigiri", url: "PlatsClassiques.html", anchor: "onigiri"},
+        { name: "Croquettes de patates", url: "PlatsClassiques.html", anchor: "croquettes"}
     ];
 
     return recipes.filter(function (recipe) {
