@@ -71,6 +71,7 @@ main {
 .titreMer {
     text-decoration: underline;
     font-size: 1.1em;
+    font-family: 'Dancing Script', cursive;
 }
 
 .ulMer {

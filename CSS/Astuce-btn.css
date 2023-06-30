@@ -1,0 +1,73 @@
+.HelpBtn {
+    width: fit-content;
+    margin: auto;
+}
+
+.closeHelp {
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.overlayBouton {
+    display: none;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Astuce {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    border: 3px solid white;
+    background-color: #ffffff;
+    background-image: url("../Images/Classique/bg_astuce.png");
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: rgb(105, 151, 105); */
+    border-radius: 20px;
+}
+
+
+
+.TxtAstuce {
+    text-align: left;
+    padding: 15px;
+}
+
+.HelpBtn {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+}
+  
+.HelpBtn {
+    width: 80px;
+    height: 26px;
+    cursor: pointer;
+    border: 1.5px solid black;
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 13px;
+    border-radius: 4px;
+    box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+}
+  
+.HelpBtn:hover {
+    background-position: left;
+    color: white;
+    box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+}
+  
+.HelpBtn:focus {
+    outline: none;
+}

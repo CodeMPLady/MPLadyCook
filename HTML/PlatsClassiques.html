@@ -3,6 +3,7 @@
 <head>
     <link href="../CSS/style_classique.css" rel="stylesheet">
     <link href="../CSS/nav.css" rel="stylesheet">
+    <link href="../CSS/Astuce-btn.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plats classiques</title>
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="../Script/BoutonPrep.js"></script>
+    <script src="../Script/HelpButton.js"></script>
 </head>
 <body>
     <nav>
@@ -39,7 +41,15 @@
         <ul id="mainUlClass">
             <li class="liClass" style="--accent-color:#AC2A1A">
                 <div class="icon"><i class="fa-brands fa-codepen"></i></div>
-                <div class="title" id="quicheCC">Quiche courgettes chèvre</div>
+                    <div class="title" id="quicheCC">Quiche courgettes chèvre</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Voici une astuce: <br> quand on ne sait pas, on dit pas</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                 <div class="imgDiv"><img src="../Images/Classique/quiche.jpg" class="imgClass"></div>
                 <div class="descr">
                     <p class="titreClass">Ingrédients</p>
@@ -81,12 +91,20 @@
             </li>
             <li class="liClass" style="--accent-color:#DA611E">
                 <div class="icon"><i class="fa-brands fa-html5"></i></div>
-                <div class="title" id="pizza">Pizza</div>
-                <div class="imgDiv"><img src="../Images/Classique/pizza_bis.jpg" class="imgClass"></div>
+                    <div class="title" id="pizza">Pizza</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <script src="../Script/HelpButton.js"></script>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <p class="TxtAstuce">Voici une astuce: <br> quand on ne sait pas, on dit pas</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
+                    <div class="imgDiv"><img src="../Images/Classique/pizza_bis.jpg" class="imgClass"></div>
                 <div class="descr">
                     <p class="titreClass">Ingrédients</p>
                     <ul class="ulClass">
-                        <li class="liIng">1 pot de sauce provençale ou bolognaise<br> ou crème fraîche</li>
+                        <li class="liIng">1 pot de sauce provençale ou bolognaise ou crème fraîche</li>
                         <li class="liIng">Gruyère râpé</li>
                         <li class="liIng">Jambon cru</li>
                         <li class="liIng">Chèvre ou mozzarella</li>
@@ -105,6 +123,13 @@
             <li class="liClass" style="--accent-color:#2D8D82">
                 <div class="icon"><i class="fa-brands fa-css3"></i></div>
                 <div class="title" id="gnocchis">Gnocchis di patate</div>
+                <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <p class="TxtAstuce">Voici une astuce: <br> quand on ne sait pas, on dit pas</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                 <div class="imgDiv"><img src="../Images/Classique/Gnocchis.jpg" class="imgClass"></div>
                 <div class="descr">
                     <p class="titreClass">Ingrédients pour 4 personnes</p>
@@ -133,9 +158,17 @@
                     </ul>
                 </div>
             </li>
-            <li class="liClass" style="--accent-color:#ACA74D">
+            <li class="liClass" style="--accent-color:#236e1f">
                 <div class="icon"><i class="fa-brands fa-js"></i></div>
                 <div class="title" id="onigiri">Onigiris</div>
+                <button class="HelpBtn">Astuce</button>
+                <div class="overlayBouton">
+                    <div class="Astuce">
+                        <p class="TxtAstuce">Voici une astuce: <br> quand on ne sait pas, on dit pas</p>
+                        <button class="closeHelp">x</button>
+                    </div>
+                </div>   
+
                 <div class="imgDiv"><img src="../Images/Classique/onigiri.jpg" class="imgClass"></div>
                 <div class="descr">
                     <p class="titreClass">Ingrédients (nombre portions à déterminer)</p>
@@ -160,6 +193,13 @@
             <li class="liClass" style="--accent-color:#0B374D">
                 <div class="icon"><i class="fa-brands fa-github"></i></div>
                 <div class="title" id="croquettes">Crocchette di patate</div>
+                <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <p class="TxtAstuce">Voici une astuce:  quand on ne sait pas, on dit pas</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                 <div class="imgDiv"><img src="../Images/Classique/crocchette.jpg" class="imgClass"></div>
                 <div class="descr">
                     <p class="titreClass">Ingrédients (nombre portions à déterminer)</p>
