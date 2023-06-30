@@ -1,23 +1,18 @@
-// const BoutonPrep = document.querySelector(".ulClass");
+document.addEventListener('DOMContentLoaded', function() {
+    const BoutonsPrepArray = document.querySelectorAll(".openPrep");
+    const DescArray = document.querySelectorAll(".descr");
 
-// document.querySelector(".btnPrep").addEventListener("click", () => {
-//     ulClass.style.height = "500px" ;
-// });
+    BoutonsPrepArray.forEach(function(BoutonPrep, index) {
+        const Descr = DescArray[index];
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const helpButtons = document.querySelectorAll(".HelpBtn");
-//     const overlayAstuces = document.querySelectorAll(".overlayBouton");
+        BoutonPrep.addEventListener("click", () => {
+            Descr.style.height = "100%";
+            console.log("anche mio");
+        });
 
-//     helpButtons.forEach(function(helpButton, index) {
-//         const overlayAstuce = overlayAstuces[index];
-
-//         helpButton.addEventListener("click", () => {
-//             overlayAstuce.style.display = "flex";
-//             console.log("Ti amo");
-//         });
-
-//         overlayAstuce.querySelector(".closeHelp").addEventListener("click", () => {
-//             overlayAstuce.style.display = "none";
-//         });
-//     });
-// });
+        Descr.querySelector(".closePrep").addEventListener("click", () => {
+            Descr.style.height = "0";
+            console.log("hahaha");  
+        });
+    });
+});

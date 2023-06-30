@@ -25,15 +25,15 @@
     background-image: url("../Images/Classique/bg_astuce.png");
     background-attachment: fixed;
     background-size: cover;
-    /* background-color: rgb(105, 151, 105); */
     border-radius: 20px;
 }
 
 
 
 .TxtAstuce {
-    text-align: left;
-    padding: 15px;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    font-size: 0.8em;
 }
 
 .HelpBtn {

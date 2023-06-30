@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const helpButtons = document.querySelectorAll(".HelpBtn");
-    const overlayAstuces = document.querySelectorAll(".overlayBouton");
+    const helpButtonsArray = document.querySelectorAll(".HelpBtn");
+    const overlayAstucesArray = document.querySelectorAll(".overlayBouton");
 
-    helpButtons.forEach(function(helpButton, index) {
-        const overlayAstuce = overlayAstuces[index];
+    helpButtonsArray.forEach(function(helpButton, index) {
+        const overlayAstuce = overlayAstucesArray[index];
 
         helpButton.addEventListener("click", () => {
             overlayAstuce.style.display = "flex";

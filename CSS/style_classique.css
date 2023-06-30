@@ -11,11 +11,10 @@
 
     main {
         display: grid;
-        /* background: linear-gradient(90deg, #bfa44d, #ba4a30); */
         background-image: url(../Images/Classique/bg_classique_big.svg);
         background-size:cover;
-        position: relative;
         margin-top: 300px;
+        height: auto;
     }
 
     #mainUlClass .liClass {
@@ -80,7 +79,6 @@
 
     main {
         display: grid;
-        /* background: linear-gradient(90deg, #bfa44d, #ba4a30); */
         background-image: url(../Images/Classique/bg_classique_big.svg);
         background-size:cover;
         position: relative;
@@ -214,15 +212,6 @@
     font-family: 'Dancing Script', cursive;
 }
 
-/* .btnPrep::after {
-    padding: 10px;
-    background : #232a30;
-    opacity: 1;
-    color : white;
-    cursor : pointer;
-    content: "+";
-} */
-
 .Title {
     background: linear-gradient(90deg, #bfa44d, #ba4a30);
 }
@@ -326,8 +315,13 @@
   
 #mainUlClass .liClass .descr {
     font-size: 0.9rem;
+    height: 0;
 }
 
 #logo {
     width: 70px;
+}
+
+a {
+    color: white;
 }
