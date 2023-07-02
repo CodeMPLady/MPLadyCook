@@ -60,7 +60,7 @@
     }
 
     .imgClass {
-        width: 140px;
+        width: 160px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
     }
@@ -219,7 +219,6 @@
 .banner {
     display: flex;
     position: absolute;
-    z-index: -1;
     background-image: url(../Images/Classique/pizza.jpg);
     background-position: center;
     background-size: cover;
@@ -227,6 +226,7 @@
     width:100%;
     align-items:center;
     justify-content: center;
+    box-shadow: inset 0px -5px 20px 7px #bfa44d, -3px 10px 20px #bfa44d, inset 1px 8px 20px 7px #bfa44d;
 }
 
 .textPres {
@@ -295,6 +295,7 @@
       rgba(0, 0, 0, 0.2) 70%,
       rgba(0, 0, 0, 0.4));
     height: var(--roleH);
+    
 }
   
 #mainUlClass .liClass .icon, #mainUlClass .liClass .title, #mainUlClass .liClass .descr {
@@ -315,7 +316,8 @@
   
 #mainUlClass .liClass .descr {
     font-size: 0.9rem;
-    height: 0;
+    height: 25px;
+    overflow: hidden;
 }
 
 #logo {

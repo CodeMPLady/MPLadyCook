@@ -8,21 +8,21 @@ function genererBaliseP() {
     if (activateur) {
         activateur = false;
         if (largeurEcran < 770) {
-        nouvelElementP.textContent = "Nous allons présenter ici les bases qui sont nécessaires à la réalisation des recettes proposées sur ce site.";
+        nouvelElementP.textContent = "Phrase courte";
         } else {
-        nouvelElementP.textContent = "A COMPLETER";
+        nouvelElementP.textContent = "Phrase longue";
         }
         nouvelElementP.setAttribute('id', 'pres');
         parentElement.appendChild(nouvelElementP);
         
-        let  createStyle =  document.createElement("style");
-        let style = `
-        #textPres {
-            width: 70%;
-          }
-        `
-        createStyle.innerText = style;
-        parentElement.appendChild(createStyle);
+        // let  createStyle =  document.createElement("style");
+        // let style = `
+        // #textPres {
+        //     width: 70%;
+        //   }
+        // `
+        // createStyle.innerText = style;
+        // parentElement.appendChild(createStyle);
     }
 }
   

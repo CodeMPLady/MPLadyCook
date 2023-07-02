@@ -7,12 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         BoutonPrep.addEventListener("click", () => {
             Descr.style.height = "100%";
-            console.log("anche mio");
         });
 
         Descr.querySelector(".closePrep").addEventListener("click", () => {
-            Descr.style.height = "0";
-            console.log("hahaha");  
+            Descr.style.height = "25px";
         });
     });
 });

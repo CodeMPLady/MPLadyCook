@@ -1,29 +1,269 @@
+@media (min-width: 1000px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .banner {
+        display: flex;
+        position: absolute;
+        background-image: url(../Images/Mer/seaBanner.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: 300px;
+        width:100%;
+        align-items:center;
+        justify-content: center;
+        box-shadow: inset 0px -10px 20px 7px lightblue, -3px 10px 20px lightblue, inset 1px 8px 20px 7px lightblue;
+    }
+
+    main {
+        display: grid;
+        background-image: url(../Images/Mer/bg_mer_big.svg);
+        background-size:cover;
+        margin-top: 300px;
+        height: auto;
+    }
+
+    #mainUlMer .liMer {
+        width: 30%;
+        display: grid;
+        width: fit-content;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
+    }
+
+    .titreMer {
+        text-decoration: underline;
+        font-size: 1.8em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.1em;
+        line-height: 25px;
+    }
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 10px;
+        list-style-type: none;
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .imgMer {
+        height: 160px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px lightcyan;
+    }
+}
+
+@media (max-width: 1000px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .banner {
+        display: flex;
+        position: absolute;
+        background-image: url(../Images/Mer/seaBanner_2.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: 300px;
+        width:100%;
+        align-items:center;
+        justify-content: center;
+        box-shadow: inset 0px -10px 20px 7px lightblue, 5px 10px 20px lightblue, inset 1px 8px 20px 7px lightblue;
+    }
+
+    main {
+        display: grid;
+        /* background: linear-gradient(90deg, #02a66c, #2d76ff); */
+        background-image: url(../Images/Mer/bg_mer_big2.svg);
+        background-size:cover;
+        /* position: relative; */
+        margin-top: 300px;
+        height: auto;
+    }
+
+    #mainUlMer .liMer {
+        width: 100%;
+        display: grid;
+        /* width: fit-content; */
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
+    }
+
+    .titreMer {
+        text-decoration: underline;
+        font-size: 1.7em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 25px;
+    }
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 20px;
+        list-style-type: none;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .imgMer {
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px lightcyan;
+    }
+}
+
+@media (max-width: 500px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 1.6em;
+    }
+
+    .banner {
+        display: flex;
+        position: absolute;
+        /* z-index: -1; */
+        background-image: url(../Images/Mer/seaBanner_2.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: 300px;
+        width:100%;
+        align-items:center;
+        justify-content: center;
+        box-shadow: inset 0px -10px 20px 7px lightblue, 5px 10px 20px lightblue, inset 1px 8px 20px 7px lightblue;
+    }
+
+    main {
+        display: grid;
+        background-image: url(../Images/Mer/bg_mer_small.svg);
+        background-size:contain;
+        background-position:center;
+        margin-top: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    #mainUlMer .liMer {
+        width: fit-content;
+        display: grid;
+        width: fit-content;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
+    }
+
+    .titreMer {
+        text-decoration: underline;
+        font-size: 1.6em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 25px;
+    }    
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 15px;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .imgMer {
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px lightcyan;
+    }
+}
+
 .Title {
     background: linear-gradient(90deg, #02a66c, #2d76ff);
-}
-
-h1 {
-    color:black;
-    text-align: center;
-    border-radius: 3px;
-    background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
-    padding: 10px 50px 10px 50px;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.banner {
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    background-image: url(../Images/Mer/seaBanner.jpg);
-    background-position: bottom;
-    background-size: cover;
-    height: 300px;
-    width:100%;
-    align-items:center;
-    justify-content: center;
-    box-shadow: 5px 5px 20px lightblue;
 }
 
 .textPres {
@@ -35,13 +275,6 @@ h1 {
     background-color:lightcyan;
     margin-left: 10px;
     box-shadow: 5px 5px 20px lightblue;
-}
-
-main {
-    display: grid;
-    background: linear-gradient(90deg, #02a66c, #2d76ff);
-    position: relative;
-    margin-top: 300px;
 }
 
 #mainUlMer {
@@ -61,55 +294,8 @@ main {
     padding-inline: calc(var(--col-gap) / 2);
 }
 
-.imgMer {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px lightcyan;
-}
-
-.titreMer {
-    text-decoration: underline;
-    font-size: 1.1em;
-    font-family: 'Dancing Script', cursive;
-}
-
 .ulMer {
     padding: 0px 15px 15px 15px;
-}
-
-.liIng {
-    list-style-type: none;
-}
-
-#mainUlMer .liMer {
-    display: grid;
-    width: fit-content;
-    grid-template:
-      "role"
-      "icon"
-      "title"
-      "descr";
-    align-items: flex-start;
-    gap: 1rem;
-    padding-block-end: calc(var(--flapH) + 1rem);
-    text-align: center;
-    background: var(--accent-color);
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6) var(--roleH),
-      rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
-      rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
-    clip-path: polygon(
-      calc(var(--col-gap) / -2 - 5px) 0,
-      calc(100% + var(--col-gap) / 2 + 5px) 0,
-      calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
-      50% 100%,
-      calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
-}
-
-.liMer:hover, .imgMer:hover {
-    transform: scale(1.04);
-    --barH: 0;
 }
 
 .liMer, .imgMer {
@@ -154,10 +340,16 @@ main {
 }
   
 #mainUlMer .liMer .title {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
   
 #mainUlMer .liMer .descr {
     font-size: 0.9rem;
+    height: 25px;
+    overflow: hidden;
+}
+
+a {
+    color: white;
 }

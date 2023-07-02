@@ -3,6 +3,7 @@
     <head>
         <link href="../CSS/style_mer.css" rel="stylesheet">
         <link href="../CSS/nav.css" rel="stylesheet">
+        <link href="../CSS/Astuce-btn.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Plats de la mer</title>
@@ -10,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="../Script/BoutonPrep.js"></script>
+        <script src="../Script/HelpButton.js"></script>
     </head>
     <body>
         <nav>
@@ -38,96 +41,139 @@
             <ul id="mainUlMer">
                 <li class="liMer" style="--accent-color:#0B374D">
                     <div class="title" id="pavesSaumon">Pavés de saumon</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Vous pouvez remplacer l'huile d'olive par de la crème fraîche et mettre le saumon dans du papier aluminium pour faire des papillotes gourmandes</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Mer/pave_saumon.jpg" class="imgMer"></div>
                     <div class="descr">
-                        <p class="titreMer">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreMer">Ingrédients</p>
                         <ul class="ulMer">
-                            <li class="liIng">Deux pavés de saumon</li>
-                            <li class="liIng">2 cuillères à soupe d'huile d'olive</li>
+                            <li class="liIng">Pavés de saumon</li>
+                            <li class="liIng">1 cuillères à soupe d'huile d'olive</li>
                             <li class="liIng">Pincées de sel et poivre</li>
-                            <li class="liIng">Huile d'olive</li>
                         </ul>
                         <p class="titreMer">Préparation</p>
                         <ul class="ulMer">
-                            <li class="liIng">- Placer les pavés dans un plat</li>
-                            <li class="liIng">- Les arroser d'huile d'olive</li>
-                            <li class="liIng">- Saler et poivrer</li>
-                            <li class="liIng">- Faire cuire au four pendant 20 minutes à 180°C</li>
+                            <li class="liPrep">- Placer les pavés dans un petit plat</li>
+                            <li class="liPrep">- Les arroser d'huile d'olive</li>
+                            <li class="liPrep">- Saler et poivrer</li>
+                            <li class="liPrep">- Faire cuire au four pendant 20 minutes à 180°C</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liMer" style="--accent-color:#12a878">
                     <div class="title" id="saumonTeriyaki">Saumon teriyaki</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce"> A faire dans un premier temps</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Mer/teriyaki.jpg" class="imgMer"></div>
                     <div class="descr">
-                        <p class="titreMer">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreMer">Ingrédients</p>
                         <ul class="ulMer">
-                            <li class="liIng">2 pavés de saumon d'environ 150g chacun</li>
-                            <li class="liIng">2 cuillères à soupe de graines de sésame</li>
-                            <li class="liIng">2 cuillères à café de gingembre frais râpé</li>
-                            <li class="liIng">200ml de sauce soja</li>
-                            <li class="liIng">150ml de mirin</li>
-                            <li class="liIng">4 cuillères à soupe de sucre semoule</li>
+                            <li class="liIng">Pavés de saumon d'environ 150g</li>
+                            <li class="liIng">1 cuillère à soupe de graines de sésame</li>
+                            <li class="liIng">1 cuillère à café de gingembre frais râpé</li>
+                            <li class="liIng">100ml de sauce soja</li>
+                            <li class="liIng">75ml de mirin</li>
+                            <li class="liIng">2 cuillères à soupe de sucre semoule</li>
                         </ul>
-                        <p class="titreMer">Ingrédients et préparation de la sauce teriyaki</p>
+                        <p class="titreMer">Ingrédients et <br>préparation de la sauce teriyaki</p>
                         <ul class="ulMer">
-                            <li class="liIng">Rendez-vous sur la page "Les bases culinaires" !</li>
+                            <li class="liIng">Rendez-vous sur la page <a href="Bases.html" target="_blank">les bases culinaires</a> !</li>
                         </ul>
                         <p class="titreMer">Préparation du poisson</p>
                         <ul class="ulMer">
-                            <li class="liIng">- Retirer les arêtes et la peau du saumon</li>
-                            <li class="liIng">- Mélanger dans un plat le gingembre et la sauce</li>
-                            <li class="liIng">- Faire mariner les pavés pendant 30 minutes au frigo</li>
-                            <li class="liIng">- Faire chauffer une poêle</li>
-                            <li class="liIng">- Égoutter le saumon</li>
-                            <li class="liIng">- Le saisir 3 à 4 minutes de chaque côté</li>
-                            <li class="liIng">- Essuyer la poêle et faire réduire la marinade 2 à 3 minutes</li>
-                            <li class="liIng">- Remettre le saumon dans la poêle pour l'enrober de sauce</li>
-                            <li class="liIng">- Saupoudrer le saumon de graines de sésame</li>
+                            <li class="liPrep">- Retirer les arêtes et la peau du saumon</li>
+                            <li class="liPrep">- Mélanger dans un plat le gingembre et la sauce</li>
+                            <li class="liPrep">- Faire mariner les pavés pendant 30 minutes au frigo</li>
+                            <li class="liPrep">- Faire chauffer une poêle</li>
+                            <li class="liPrep">- Égoutter le saumon</li>
+                            <li class="liPrep">- Le saisir 3 à 4 minutes de chaque côté</li>
+                            <!-- ! A vérifier --> 
+                            <li class="liPrep">- Essuyer la poêle et faire réduire la marinade 2-3 minutes</li>
+                            <li class="liPrep">- Remettre le saumon dans la poêle pour l'enrober de sauce</li>
+                            <li class="liPrep">- Saupoudrer le saumon de graines de sésame</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liMer" style="--accent-color:#C5AA36">
                     <div class="title" id="limande">Limande du Nord</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Vous pouvez couper la courgette en rondelles plus épaisses si vous souhaitez rajouter du craquant à votre quiche</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Mer/Limande.jpg" class="imgMer"></div>
                     <div class="descr">
-                        <p class="titreMer">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreMer">Ingrédients</p>
                         <ul class="ulMer">
-                            <li class="liIng">Deux filets de limande du Nord</li>
-                            <li class="liIng">2 cuillères à soupe d'huile d'olive</li>
+                            <li class="liIng">Filets de limande du Nord</li>
+                            <li class="liIng">1 cuillères à soupe d'huile d'olive</li>
                             <li class="liIng">Pincées de sel et poivre</li>
                             <li class="liIng">Jus de citron</li>
                         </ul>
                         <p class="titreMer">Préparation</p>
                         <ul class="ulMer">
-                            <li class="liIng">- Faire chauffer une poêle avec de l'huile d'olive</li>
-                            <li class="liIng">- Mettre les filets dans la poêle</li>
-                            <li class="liIng">- Saler et poivrer</li>
-                            <li class="liIng">- Faire cuire pendant 5 à 7 minutes</li>
-                            <li class="liIng">- Arroser de jus de citron après la cuisson</li>
+                            <li class="liPrep">- Faire chauffer une poêle avec de l'huile d'olive</li>
+                            <li class="liPrep">- Mettre le poisson dans la poêle</li>
+                            <li class="liPrep">- Saler et poivrer</li>
+                            <li class="liPrep">- Faire cuire pendant 5 à 7 minutes</li>
+                            <li class="liPrep">- Arroser de jus de citron après la cuisson</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liMer" style="--accent-color:#DA611E">
                     <div class="title" id="makis">Makis</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Une natte en bambou est nécessaire pour enrouler la feuille nori avec le riz, au moment de les découper allez y doucement mais fermement afin d'éviter les accroches avec votre couteau </p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Mer/makis.jpg" class="imgMer"></div>
                     <div class="descr">
-                        <p class="titreMer">Ingrédients (nombre de portions à déterminer)</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreMer">Ingrédients</p>
                         <ul class="ulMer">
-                            <li class="liIng">Riz japonais (quantité à déterminer)</li>
+                            <li class="liIng">200g Riz japonais</li>
                             <li class="liIng">Feuilles de nori</li>
-                            <li class="liIng">Crevettes équeuttées (quantité à déterminer)</li>
+                            <li class="liIng">Crevettes équeuttées ou saumon</li>
+                            <li class="liIng">Graines de sésame</li>                            
                         </ul>
                         <p class="titreMer">Préparation</p>
                         <ul class="ulMer">
-                            <li class="liIng">- Faire cuire le riz à la japonaise</li>
-                            <li class="liIng">- Une fois cuit, l'étaler sur une assiette pour qu'il tiédisse</li>
-                            <li class="liIng">- Mettre une feuille de nori à plat sur la natte de bambou</li>
-                            <li class="liIng">- Mettre du riz par dessus</li>
-                            <li class="liIng">- Mettre des crevettes sur une rangée</li>
-                            <li class="liIng">- Rouler bien serré les makis à l'aide de la natte en bambou</li>
-                            <li class="liIng">- Découper le rouleau afin d'avoir des makis</li>
+                            <li class="liPrep">- Rendez-vous sur <a href="Bases.html" target="_blank">les bases culinaires</a> pour la cuisson du  riz !</li>
+                            <li class="liPrep">- Une fois cuit, l'étaler sur une assiette pour qu'il tiédisse</li>
+                            <li class="liPrep">- Mettre une feuille de nori à plat sur la natte de bambou</li>
+                            <li class="liPrep">- Mettre du riz par dessus</li>
+                            <li class="liPrep">- Mettre des crevettes sur une rangée</li>
+                            <li class="liPrep">- Rouler bien serré les makis à l'aide de la natte en bambou</li>
+                            <li class="liPrep">- Découper le rouleau afin d'avoir des makis</li>
+                            <li class="liPrep">- Une fois en place parsemer de graines de sésame</li>
+
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <!-- <li class="liMer" style="--accent-color:#AC2A1A">
