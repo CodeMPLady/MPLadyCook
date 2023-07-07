@@ -1,53 +1,281 @@
+@media (min-width: 1000px){
+    h1 {
+        color:black;
+        border-radius: 3px;
+        background: linear-gradient(270deg, #569847, #8ade98);
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .banner {
+        display: flex;
+        position: absolute;
+        background-image: url(../Images/Viande/meat_banner.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: 300px;
+        width:100%;
+        align-items:center;
+        justify-content: center;
+        box-shadow: inset 0px -5px 20px 7px #6aa975, -3px 10px 20px #6aa975, inset 1px 8px 20px 7px #6aa975;
+    }
+
+    main {
+        background-image: url(../Images/Viande/bg_viande_big.svg);
+        display: grid;
+        background-position:center;
+        margin-top: 300px;
+    }
+
+    #mainUlViande .liViande {
+        width: 30%;
+        display: grid;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
+        );
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
+        );
+    }
+
+    .titreViande {
+        text-decoration: underline;
+        font-size: 1.8em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.1em;
+        line-height: 25px;
+    }
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 10px;
+        list-style-type: none;
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .imgViande {
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px lightcyan;
+    }
+}
+
+@media (max-width: 1000px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background: linear-gradient(270deg, #569847, #8ade98);
+        padding: 10px 35px 10px 35px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .banner {
+        display: flex;
+        position: absolute;
+        background-image: url(../Images/Viande/meat_banner.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: 300px;
+        width:100%;
+        align-items:center;
+        justify-content: center;
+        box-shadow: inset 0px -5px 20px 7px #6aa975, 5px 10px 20px #6aa975, inset 1px 8px 20px 7px #6aa975;
+    }
+
+    main {
+        /* --bgColor: linear-gradient(90deg, #3d7530, #aafbb8); */
+        background-image: url(../Images/Viande/bg_viande_big.svg);
+        display: grid;
+        background-position:center;
+        margin-top: 300px;
+        height: auto;
+    }
+
+    #mainUlViande .liViande {
+        width: 100%;
+        display: grid;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
+        );
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
+        );
+    }
+
+    .titreViande {
+        text-decoration: underline;
+        font-size: 1.7em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 25px;
+    }
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 20px;
+        list-style-type: none;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .imgViande {
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px lightcyan;
+    }
+}
+
+@media (max-width: 500px){
+    h1 {
+        color:black;
+        text-align: center;
+        border-radius: 3px;
+        background: linear-gradient(270deg, #569847, #8ade98);
+        padding: 10px 50px 10px 50px;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 1.6em;
+    }
+
+    .banner {
+        display: flex;
+        position: absolute;
+        background-image: url(../Images/Viande/meat_banner.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: 300px;
+        width:100%;
+        align-items:center;
+        justify-content: center;
+        box-shadow: inset 0px -5px 20px 7px #6aa975, 5px 10px 20px #6aa975, inset 1px 8px 20px 7px #6aa975;
+    }
+
+    main {
+        --color: rgba(30, 30, 30);
+        /* --bgColor: linear-gradient(90deg, #3d7530, #aafbb8); */
+        background-image: url(../Images/Viande/bg_viande_small.svg);
+        min-height: 100vh;
+        display: grid;
+        align-content: center;
+        gap: 2rem;
+        color: var(--color);
+        position: relative;
+        margin: 300px 0px 0px 0px;
+    }
+
+    #mainUlViande .liViande {
+        width: fit-content;
+        display: grid;
+        grid-template:
+          "role"
+          "icon"
+          "title"
+          "descr";
+        align-items: flex-start;
+        gap: 1rem;
+        padding-block-end: calc(var(--flapH) + 1rem);
+        text-align: center;
+        background: var(--accent-color);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6) var(--roleH),
+          rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+          rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
+        );
+        clip-path: polygon(
+          calc(var(--col-gap) / -2 - 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px) 0,
+          calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
+          50% 100%,
+          calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
+        );
+    }
+
+    .titreViande {
+        text-decoration: underline;
+        font-size: 1.6em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .liIng {
+        list-style-type: square;
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 25px;
+    }
+
+    .liPrep {
+        line-height: 25px;
+        padding-bottom: 15px;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .imgViande {
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px lightcyan;
+    }
+}
+
 .Title {
     background: linear-gradient(90deg, #3d7530, #aafbb8);
 }
 
-h1 {
-    color:black;
-    text-align: center;
-    border-radius: 3px;
-    background: linear-gradient(270deg, #569847, #8ade98);
-    padding: 10px 50px 10px 50px;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.banner {
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    background-image: url(../Images/Viande/meat_banner.jpg);
-    background-position: bottom;
-    background-size: cover;
-    height: 300px;
-    width:100%;
-    align-items:center;
-    justify-content: center;
-    box-shadow: 5px 5px 20px lightblue;
-}
-
-.textPres {
+#textPres {
     border-radius: 10px;
     padding: 1px 10px 1px 10px;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
     background-color: #a2d6ab;
     margin: 0px 0px 0px 10px;
     box-shadow: 5px 5px 20px lightblue;
-}
-
-main {
-    --color: rgba(30, 30, 30);
-    --bgColor: linear-gradient(90deg, #3d7530, #aafbb8);
-    min-height: 100vh;
-    display: grid;
-    align-content: center;
-    gap: 2rem;
-    color: var(--color);
-    background: var(--bgColor);
-    position: relative;
-    margin: 300px 0px 0px 0px;
 }
 
 #mainUlViande {
@@ -55,69 +283,19 @@ main {
     --barH: 1rem;
     --roleH: 2rem;
     --flapH: 2rem;
-    width: min(90rem, 90%); 
-    margin-inline: auto;
-    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--col-gap);
-    padding-inline: calc(var(--col-gap) / 2);
     justify-content: center;
     align-items: flex-start;
-    list-style: none;
-}
-
-.imgViande {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px lightcyan;
-}
-
-.titreViande {
-    text-decoration: underline;
-    font-size: 1.1em;
-    font-family: 'Dancing Script', cursive;
+    margin-inline: auto;
+    margin-top: 70px;
+    width: min(90rem, 90%); 
+    gap: var(--col-gap);
+    padding-inline: calc(var(--col-gap) / 2);
 }
 
 .ulViande {
     padding: 0px 15px 15px 15px;
-}
-
-.liIng {
-    list-style-type: none;
-}
-
-#mainUlViande .liViande {
-    width: fit-content;
-    display: grid;
-    grid-template:
-      "role"
-      "icon"
-      "title"
-      "descr";
-    align-items: flex-start;
-    gap: 1rem;
-    padding-block-end: calc(var(--flapH) + 1rem);
-    text-align: center;
-    background: var(--accent-color);
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6) var(--roleH),
-      rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
-      rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem)
-    );
-    clip-path: polygon(
-      calc(var(--col-gap) / -2 - 5px) 0,
-      calc(100% + var(--col-gap) / 2 + 5px) 0,
-      calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)),
-      50% 100%,
-      calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
-    );
-}
-
-.liViande:hover, .imgDiv:hover {
-    transform: scale(1.04);
-    --barH: 0;
 }
 
 .liViande, .imgDiv {
@@ -161,19 +339,21 @@ main {
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);   
 }
   
-#mainUlViande .liViande .icon {
-    font-size: 3rem;
-}
-
 #mainUlViande .liViande .title {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
   
 #mainUlViande .liViande .descr {
     font-size: 0.9rem;
+    height: 25px;
+    overflow: hidden;
 }
 
 #logo {
     width: 70px;
+}
+
+a {
+    color: white;
 }

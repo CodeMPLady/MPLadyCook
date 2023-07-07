@@ -81,8 +81,9 @@
         display: grid;
         background-image: url(../Images/Classique/bg_classique_big.svg);
         background-size:cover;
-        position: relative;
         margin-top: 300px;
+        /* position: relative; */
+        height: auto;
     }
 
     #mainUlClass .liClass {
@@ -148,13 +149,12 @@
 
     main {
         display: grid;
-        /* background: linear-gradient(90deg, #bfa44d, #ba4a30); */
         background-image: url(../Images/Classique/bg_classique_small.svg);
-        background-size:contain;
+        background-size:cover;
         background-position:center;
-        position: relative;
         margin-top: 300px;
         width: 100%;
+        height: auto;
     }
 
     #mainUlClass .liClass {

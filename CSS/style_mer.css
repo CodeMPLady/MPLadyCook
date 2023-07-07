@@ -33,7 +33,6 @@
     #mainUlMer .liMer {
         width: 30%;
         display: grid;
-        width: fit-content;
         grid-template:
           "role"
           "icon"
@@ -201,7 +200,7 @@
     main {
         display: grid;
         background-image: url(../Images/Mer/bg_mer_small.svg);
-        background-size:contain;
+        background-size:cover;
         background-position:center;
         margin-top: 300px;
         width: 100%;
@@ -211,7 +210,6 @@
     #mainUlMer .liMer {
         width: fit-content;
         display: grid;
-        width: fit-content;
         grid-template:
           "role"
           "icon"

@@ -3,6 +3,7 @@
     <head>
         <link href="../CSS/style_viande.css" rel="stylesheet">
         <link href="../CSS/nav.css" rel="stylesheet">
+        <link href="../CSS/Astuce-btn.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Plats à base de viande</title>
@@ -10,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="../Script/BoutonPrep.js"></script>
+        <script src="../Script/HelpButton.js"></script>
     </head>
     <body>
         <nav>
@@ -28,47 +31,64 @@
             <h1>Les plats à base de viande</h1>
         </div>
         <div class="banner">
-            <div class="textPres">
-                <div><p>La viande est un met apprécié de toutes les cultures du monde et permet d'infinies associations culinaires. <br>Nous allons ici présenter notre panel de recettes qui mettent en valeur la viande et ce quel que soit son type !</p></div>
+            <div id="textPres">
+                    <script src="../Script/adjustTextViande.js"></script>
             </div>
         </div>
         <main>
             <ul id="mainUlViande">
                 <li class="liViande" style="--accent-color:#0B374D">
-                    <div class="icon"><i class="fa-brands fa-codepen"></i></div>
                     <div class="title" id="nouillesBoeuf">Nouilles sautées au boeuf</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Vous pouvez remplacer l'huile d'olive par de la crème fraîche et mettre le saumon dans du papier aluminium pour faire des papillotes gourmandes</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Viande/nouilles_boeuf.jpg" class="imgViande"></div>
                     <div class="descr">
-                        <p class="titreViande">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreViande">Ingrédients pour 2 personnes</p>
                         <ul class="ulViande">
                             <li class="liIng">200g de nouilles de blé</li>
                             <li class="liIng">200g de bavette de boeuf</li>
                             <li class="liIng">1 oignon</li>
                             <li class="liIng">1 gousse d'ail</li>
                             <li class="liIng">2 cuillères à soupe de sauce soja</li>
-                            <li class="liIng">2 cuillères à soupe <br>de sauce nuoc-mâm</li>
+                            <li class="liIng">2 cuillères à soupe de sauce nuoc-mâm</li>
                         </ul>
                         <p class="titreViande">Préparation</p>
                         <ul class="ulViande">
-                            <li class="liIng">- Faire cuire les nouilles</li>
-                            <li class="liIng">- Les passer sous un filet d'eau froide et les égoutter</li>
-                            <li class="liIng">- Couper la bavette en fines lamelles</li>
-                            <li class="liIng">- Éplucher et émincer l'oignon et l'ail</li>
-                            <li class="liIng">- Faire chauffer un filet d'huile de tournesol dans une poêle</li>
-                            <li class="liIng">- Faire dorer l'oignon et l'ail</li>
-                            <li class="liIng">- Ajouter la viande puis les sauces</li>
-                            <li class="liIng">- Faire revenir 3 minutes à feu vif</li>
-                            <li class="liIng">- Saler et poivrer</li>
-                            <li class="liIng">- Ajouter les nouilles et faire sauter pendant 3 minutes</li>
+                            <li class="liPrep">- Faire cuire les nouilles</li>
+                            <li class="liPrep">- Les passer sous un filet d'eau froide et les égoutter</li>
+                            <li class="liPrep">- Couper la bavette en fines lamelles</li>
+                            <li class="liPrep">- Éplucher et émincer l'oignon et l'ail</li>
+                            <li class="liPrep">- Faire chauffer un filet d'huile de tournesol dans une poêle</li>
+                            <li class="liPrep">- Faire dorer l'oignon et l'ail</li>
+                            <li class="liPrep">- Ajouter la viande puis les sauces</li>
+                            <li class="liPrep">- Faire revenir 3 minutes à feu vif</li>
+                            <li class="liPrep">- Saler et poivrer</li>
+                            <li class="liPrep">- Ajouter les nouilles et faire sauter pendant 3 minutes</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liViande" style="--accent-color:#ACA74D">
-                    <div class="icon"><i class="fa-brands fa-html5"></i></div>
                     <div class="title" id="pouletCitron">Poulet mariné au citron</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Vous pouvez remplacer l'huile d'olive par de la crème fraîche et mettre le saumon dans du papier aluminium pour faire des papillotes gourmandes</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Viande/poulet_citron.jpg" class="imgViande"></div>
                     <div class="descr">
-                        <p class="titreViande">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreViande">Ingrédients pour 2 personnes</p>
                         <ul class="ulViande">
                             <li class="liIng">2 blancs de poulet Label rouge</li>
                             <li class="liIng">1 citron</li>
@@ -80,61 +100,78 @@
                         </ul>
                         <p class="titreViande">Préparation</p>
                         <ul class="ulViande">
-                            <li class="liIng">- Couper le poulet en dés</li>
-                            <li class="liIng">- Presser le citron</li>
-                            <li class="liIng">- Ajouter le poulet</li>
-                            <li class="liIng">- Presser l'ail</li>
-                            <li class="liIng">- Ajouter le sel et le cumin</li>
-                            <li class="liIng">- Ajouter le romarin lavé et coupé</li>
-                            <li class="liIng">- Laisser mariner 15 minutes</li>
-                            <li class="liIng">- Cuire le poulet avec un filet d'huile d'olive</li>
+                            <li class="liPrep">- Couper le poulet en dés</li>
+                            <li class="liPrep">- Presser le citron</li>
+                            <li class="liPrep">- Ajouter le poulet</li>
+                            <li class="liPrep">- Presser l'ail</li>
+                            <li class="liPrep">- Ajouter le sel et le cumin</li>
+                            <li class="liPrep">- Ajouter le romarin lavé et coupé</li>
+                            <li class="liPrep">- Laisser mariner 15 minutes</li>
+                            <li class="liPrep">- Cuire le poulet avec un filet d'huile d'olive</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liViande" style="--accent-color:#2D8D82">
-                    <div class="icon"><i class="fa-brands fa-css3"></i></div>
                     <div class="title" id="pouletThai">Poulet grillé à la thaï</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Vous pouvez remplacer l'huile d'olive par de la crème fraîche et mettre le saumon dans du papier aluminium pour faire des papillotes gourmandes</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Viande/Poulet_thai.jpg" class="imgViande"></div>
                     <div class="descr">
-                        <p class="titreViande">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreViande">Ingrédients pour 2 personnes</p>
                         <ul class="ulViande">
                             <li class="liIng">2 cuisses de poulet</li>
                             <li class="liIng">1,5 cuillère à soupe de pâte de curry jaune</li>
                             <li class="liIng">1,5 cuillère à soupe de sauce soja</li>
-                            <li class="liIng">1 tige de citronnelle</li>
                             <li class="liIng">1,5 cuillère à soupe d'huile de sésame</li>
                         </ul>
                         <p class="titreViande">Préparation</p>
                         <ul class="ulViande">
-                            <li class="liIng">- Mettre les cuisses dans un plat à four</li>
-                            <li class="liIng">- Mélanger dans un bol le curry jaune, la sauce soja, la citronnelle et l'huile de sésame</li>
-                            <li class="liIng">- Enduire les cuisses avec la marinade</li>
-                            <li class="liIng">- Laisser reposer 2h ou une nuit au frigo</li>
-                            <li class="liIng">- Préchauffer le four à 210°C</li>
-                            <li class="liIng">- Faire cuire le poulet 30 minutes</li>
+                            <li class="liPrep">- Mettre les cuisses dans un plat à four</li>
+                            <li class="liPrep">- Mélanger dans un bol le curry jaune, la sauce soja et l'huile de sésame</li>
+                            <li class="liPrep">- Enduire les cuisses avec la marinade</li>
+                            <li class="liPrep">- Laisser reposer minimum 2h</li>
+                            <li class="liPrep">- Préchauffer le four à 210°C</li>
+                            <li class="liPrep">- Faire cuire le poulet 30 minutes</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liViande" style="--accent-color:#DA611E">
-                    <div class="icon"><i class="fa-brands fa-js"></i></div>
                     <div class="title" id="loklak">Boeuf lok lak</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Faites attention à bien graisser votre wok pour éviter les accrochages</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Viande/loklak2.jpg" class="imgViande"></div>
                     <div class="descr">
-                        <p class="titreViande">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreViande">Ingrédients pour 2 personnes</p>
                         <ul class="ulViande">
                             <li class="liIng">250g de filet de boeuf</li>
                             <li class="liIng">1 tomate</li>
-                            <li class="liIng">De la salade</li>
+                            <li class="liIng">100g de laitue</li>
                             <li class="liIng">1 oignon</li>
                             <li class="liIng">1 gousse d'ail</li>
-                            <li class="liIng">Pincées de paprika</li>
+                            <li class="liIng">1 pincées de paprika</li>
                             <li class="liIng">1 cuillère à soupe d'huile de tournesol</li>
                         </ul>
                         <p class="titreViande">Ingrédients pour la marinade</p>
                         <ul class="ulViande">
                             <li class="liIng">2 cuillères à café de paprika</li>
-                            <li class="liIng">1/4 de cuillère à café de poivre moulu</li>
-                            <li class="liIng">1/8 de cuillère à café de glutamate</li>
+                            <li class="liIng">2 pincées de cuillère à café de poivre moulu</li>
+                            <li class="liIng">1 pincée glutamate</li>
                             <li class="liIng">1 cuillère à soupe de fécule de maïs</li>
                             <li class="liIng">2 cuillères à soupe de sauce nuoc-mâm</li>
                             <li class="liIng">1 cuillère à soupe de sauce soja claire</li>
@@ -143,33 +180,39 @@
                         </ul>
                         <p class="titreViande">Ingrédients et préparation de la sauce lok lak</p>
                         <ul class="ulViande">
-                            <li class="liIng">Rendez-vous sur la page "Les bases culinaires" !</li>
+                            <li class="liIng">Rendez-vous sur la page <a href="Bases.html#sauceLoklak" target="_blank">"Les bases culinaires"</a> !</li>
                         </ul>
                         <p class="titreViande">Préparation</p>
                         <ul class="ulViande">
-                            <li class="liIng">- Couper le boeuf en morceaux de la taille d'une bouchée</li>
-                            <li class="liIng">- Peler et émincer l'oignon et l'ail</li>
-                            <li class="liIng">- Couper la tomate en rondelles</li>
-                            <li class="liIng">- Laver et essorer la salade</li>
-                            <li class="liIng">- Mettre les ingrédients de la marinade, le boeuf et l'ail dans un saladier</li>
-                            <li class="liIng">- Mélanger, couvrir le saladier et laisser reposer une heure au frigo</li>
-                            <li class="liIng">- Faire chauffer une cuillère à soupe d'huile de tournesol dans un wok</li>
-                            <li class="liIng">- Faire revenir l'oignon jusqu'à ce qu'il soit ambré</li>
-                            <li class="liIng">- Ajouter le boeuf</li>
-                            <li class="liIng">- Faire revenir rapidement pendant 1 minute à feu très vif</li>
-                            <li class="liIng">- Ajouter la marinade</li>
-                            <li class="liIng">- Mélanger vivement pendant 2 minutes</li>
-                            <li class="liIng">- Disposer les feuilles de salade, la tomate et le boeuf dans des assiettes</li>
-                            <li class="liIng">- Déguster avec du riz blanc et la sauce</li>
+                            <li class="liPrep">- Couper le boeuf en morceaux de la taille d'une bouchée</li>
+                            <li class="liPrep">- Peler et émincer l'oignon et l'ail</li>
+                            <li class="liPrep">- Couper la tomate en rondelles</li>
+                            <li class="liPrep">- Laver et essorer la salade</li>
+                            <li class="liPrep">- Mettre les ingrédients de la marinade, le boeuf et l'ail dans un saladier</li>
+                            <li class="liPrep">- Mélanger, couvrir le saladier et laisser reposer une heure au frigo</li>
+                            <li class="liPrep">- Faire chauffer une cuillère à soupe d'huile de tournesol dans un wok</li>
+                            <li class="liPrep">- Faire revenir les oignons et ajouter le boeuf</li>
+                            <li class="liPrep">- Faire chauffer pendant 1 minute à feu vif</li>
+                            <li class="liPrep">- Ajouter la marinade et mélanger vivement pendant 2 minutes</li>
+                            <li class="liPrep">- Disposer les feuilles de salade, la tomate et le boeuf dans des assiettes</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
                 <li class="liViande" style="--accent-color:#AC2A1A">
-                    <div class="icon"><i class="fa-brands fa-github"></i></div>
                     <div class="title" id="chirashiPoulet">Chirashi au poulet</div>
+                    <button class="HelpBtn">Astuce</button>
+                    <div class="overlayBouton">
+                        <div class="Astuce">
+                            <script src="../Script/HelpButton.js"></script>
+                            <p class="TxtAstuce">Vous pouvez remplacer l'huile d'olive par de la crème fraîche et mettre le saumon dans du papier aluminium pour faire des papillotes gourmandes</p>
+                            <button class="closeHelp">x</button>
+                        </div>
+                    </div>
                     <div class="imgDiv"><img src="../Images/Viande/chirashi_poulet.jpg" class="imgViande"></div>
                     <div class="descr">
-                        <p class="titreViande">Ingrédients pour 2 portions</p>
+                        <button class="openPrep">+</button>
+                        <p class="titreViande">Ingrédients pour 2 personnes</p>
                         <ul class="ulViande">
                             <li class="liIng">175g de riz japonais</li>
                             <li class="liIng">2,5 cuillères à soupe de vinaigre de riz</li>
@@ -181,23 +224,24 @@
                         </ul>   
                         <p class="titreViande">Ingrédients et préparation de la sauce yakiniku</p>
                         <ul class="ulViande">
-                            <li class="liIng">Rendez-vous sur la page "Les bases culinaires" !</li>
+                            <li class="liIng">Rendez-vous sur la page <a href="Bases.html#yakiniku" target="_blank">"Les bases culinaires"</a> !</li>
                         </ul>
                         <p class="titreViande">Préparation du riz vinaigré</p>
                         <ul class="ulViande">
-                            <li class="liIng">Rendez-vous sur la page "Les bases culinaires" !</li>
+                            <li class="liIng">Rendez-vous sur la page <a href="Bases.html#rizVinaigre" target="_blank">"Les bases culinaires"</a> !</li>
                         </ul>
                         <p class="titreViande">Préparation du chirashi</p>
                         <ul class="ulViande">
-                            <li class="liIng">- Mettre le poulet coupé en petits dés dans un plat</li>
-                            <li class="liIng">- Verser la marinade dessus</li>
-                            <li class="liIng">- Réserver au frigo pendant 15 minutes</li>
-                            <li class="liIng">- Placer le riz dans des bols</li>
-                            <li class="liIng">- Raper la carotte, couper la tomate et le concombre</li>
-                            <li class="liIng">- Les disposer au dessus du riz</li>
-                            <li class="liIng">- Faire cuire le poulet avec un filet d'huile d'olive</li>
-                            <li class="liIng">- Une fois cuit, le mettre dans les bols avec le reste de la marinade</li>
+                            <li class="liPrep">- Mettre le poulet coupé en petits dés dans un plat</li>
+                            <li class="liPrep">- Verser la marinade dessus</li>
+                            <li class="liPrep">- Réserver au frigo pendant 15 minutes</li>
+                            <li class="liPrep">- Placer le riz dans des bols</li>
+                            <li class="liPrep">- Raper la carotte, couper la tomate et le concombre</li>
+                            <li class="liPrep">- Les disposer au dessus du riz</li>
+                            <li class="liPrep">- Faire cuire le poulet avec un filet d'huile d'olive</li>
+                            <li class="liPrep">- Une fois cuit, le mettre dans les bols avec le reste de la marinade</li>
                         </ul>
+                        <button class="closePrep">-</button>
                     </div>
                 </li>
             </ul>
