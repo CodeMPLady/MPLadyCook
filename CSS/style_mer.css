@@ -109,10 +109,8 @@
 
     main {
         display: grid;
-        /* background: linear-gradient(90deg, #02a66c, #2d76ff); */
         background-image: url(../Images/Mer/bg_mer_big2.svg);
         background-size:cover;
-        /* position: relative; */
         margin-top: 300px;
         height: auto;
     }
@@ -120,7 +118,6 @@
     #mainUlMer .liMer {
         width: 100%;
         display: grid;
-        /* width: fit-content; */
         grid-template:
           "role"
           "icon"
@@ -186,7 +183,6 @@
     .banner {
         display: flex;
         position: absolute;
-        /* z-index: -1; */
         background-image: url(../Images/Mer/seaBanner_2.jpg);
         background-position: bottom;
         background-size: cover;

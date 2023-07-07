@@ -1,5 +1,4 @@
 .HelpBtn {
-    width: fit-content;
     margin: auto;
 }
 
@@ -11,13 +10,11 @@
 .overlayBouton {
     display: none;
     justify-content: center;
-    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .Astuce {
     position: absolute;
-    z-index: 1;
     height: 200px;
     width: 200px;
     border: 3px solid white;
@@ -28,10 +25,7 @@
     border-radius: 20px;
 }
 
-
-
 .TxtAstuce {
-    text-align: center;
     padding: 5px 15px 5px 15px;
     font-size: 0.8em;
 }
@@ -55,7 +49,6 @@
     font-size: 13px;
     border-radius: 4px;
     box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
-    background: rgb(2,0,36);
     background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
     background-size: 150%;
     background-position: right;
@@ -70,4 +63,40 @@
   
 .HelpBtn:focus {
     outline: none;
+}
+
+@media (min-width: 1000px){
+    .Astuce {
+        width: 200px;
+        height: 200px;
+    }
+
+    .TxtAstuce {
+        font-size: 0.8em;
+        padding: 5px 15px 5px 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    .Astuce {
+        width: 250px;
+        height: 250px;
+    }
+
+    .TxtAstuce {
+        font-size: 1.1em;
+        padding: 5px 15px 5px 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .Astuce {
+        width: 200px;
+        height: 200px;
+    }
+
+    .TxtAstuce {
+        font-size: 0.8em;
+        padding: 5px 15px 5px 15px;
+    }
 }
