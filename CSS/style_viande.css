@@ -89,15 +89,15 @@
     }
 }
 
-@media (max-width: 1000px){
+@media (min-width:500px) and (max-width: 1000px){
     h1 {
-        color:black;
         text-align: center;
         border-radius: 3px;
         background: linear-gradient(270deg, #569847, #8ade98);
         padding: 10px 35px 10px 35px;
         width: fit-content;
-        margin: 0 auto;
+        margin: auto;
+        font-size: 1.3em;
     }
 
     .banner {
@@ -114,12 +114,10 @@
     }
 
     main {
-        /* --bgColor: linear-gradient(90deg, #3d7530, #aafbb8); */
         background-image: url(../Images/Viande/bg_viande_big.svg);
         display: grid;
         background-position:center;
         margin-top: 300px;
-        height: auto;
     }
 
     .liViande {
@@ -186,7 +184,6 @@
 
 @media (max-width: 500px){
     h1 {
-        color:black;
         text-align: center;
         border-radius: 3px;
         background: linear-gradient(270deg, #569847, #8ade98);
@@ -210,15 +207,10 @@
     }
 
     main {
-        --color: rgba(30, 30, 30);
         background-image: url(../Images/Viande/bg_viande_small.svg);
-        min-height: 100vh;
         display: grid;
-        align-content: center;
         gap: 2rem;
-        color: var(--color);
-        position: relative;
-        margin: 300px 0px 0px 0px;
+        margin-top: 300px;
     }
 
     .liViande {
@@ -269,7 +261,6 @@
     }
 
     .imgViande {
-        width: 140px;
         height: 140px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
@@ -291,7 +282,6 @@
     border-radius: 10px;
     padding: 1px 10px 1px 10px;
     background-color: #a2d6ab;
-    margin: 0px 0px 0px 10px;
     box-shadow: 5px 5px 20px lightblue;
 }
 
@@ -303,7 +293,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
     margin-inline: auto;
     margin-top: 70px;
     width: min(90rem, 90%); 

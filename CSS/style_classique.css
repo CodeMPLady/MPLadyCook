@@ -64,9 +64,14 @@
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
     }
+
+    #logo {
+        height: 70px;
+        margin: 20px;
+    }
 }
 
-@media (max-width: 1000px) {
+@media (min-width:500px) and (max-width: 1000px){
     h1 {
         color:black;
         text-align: center;
@@ -83,6 +88,7 @@
         background-size:cover;
         margin-top: 300px;
         /* position: relative; */
+        background-position:center;
         height: auto;
     }
 
@@ -127,10 +133,18 @@
         text-align: left;
         font-size: 1.2em;
     }
+    
     .imgClass {
         width: 200px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 10px;
     }
     
 }
@@ -202,6 +216,13 @@
         width: 140px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 10px;
     }
     
 }
@@ -318,10 +339,6 @@
     font-size: 0.9rem;
     height: 25px;
     overflow: hidden;
-}
-
-#logo {
-    width: 70px;
 }
 
 a {

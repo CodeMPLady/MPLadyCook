@@ -81,9 +81,14 @@
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
     }
+
+    #logo {
+        height: 70px;
+        margin: 20px;
+    }
 }
 
-@media (max-width: 1000px){
+@media (min-width:500px) and (max-width: 1000px){
     h1 {
         color:black;
         text-align: center;
@@ -111,6 +116,7 @@
         display: grid;
         background-image: url(../Images/Mer/bg_mer_big2.svg);
         background-size:cover;
+        background-position:center;
         margin-top: 300px;
         height: auto;
     }
@@ -165,6 +171,13 @@
         height: 200px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 10px;
     }
 }
 
@@ -253,6 +266,13 @@
         height: 140px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 10px;
     }
 }
 
