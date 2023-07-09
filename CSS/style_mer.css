@@ -282,7 +282,7 @@
 
 .textPres {
     border-radius: 10px;
-    padding: 1px 10px 1px 10px;
+    padding: 0 10px 0 10px;
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -360,7 +360,7 @@
   
 #mainUlMer .liMer .descr {
     font-size: 0.9rem;
-    height: 35px;
+    height: 37px;
     overflow: hidden;
 }
 

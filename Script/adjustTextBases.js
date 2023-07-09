@@ -19,7 +19,12 @@ function genererBaliseP() {
         let style = `
         #textPres {
             width: 70%;
-          }
+        }
+        #textPres:hover {
+            background: -webkit-linear-gradient(45deg, rgba(16,6,255,1) 0%, rgba(50,50,50,1) 50%, rgba(255,0,0,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         `
         createStyle.innerText = style;
         parentElement.appendChild(createStyle);

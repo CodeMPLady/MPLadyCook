@@ -280,11 +280,14 @@
     background: linear-gradient(90deg, #3d7530, #aafbb8);
 }
 
-#textPres {
+.textPres {
     border-radius: 10px;
-    padding: 1px 10px 1px 10px;
+    padding: 0 10px 0 10px;
+    width: fit-content;
+    text-align: center;
     background-color: #a2d6ab;
-    box-shadow: 5px 5px 20px lightblue;
+    margin: 0px 0px 0px 10px;
+    box-shadow: 5px 5px 20px #c4c1b7;
 }
 
 #mainUlViande {
@@ -351,7 +354,7 @@
   
 .descr {
     font-size: 0.9rem;
-    height: 35px;
+    height: 37px;
     overflow: hidden;
 }
 
