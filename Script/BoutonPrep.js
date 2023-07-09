@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         Descr.querySelector(".closePrep").addEventListener("click", () => {
-            Descr.style.height = "25px";
+            Descr.style.height = "35px";
         });
     });
 });

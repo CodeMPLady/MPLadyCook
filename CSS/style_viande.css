@@ -26,6 +26,8 @@
         display: grid;
         background-position:center;
         margin-top: 300px;
+        height: auto;
+
     }
 
     .liViande {
@@ -293,6 +295,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     margin-inline: auto;
     margin-top: 70px;
     width: min(90rem, 90%); 
@@ -348,7 +351,7 @@
   
 .descr {
     font-size: 0.9rem;
-    height: 25px;
+    height: 35px;
     overflow: hidden;
 }
 

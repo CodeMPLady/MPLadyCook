@@ -12,7 +12,7 @@
     .banner {
         display: flex;
         position: absolute;
-        background-image: url(../Images/Mer/seaBanner.jpg);
+        background-image: url(../Images/Mer/seaBanner_big.jpg);
         background-position: bottom;
         background-size: cover;
         height: 300px;
@@ -102,7 +102,7 @@
     .banner {
         display: flex;
         position: absolute;
-        background-image: url(../Images/Mer/seaBanner_2.jpg);
+        background-image: url(../Images/Mer/seaBanner_big.jpg);
         background-position: bottom;
         background-size: cover;
         height: 300px;
@@ -360,7 +360,7 @@
   
 #mainUlMer .liMer .descr {
     font-size: 0.9rem;
-    height: 25px;
+    height: 35px;
     overflow: hidden;
 }
 
