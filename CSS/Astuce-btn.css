@@ -112,7 +112,8 @@
     color: #36395A;
     cursor: pointer;
     font-family: "JetBrains Mono",monospace;
-    height: 20px;
+    height: 22px;
+    text-align: top;
     line-height: 1;
     list-style: none;
     overflow: hidden;
