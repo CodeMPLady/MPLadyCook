@@ -24,10 +24,7 @@ body {
     }
     
     .olcards {
-        width: fit-content;
-        margin: 20px 0px 0px 0px;
-        list-style: none;
-        counter-reset: cardCount;
+        /* counter-reset: cardCount; */
         display: flex;
         flex-direction: column;
         --cardsGap: 1.5rem;
@@ -38,7 +35,6 @@ body {
 
     .container {
         display: flex;
-        height: fit-content;
         gap: 7em;
         margin-top: 20px;
     }
@@ -47,10 +43,9 @@ body {
         background-color: white;
         border-radius: 6px;
         border-collapse: collapse;
-        height: fit-content;
         min-height: 250px;
-        width: fit-content;
     }
+
     .ingredients {
         display: flex;
         margin-left: 50px;
@@ -59,7 +54,6 @@ body {
     
     .preparation {
         background-color: white;
-        height: fit-content;
         padding: 0px 80px 30px 20px;
         border-radius: 6px;
         border: 2px black solid;
@@ -67,9 +61,7 @@ body {
     }
     
     .content {
-        position: relative;
         display: grid;
-        width: 100%;
         background-color: var(--cardColor);
         --inlinePadding: -5em;
         --boxPadding: 0.5em;
@@ -95,7 +87,6 @@ body {
         --labelOffset: 6rem;
         --arrowClipSize: 1.5rem;
         margin-top: var(--labelOffset);
-        z-index: -1;
     }
 
     .icon {
@@ -134,11 +125,6 @@ body {
 }
 
 @media (max-width: 700px) {
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-        * {
-            font-size: small;
-        }
-    }
     h1 {
         background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
         width: fit-content;
@@ -160,9 +146,7 @@ body {
     }
     
     .olcards {
-        margin: 20px 0px 0px 0px;
-        list-style: none;
-        counter-reset: cardCount;
+        /* counter-reset: cardCount; */
         display: flex;
         flex-direction: column;
         --cardsGap: 1.5rem;
@@ -170,23 +154,23 @@ body {
         padding-bottom: var(--cardsGap);
         align-items: flex-start;
     }
+
     .container {
         display: flex;
         flex-direction: column;
         height: fit-content;
+        width: 100%;
         gap: 2em;
         margin-top: 10px;
     }
 
     .TIng {
-        background: rgb(225,225,225);
         background: radial-gradient(circle, rgba(225,225,225,1) 0%, rgba(232,232,232,1) 100%);
         border-radius: 6px;
         border-collapse: collapse;
-        height: fit-content;
         min-height: 250px;
-        width: fit-content;
     }
+
     .ingredients {
         display: flex;
         align-items: center;
@@ -194,9 +178,7 @@ body {
     }
     
     .preparation {
-        background: rgb(225,225,225);
         background: radial-gradient(circle, rgba(225,225,225,1) 0%, rgba(232,232,232,1) 100%);
-        height: fit-content;
         padding: 0px 80px 30px 20px;
         border-radius: 6px;
         border: 2px black solid;
@@ -233,7 +215,6 @@ body {
         --labelOffset: 5rem;
         --arrowClipSize: 1.5rem;
         margin-top: var(--labelOffset);
-        z-index: -1;
         width: 100%;
     }
 

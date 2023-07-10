@@ -6,7 +6,7 @@
         background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
         padding: 10px 50px 10px 50px;
         width: fit-content;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .banner {
@@ -27,15 +27,13 @@
         background-image: url(../Images/Mer/bg_mer_big.svg);
         background-size:cover;
         margin-top: 300px;
-        height: auto;
     }
 
-    #mainUlMer .liMer {
+    .liMer {
         width: 30%;
         display: grid;
         grid-template:
           "role"
-          "icon"
           "title"
           "descr";
         align-items: flex-start;
@@ -96,7 +94,7 @@
         background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
         padding: 10px 50px 10px 50px;
         width: fit-content;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .banner {
@@ -118,15 +116,12 @@
         background-size:cover;
         background-position:center;
         margin-top: 300px;
-        height: auto;
     }
 
-    #mainUlMer .liMer {
-        width: 100%;
+    .liMer {
         display: grid;
         grid-template:
           "role"
-          "icon"
           "title"
           "descr";
         align-items: flex-start;
@@ -185,11 +180,9 @@
     h1 {
         color:black;
         text-align: center;
-        border-radius: 3px;
         background:linear-gradient(270deg, #5defc3, hsl(201, 87%, 72%) );
         padding: 10px 50px 10px 50px;
-        width: fit-content;
-        margin: 0 auto;
+        margin: auto;
         font-size: 1.6em;
     }
 
@@ -213,15 +206,13 @@
         background-position:center;
         margin-top: 300px;
         width: 100%;
-        height: auto;
     }
 
-    #mainUlMer .liMer {
-        width: fit-content;
+    .liMer {
+        width: 100%;
         display: grid;
         grid-template:
           "role"
-          "icon"
           "title"
           "descr";
         align-items: flex-start;
@@ -283,12 +274,10 @@
 .textPres {
     border-radius: 10px;
     padding: 0 10px 0 10px;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
     background-color:lightcyan;
-    margin-left: 10px;
     box-shadow: 5px 5px 20px lightblue;
+    text-align: center;
+    margin: 0px 15px 0px 15px;
 }
 
 #mainUlMer {
@@ -302,7 +291,6 @@
     align-items: flex-start;
     margin-inline: auto;
     margin-top: 70px;
-    list-style: none;
     width: min(90rem, 90%);
     gap: var(--col-gap);
     padding-inline: calc(var(--col-gap) / 2);
@@ -316,7 +304,7 @@
     transition: transform 0.4s ease;
 }
 
-#mainUlMer .liMer::before {
+.liMer::before {
     content: "";
     grid-area: role;
     height: var(--barH);
@@ -333,7 +321,7 @@
       rgba(0, 0, 0, 0.4));
 }
   
-#mainUlMer .liMer::after {
+.liMer::after {
     content: "";
     grid-area: role;
     background: var(--accent-color);
@@ -347,18 +335,18 @@
     height: var(--roleH);
 }
   
-#mainUlMer .liMer .icon, #mainUlMer .liMer .title, #mainUlMer .liMer .descr {
+.title, .descr {
     padding-inline: 1rem;
     color: white;
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
   
-#mainUlMer .liMer .title {
+.title {
     font-size: 1.4rem;
     font-weight: 700;
 }
   
-#mainUlMer .liMer .descr {
+.descr {
     font-size: 0.9rem;
     height: 37px;
     overflow: hidden;

@@ -5,11 +5,9 @@
 @media (min-width: 1500px) {
     h1 {
         color:black;
-        text-align: center;
-        border-radius: 3px;
         padding: 20px 50px 20px 50px;
         width: fit-content;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .img {
@@ -31,9 +29,6 @@
         box-sizing: border-box;
         box-shadow: 1px 1px 20px black;
         overflow: hidden;
-        position: relative;
-        z-index: 1;
-        height: fit-content;
         width: 95%;
         align-items: center;
     }
@@ -66,7 +61,6 @@
         grid-column: 2 / 4;
         grid-row: 1 / 4;
         padding-top: 20px;
-        height: fit-content
     }
 
     .container {
@@ -86,15 +80,12 @@
     
     .box {
         display: grid;
+        width: 95%;
         grid-template-columns: 250px 450px;
         grid-template-rows: 20% 80%;
         background: rgb(250, 236, 211);
         box-sizing: border-box;
         box-shadow: 1px 1px 20px black;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-        height: fit-content;
         align-self:center;
     }
 
@@ -126,11 +117,11 @@
 
     .ulRec {
         list-style: none;
+        padding-left: 0;
     }
 
     .liRec{
         list-style: none;
-        color: black;
         font-size: 18px;
         line-height: 25px;
     }
@@ -155,18 +146,16 @@
     
     .box, .BigBox, .imgFrais, .BigImgTop, .BigImgBot {
         transition: transform 0.3s ease;
-    }
-    
+    }  
 }
 
 @media (min-width: 700px) and (max-width: 1500px) {
     h1 {
         color:black;
-        text-align: center;
         border-radius: 3px;
         padding: 20px 50px 20px 50px;
         width: fit-content;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .container {
@@ -287,7 +276,6 @@
 
     .liRec{
         list-style: none;
-        color: black;
         font-size: 18px;
         line-height: 25px;
     }
@@ -310,11 +298,9 @@
 @media (max-width: 700px) {
     h1 {
         color:black;
-        text-align: center;
-        border-radius: 3px;
         padding: 20px 50px 20px 50px;
         width: fit-content;
-        margin: 0 auto;
+        margin: auto;
         font-size: 1.7em;
     }
 
@@ -341,8 +327,8 @@
     }
 
     .BigImg {
-        height: 120px;
-        margin-left: 20px;
+        height: 110px;
+        margin-left: 10px;
         border-radius: 10px;
     }
 
@@ -460,8 +446,14 @@
         padding-bottom: 10px;
     }
 }
-
 @media (max-width: 400px) {
+    h1 {
+        color:black;
+        text-align: center;
+        padding: 20px 50px 20px 50px;
+        font-size: 1.7em;
+    }
+    
     .img {
         height: 100px;
         border-radius: 10px;
@@ -474,10 +466,10 @@
         border-radius: 10px;
     }
 }
+
 .banner {
     display: flex;
     position: absolute;
-    z-index: -1;
     background-image: url(../Images/Base/bases_banner.png);
     background-position: center;
     background-size: cover;
@@ -488,7 +480,7 @@
     box-shadow: 5px 5px 20px lightblue;
 }
 
-#textPres {
+.textPres {
     border-radius: 10px;
     padding: 1px 10px 1px 10px;
     width: fit-content;
@@ -502,14 +494,8 @@
 main {
     background-color: #bad3de;
     margin-top: 300px;
-    width: 100%;
-    height: 100%;
 }
 
 .ulIng {
     padding-bottom: 10px;
-}
-
-.ulIng, .ulPrep {
-    padding: 0;
 }

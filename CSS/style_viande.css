@@ -35,7 +35,6 @@
         display: grid;
         grid-template:
           "role"
-          "icon"
           "titleRec"
           "descr";
         align-items: flex-start;
@@ -127,7 +126,6 @@
         display: grid;
         grid-template:
           "role"
-          "icon"
           "titleRec"
           "descr";
         align-items: flex-start;
@@ -187,11 +185,9 @@
 @media (max-width: 500px){
     h1 {
         text-align: center;
-        border-radius: 3px;
         background: linear-gradient(270deg, #569847, #8ade98);
         padding: 10px 50px 10px 50px;
-        width: fit-content;
-        margin: 0 auto;
+        margin: auto;
         font-size: 1.6em;
     }
 
@@ -220,7 +216,6 @@
         display: grid;
         grid-template:
           "role"
-          "icon"
           "titleRec"
           "descr";
         align-items: flex-start;
