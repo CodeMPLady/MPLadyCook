@@ -165,7 +165,6 @@
         justify-items: center;
         padding: 0px;
         gap: 30px;
-        height: fit-content;
     }
 
     .containerLI{
@@ -182,11 +181,6 @@
         background: rgb(250, 236, 211);
         box-sizing: border-box;
         box-shadow: 1px 1px 20px black;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-        height: fit-content;
-        align-items: center;
     }
 
     .img {
@@ -237,11 +231,6 @@
         background: rgb(250, 236, 211);
         box-sizing: border-box;
         box-shadow: 1px 1px 20px black;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-        height: fit-content;
-        align-self:center;
     }
 
     .GridTitle {
@@ -253,7 +242,6 @@
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         justify-self: center;
-        align-self: baseline;
         height: 200px;
     }
     
@@ -487,7 +475,7 @@
     height: fit-content;
     text-align: center;
     background-color: #c4ced2;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 60px 0px 60px;
     box-shadow: 5px 5px 20px black;
 }
 
@@ -496,6 +484,7 @@ main {
     margin-top: 300px;
 }
 
-.ulIng {
-    padding-bottom: 10px;
+.BigBox .ulIng, .BigBox .ulPrep {
+    padding-bottom: 20px;
+    padding-right: 40px;
 }
