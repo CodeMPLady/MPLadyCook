@@ -234,7 +234,7 @@
 
     .titreMer {
         text-decoration: underline;
-        font-size: 1.6em;
+        font-size: 1.9em;
         font-family: 'Dancing Script', cursive;
     }
 
@@ -253,8 +253,7 @@
     }
 
     .imgMer {
-        width: 140px;
-        height: 140px;
+        height: 180px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
     }
@@ -274,10 +273,10 @@
 .textPres {
     border-radius: 10px;
     padding: 0 10px 0 10px;
-    background-color:lightcyan;
-    box-shadow: 5px 5px 20px lightblue;
     text-align: center;
+    background-color:lightcyan;
     margin: 0px 15px 0px 15px;
+    box-shadow: 5px 5px 20px lightblue;
 }
 
 #mainUlMer {
@@ -298,10 +297,6 @@
 
 .ulMer {
     padding: 0px 15px 15px 15px;
-}
-
-.liMer, .imgMer {
-    transition: transform 0.4s ease;
 }
 
 .liMer::before {
@@ -342,7 +337,7 @@
 }
   
 .title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
   

@@ -5,6 +5,8 @@
 .closeHelp {
     background-color: lightblue;
     border-radius: 20px;
+    font-weight: 800;
+    border: 2px solid black;
 }
 
 .overlayBouton {
@@ -15,18 +17,12 @@
 
 .Astuce {
     position: absolute;
-    height: 200px;
-    width: 180px;
     border: 3px solid white;
-    background-color: white;
     background-image: url("../Images/Classique/bg_astuce.png");
     background-attachment: fixed;
     background-size: cover;
     border-radius: 20px;
-}
-
-.TxtAstuce {
-    font-size: 0.8em;
+    z-index: 10;
 }
 
 .HelpBtn {
@@ -71,33 +67,35 @@
     }
 
     .TxtAstuce {
-        font-size: 0.8em;
+        background-color: rgba(255, 255, 255, 0.551);
+        font-size: 0.85em;
         margin: 0;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 5px 15px 5px 15px;
     }
 }
 
 @media (max-width: 1000px){
     .Astuce {
-        width: 250px;
-        height: 250px;
+        width: 240px;
+        height: 235px;
     }
 
     .TxtAstuce {
-        font-size: 1.1em;
+        background-color: rgba(255, 255, 255, 0.551);
+        font-size: 1em;
         padding: 5px 15px 5px 15px;
     }
 }
 
 @media (max-width: 500px){
     .Astuce {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 235px;
     }
 
     .TxtAstuce {
-        font-size: 0.8em;
+        background-color: rgba(255, 255, 255, 0.551);
+        font-size: 0.9em;
         padding: 5px 15px 5px 15px;
     }
 }

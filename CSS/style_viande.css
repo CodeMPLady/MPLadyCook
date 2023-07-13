@@ -78,8 +78,7 @@
     }
 
     .imgViande {
-        width: 140px;
-        height: 140px;
+        height: 160px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
     }
@@ -258,7 +257,7 @@
     }
 
     .imgViande {
-        height: 140px;
+        height: 180px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px lightcyan;
     }
