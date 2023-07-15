@@ -44,18 +44,32 @@
 }
 
 body {
-    background-image: url(../Images/Accueil/fond.jpg);
-    background-size: contain;
+    background-image: url(../Images/Accueil/test_bg2.jpg);
+    background-size: cover;
 }
 
 .grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
     width: 100%;
+    animation: float 2s infinite alternate-reverse ease-in-out;
+    margin-bottom: 0;
+    margin-top: 0;
     justify-items: center;
     align-items: center;
 }
+.grid2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    animation: floatbis 2s infinite alternate-reverse ease-in-out;
+    margin-bottom: 40px;
+    margin-top: -40px;
+    justify-items: center;
+    align-items: center;
+}
+
+
 
 .titre {
     grid-row: 2 / 3;
@@ -85,4 +99,26 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+@keyframes float {
+    0% {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    100% {
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+}
+
+@keyframes floatbis {
+    0% {
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+    100% {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }

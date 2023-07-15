@@ -11,8 +11,8 @@ header {
 footer {
     display: flex;
     justify-content: space-between;
-    background-image: url(../Images/Accueil/footer.jpg);
-    background-size: contain;
+    background-image: url(../Images/Accueil/fond.jpg);
+    background-size: cover;
     border: 1px black solid;
     background-color: white;
     align-items: center;
@@ -21,7 +21,7 @@ footer {
 }
 
 #TxtFooter {
-    background-color: rgba(248, 240, 225, 0.706);
+    background-color: rgba(251, 251, 251, 0.706);
     padding: 10px;
     border-radius: 20px;
 }
@@ -41,12 +41,7 @@ footer {
     margin-bottom: 50px;
 }
 
-#search-input {
-    width: 300px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+
 
 #search-input:focus {
     outline: none;
@@ -67,17 +62,33 @@ footer {
         width: 50%;
         margin: auto;
     }
+
+    #search-input {
+        width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 500px) {
     #search-input:focus {
-        transform: scale(1.2);
+        transform: scale(1);
     }
 
     h1 {
         font-size: 1.3em;
     }
 
+    #search-input {
+        width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transform: scale(0.9);
+
+    }
     .result {
         display: grid;
         grid-template-columns: 1fr 1fr;
