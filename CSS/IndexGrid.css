@@ -45,7 +45,7 @@
 }
 
 body {
-    background-image: url(../Images/Accueil/bg_accueil.jpg);
+    background-image: url(../Images/Accueil/bg_accueil_compressed.jpg);
     background-size: cover;
     overflow-x: hidden;
 }
