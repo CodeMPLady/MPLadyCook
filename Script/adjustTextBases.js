@@ -18,7 +18,7 @@ function genererBaliseP() {
         let  createStyle =  document.createElement("style");
         let style = `
         #textPres {
-            font-size: 0.9em;
+            font-size: 0.95em;
         }
         #textPres:hover {
             background: -webkit-linear-gradient(45deg, rgba(16,6,255,1) 0%, rgba(50,50,50,1) 50%, rgba(255,0,0,1) 100%);

@@ -3,6 +3,17 @@
         width: 100%;
         height: 200px;
     }
+
+    .curve svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 160px;
+    }
+
+    .curve .shape-fill {
+        fill: rgba(102, 102, 102, 0.8)
+    }
     
     #search-input:focus {
         transform: scale(1.5);
@@ -38,7 +49,23 @@
         width: 100%;
         height: 200px;
     }
+
+    h1 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
     
+    .curve svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 170px;
+    }
+
+    .curve .shape-fill {
+        fill: rgb(102, 102, 102)
+    }
+
     #search-input:focus {
         transform: scale(1.5);
     }
@@ -73,7 +100,18 @@
         width: 100%;
         height: 150px;
     }
+
+    .curve svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
     
+    .curve .shape-fill {
+        fill: rgb(102, 102, 102)
+    }
+
     #search-input:focus {
         transform: scale(1);
     }
@@ -126,17 +164,6 @@
     line-height: 0;
 }
 
-.curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 200px;
-}
-
-.curve .shape-fill {
-    fill: rgba(102, 102, 102, 0.508)
-}
-
 #title {
     position: relative;
     text-align: center;
@@ -156,12 +183,13 @@ footer {
     display: flex;
     justify-content: space-between;
     background-image: url(../Images/Accueil/fond.jpg);
-    background-size: cover;
+    background-size: contain;
     border: 1px black solid;
     background-color: white;
     align-items: center;
     margin-top: 30px;
     text-align: center;
+
 }
 
 #TxtFooter:hover {

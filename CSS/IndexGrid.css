@@ -1,4 +1,11 @@
 @media (min-width: 1000px) {
+    body {
+        background-image: url(../Images/Accueil/bg_accueil_compressed.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
     .mainContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -27,7 +34,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: float 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: 50px;
         margin-top: -50px;
         justify-items: center;
@@ -40,7 +46,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: 20px;
         margin-top: -20px;
         justify-items: center;
@@ -53,7 +58,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: -10px;
         margin-top: 10px;
         justify-items: center;
@@ -66,7 +70,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: 20px;
         margin-top: -20px;
         justify-items: center;
@@ -79,7 +82,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: 50px;
         margin-top: -50px;
         justify-items: center;
@@ -91,6 +93,13 @@
 
 
 @media (min-width: 500px) and (max-width: 1000px) {
+    body {
+        background-image: url(../Images/Accueil/bg_index_small.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
     .mainContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -119,9 +128,8 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: float 2s infinite alternate-reverse ease-in-out; */
-        margin-bottom: -70px;
-        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-top: -50px;
         justify-items: center;
         align-items: center;
         box-shadow: 10px 10px 22px black;
@@ -132,9 +140,8 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
-        margin-bottom: -40px;
-        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-top: -20px;
         justify-items: center;
         align-items: center;
         box-shadow: 10px 10px 22px black;
@@ -145,7 +152,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: -10px;
         margin-top: 10px;
         justify-items: center;
@@ -158,7 +164,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: 20px;
         margin-top: -20px;
         justify-items: center;
@@ -171,7 +176,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
         margin-bottom: 50px;
         margin-top: -50px;
         justify-items: center;
@@ -182,6 +186,14 @@
 }
 
 @media (max-width: 500px) {
+    body {
+        background-image: url(../Images/Accueil/bg_index_small.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
     .mainContainer {
         display: grid;
         grid-template-columns: 1fr;
@@ -208,8 +220,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        margin-bottom: -70px;
-        margin-top: 70px;
         justify-items: center;
         align-items: center;
         border-radius: 8px;
@@ -219,8 +229,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        margin-bottom: -40px;
-        margin-top: 40px;
         justify-items: center;
         align-items: center;
         border-radius: 8px;
@@ -230,8 +238,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        margin-bottom: -10px;
-        margin-top: 10px;
         justify-items: center;
         align-items: center;
         border-radius: 8px;
@@ -241,8 +247,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        margin-bottom: 20px;
-        margin-top: -20px;
         justify-items: center;
         align-items: center;
         border-radius: 8px;
@@ -252,8 +256,6 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
-        margin-bottom: 50px;
-        margin-top: -50px;
         justify-items: center;
         align-items: center;
         border-radius: 8px;
@@ -261,12 +263,7 @@
     }
 }
 
-body {
-    background-image: url(../Images/Accueil/bg_accueil_compressed.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-}
+
 
 .titre {
     grid-row: 2 / 3;

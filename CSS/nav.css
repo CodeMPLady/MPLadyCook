@@ -101,7 +101,10 @@ span::after {
     height: 0;
 }    
 
-a:hover {
+a {
     font-size: 1.1em;
+}
+a:hover {
+    font-size: 1.2em;
 }
 
