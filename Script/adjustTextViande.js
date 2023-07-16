@@ -8,9 +8,9 @@ function genererBaliseP() {
     if (activateur) {
         activateur = false;
         if (largeurEcran < 770) {
-        nouvelElementP.textContent = "Qu'elle soit grillée, sautée ou marinée: dévorez!";
+        nouvelElementP.textContent = "Qu'elle soit grillée, sautée ou marinée : dévorez!";
         } else {
-        nouvelElementP.textContent = "Succombez aux plaisirs de la viande avec des plats qui célèbrent sa saveur et sa tendresse. Qu'elle soit grillée, sautée ou marinée: dévorez!";
+        nouvelElementP.textContent = "Succombez aux plaisirs de la viande avec des plats qui célèbrent sa saveur et sa tendresse. Qu'elle soit grillée, sautée ou marinée : dévorez!";
         }
         nouvelElementP.setAttribute('id', 'pres');
         parentElement.appendChild(nouvelElementP);

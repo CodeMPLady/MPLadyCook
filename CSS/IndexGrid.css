@@ -6,6 +6,7 @@
         padding-bottom: 100px;
         width: 100%;
         height: 300px;
+        margin-top: -50px;
     }
     .overlay {
         display: flex;
@@ -44,32 +45,75 @@
 }
 
 body {
-    background-image: url(../Images/Accueil/test_bg2.jpg);
+    background-image: url(../Images/Accueil/bg_accueil.jpg);
     background-size: cover;
+    overflow-x: hidden;
 }
 
-.grid {
+.grid1 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
-    animation: float 2s infinite alternate-reverse ease-in-out;
-    margin-bottom: 0;
-    margin-top: 0;
+    /* animation: float 2s infinite alternate-reverse ease-in-out; */
+    margin-bottom: -70px;
+    margin-top: 70px;
     justify-items: center;
     align-items: center;
+    box-shadow: 10px 10px 22px black;
+    border-radius: 8px;
 }
+
 .grid2 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
-    animation: floatbis 2s infinite alternate-reverse ease-in-out;
-    margin-bottom: 40px;
-    margin-top: -40px;
+    /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
+    margin-bottom: -40px;
+    margin-top: 40px;
     justify-items: center;
     align-items: center;
+    box-shadow: 10px 10px 22px black;
+    border-radius: 8px;
 }
 
+.grid3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
+    margin-bottom: -10px;
+    margin-top: 10px;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 10px 22px black;
+    border-radius: 8px;
+}
 
+.grid4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
+    margin-bottom: 20px;
+    margin-top: -20px;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 10px 22px black;
+    border-radius: 8px;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    /* animation: floatbis 2s infinite alternate-reverse ease-in-out; */
+    margin-bottom: 50px;
+    margin-top: -50px;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 10px 22px black;
+    border-radius: 8px;
+}
 
 .titre {
     grid-row: 2 / 3;
@@ -77,14 +121,13 @@ body {
     text-decoration: none;
     text-align: center;
     border: 2px solid black;
-    border-radius: 3px;
     padding: 5px;
     background-color: rgb(255, 255, 255);
 }
 
 .imgGrid {
     grid-row: 1 / 4;
-    border-radius: 5px;
+    border-radius: 8px;
     background-image: var(--image);
     background-size: cover;
     background-position: center;
@@ -94,6 +137,7 @@ body {
 
 .overlay:hover{
     opacity: 0.7;
+    border-radius: 5px;
 }
 
 a {
