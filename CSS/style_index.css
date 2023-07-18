@@ -1,6 +1,5 @@
 @media (min-width: 1000px) {
     header {
-        width: 100%;
         height: 200px;
     }
 
@@ -16,7 +15,7 @@
     }
     
     #search-input:focus {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 
     .result {
@@ -34,7 +33,6 @@
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        transform: scale(1.1);
     }
 
     #TxtFooter {
@@ -46,7 +44,6 @@
 
 @media (min-width: 500px) and (max-width: 1000px){
     header {
-        width: 100%;
         height: 200px;
     }
 
@@ -67,7 +64,7 @@
     }
 
     #search-input:focus {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 
     .result {
@@ -105,7 +102,7 @@
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
-        height: 150px;
+        height: 140px;
     }
     
     .curve .shape-fill {
@@ -117,25 +114,20 @@
     }
 
     h1 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     #search-input {
-        width: 300px;
+        width: 80%;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        transform: scale(0.9);
-
     }
 
     .result {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-        justify-content: center;
-        align-content: center;
-        place-items: center;
         width: 80%;
         margin: auto;
     }
@@ -158,10 +150,7 @@
 .curve {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
     overflow: hidden;
-    line-height: 0;
 }
 
 #title {

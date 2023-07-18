@@ -73,7 +73,7 @@
 
     .containerLI{
         display: inline-flex;
-        width: fit-content;
+        width: 95%;
         padding-right: 10px;
     }
     
@@ -140,7 +140,7 @@
         margin: 20px;
     }
 
-    .box:hover,.BigBox:hover, .imgFrais:hover, .imgFrais2:hover, .BigImgTop:hover, .BigImgBot:hover {
+    .box:hover,.BigBox:hover {
         transform: scale(1.01);
         border-radius:10px;
         box-shadow: 5px 5px 20px black;
