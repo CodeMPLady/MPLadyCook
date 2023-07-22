@@ -8,9 +8,9 @@ function genererBaliseP() {
     if (activateur) {
         activateur = false;
         if (largeurEcran < 770) {
-        nouvelElementP.textContent = "\"Il est frais mon poisson, il est frais!\", aussi emblématique qu'important.";
+        nouvelElementP.textContent = "\"Il est frais mon poisson, il est frais !\", aussi emblématique qu'important.";
         } else {
-        nouvelElementP.textContent = "\"Il est frais mon poisson, il est frais!\", une phrase emblématique pour un des paramètres les plus importants pour réussir une bonne recette à base de poisson.";
+        nouvelElementP.textContent = "\"Il est frais mon poisson, il est frais !\", une phrase emblématique pour un des paramètres les plus importants pour réussir une bonne recette à base de poisson.";
         }
         nouvelElementP.setAttribute('id', 'pres');
         parentElement.appendChild(nouvelElementP);

@@ -350,3 +350,7 @@
 a {
     color: white;
 }
+
+.hoverLink:hover {
+    font-size: 1.12em;
+}
