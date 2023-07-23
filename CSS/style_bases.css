@@ -32,6 +32,18 @@
         align-items: center;
     }
 
+    #BigBoxRiz {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 20% 30% 50%;
+        padding: 0px 20px 20px 0px;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        width: 95%;
+        align-items: center;
+    }
+
     .BigImgTop {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -41,6 +53,15 @@
         height: 200px;
     }
     
+    #BigImgTopRiz {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        height: 200px;
+        margin-top: 20px;
+    }
+
     .BigImgBot {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
@@ -49,17 +70,43 @@
         margin-top: 20px;    
         height: 200px;
     }
+
+    #BigImgBotRiz {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+        align-self: center;
+        height: 200px;
+        margin-top: 20px;
+    }
   
     .BigTitle {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         margin-top: 20px;
     }
+
+    #BigTitleRiz {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 20px;
+    }
+
+    #divBtnRiz {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
     
     .BigRecette {
         grid-column: 2 / 4;
         grid-row: 1 / 4;
         padding-top: 20px;
+    }
+
+    #BigRecetteRiz {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
     }
 
     .container {
@@ -72,7 +119,7 @@
     }
 
     .containerLI{
-        display: inline-flex;
+        display: grid;
         width: 95%;
         padding-right: 10px;
     }
@@ -140,20 +187,20 @@
         margin: 20px;
     }
 
-    .box:hover,.BigBox:hover {
-        transform: scale(1.01);
+    .box:hover,.BigBox:hover, #BigBoxRiz:hover {
+        /* transform: scale(1.01); */
         border-radius:10px;
         box-shadow: 5px 5px 20px black;
     }
     
-    .box, .BigBox, .imgFrais, .BigImgTop, .BigImgBot {
+    .box, .BigBox, #BigBoxRiz {
         transition: transform 0.3s ease;
     }
 
-    .BigBox .ulIng, .BigBox .ulPrep {
+    .BigBox .ulIng, .BigBox .ulPrep, #BigBoxRiz .ulIng, #BigBoxRiz .ulPrep {
         padding-bottom: 20px;
         padding-right: 0px;
-        padding-left: 27px;
+        padding-left: 20px;
     }
     
     .box .ulIng, .box .ulPrep {
@@ -182,6 +229,7 @@
     .containerLI{
         display: inline-flex;
         width: fit-content;
+        align-items:center;
         margin: 40px 30px 0 30px;
         flex-direction: column;
     }
@@ -193,6 +241,18 @@
         background: rgb(250, 236, 211);
         box-sizing: border-box;
         box-shadow: 1px 1px 20px black;
+    }
+
+    #BigBoxRiz {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 20% 30% 50%;
+        padding: 0px 20px 20px 0px;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        width: 90%;
+        align-items: center;
     }
 
     .img {
@@ -213,6 +273,15 @@
         margin-top: 20px;    
         height: 200px;
     }
+
+    #BigImgTopRiz {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        height: 200px;
+        margin-top: 20px;
+    }
  
     .BigImgBot {
         grid-column: 1 / 2;
@@ -222,6 +291,15 @@
         margin-top: 20px;    
         height: 200px;
     }
+
+    #BigImgBotRiz {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+        align-self: center;
+        height: 200px;
+        margin-top: 20px;
+    }
   
     .BigTitle {
         grid-column: 1 / 2;
@@ -229,11 +307,28 @@
         margin-top: 20px;
     }
 
+    #BigTitleRiz {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 10px;
+    }
+
+    #divBtnRiz {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+
     .BigRecette {
         grid-column: 2 / 4;
         grid-row: 1 / 4;
         padding-top: 20px;
         height: fit-content
+    }
+
+    #BigRecetteRiz {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
     }
 
     .box {
@@ -295,10 +390,10 @@
         padding-bottom: 10px;
     }
 
-    .BigBox .ulIng, .BigBox .ulPrep {
+    .BigBox .ulIng, .BigBox .ulPrep, #BigBoxRiz .ulIng, #BigBoxRiz .ulPrep {
         padding-bottom: 20px;
         padding-right: 0px;
-        padding-left: 27px;
+        padding-left: 20px;
     }
     
     .box .ulIng, .box .ulPrep {

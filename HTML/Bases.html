@@ -7,7 +7,7 @@
         <link rel="shortcut icon" type="image/png" href="../Images/mini_mplady_logo.png"/>
         <link href="../CSS/style_bases.css" rel="stylesheet">
         <link href="../CSS/nav.css" rel="stylesheet">
-        <link href="../CSS/Astuce-btn.css" rel="stylesheet">
+        <link href="../CSS/BtnRiz.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">    
@@ -38,50 +38,52 @@
         <main>
             <ul class="container">
                 <li class="containerLI">
-                    <div class="BigBox">
-                        <div class="BigTitle" id="rizVinaigre"><p class="BoxTitle">Le riz japonais</p>
+                    <div id="BigBoxRiz">
+                        <div id="BigTitleRiz" id="rizVinaigre">
+                            <p class="BoxTitle">Le riz japonais</p>
                         </div>
-                        <div class="BigImgTop"><img src="../Images/Base/riz_vinaigre.jpg" class="BigImg"></div>
-                        <div class="BigImgBot"><img src="../Images/Base/riz_vinaigre2.jpg" class="BigImg"></div>
-                        <div class="BigRecette">
-                            <!-- <button class="HelpBtnRiz">Astuce</button>
-                            <div class="overlayBoutonRiz">
-                                <div class="AstuceRiz">
-                                    <script src="../Script/HelpButton.js"></script>
-                                    <button class="closeHelpRiz">x</button>
-                                    <ul class="ulRec">
-                                        <li class="titleRecPart">Ingrédients supplémentaires :</li>
-                                        <ul class="ulIng">
-                                            <li class="liRec">2,5 cuillères à soupe de vinaigre de riz</li>
-                                            <li class="liRec">1,5 cuillère à soupe de sucre</li>
-                                        </ul>
-                                        <li class="titleRecPart">Etapes supplémentaires :</li>
-                                        <ul class="ulPrep">
-                                            <li class="liRec">- Mettre le vinaigre de riz et le sucre dans une casserole sur un feu doux</li>
-                                            <li class="liRec">- Une fois le sucre dissout, verser le mélange sur le riz</li>
-                                            <li class="liRec">- Bien remuer le riz pour que la totalité soit vinaigrée</li>
-                                        </ul>
-                                </div>
-                                </div>
-                            </div>                         -->
+                        <div id="divBtnRiz">
+                            <button class="HelpBtnRiz">Riz vinaigré</button>
+                        </div>
+                        <div id="BigImgTopRiz"><img src="../Images/Base/riz_vinaigre.jpg" class="BigImg"></div>
+                        <div id="BigImgBotRiz"><img src="../Images/Base/riz_vinaigre2.jpg" class="BigImg"></div>
+                        <div id="BigRecetteRiz">                        
                             <ul class="ulRec">
+                                <div class="AstuceRiz">
+                                    <div class="overlayBoutonRiz">
+                                        <script src="../Script/HelpButtonRiz.js"></script>
+                                        <ul class="ulRec">
+                                            <div id="divCloseRiz">
+                                                <button class="closeHelpRiz">X</button>
+                                            </div>
+                                            <div id="divRecetteRizVig">
+                                                <li class="titleRecPart">Ingrédients supplémentaires :</li>
+                                                <ul class="ulIng">
+                                                    <li class="liRec">2,5 cuillères à soupe de vinaigre de riz</li>
+                                                    <li class="liRec">1,5 cuillère à soupe de sucre</li>
+                                                </ul>
+                                            <li class="titleRecPart">Etapes supplémentaires :</li>
+                                                <ul class="ulPrep">
+                                                    <li class="liRec">- Mettre le vinaigre de riz et le sucre dans une casserole sur un feu doux</li>
+                                                    <li class="liRec">- Une fois le sucre dissout, verser le mélange sur le riz</li>
+                                                    <li class="liRec">- Bien remuer le riz pour que la totalité soit vinaigrée</li>
+                                                </ul>
+                                            </div>
+                                        </ul>        
+                                    </div>
+                                </div>
                                 <li class="titleRecPart">Ingrédients pour 2 portions :</li>
                                 <ul class="ulIng">
                                     <li class="liRec">175g de riz japonais</li>
-                                    <li class="liRec">2,5 cuillères à soupe de vinaigre de riz</li>
-                                    <li class="liRec">1,5 cuillère à soupe de sucre</li>
-                                    <li class="liRec">Une pincée de sel</li>
                                 </ul>
                                 <li class="titleRecPart">Préparation :</li>
                                 <ul class="ulPrep">
                                     <li class="liRec">- Bien rincer le riz</li>
-                                    <li class="liRec">- Le mettre dans une casserole avec un peu plus d'eau froide que de riz</li>
-                                    <li class="liRec">- Mettre le feu fort et dès que l'eau bout, couvrir et baisser le feu</li>
-                                    <li class="liRec">- Faire cuire à feu doux pendant 12 minutes</li>
-                                    <li class="liRec">- Une fois le riz cuit, l'étaler sur une assiette</li>
-                                    <li class="liRec">- Mettre le vinaigre de riz et le sucre dans une casserole sur un feu doux</li>
-                                    <li class="liRec">- Une fois le sucre dissout, verser le mélange sur le riz</li>
-                                    <li class="liRec">- Bien remuer le riz pour que la totalité soit vinaigrée</li>
+                                    <li class="liRec">- Le mettre dans une casserole avec un peu plus d'eau que de riz</li>
+                                    <li class="liRec">- Mettre le feu fort. Une fois que l'eau bout, couvrir et baisser le feu</li>
+                                    <li class="liRec">- Remuer de temps en temps pour éviter que le riz n'accroche la casserole</li>
+                                    <li class="liRec">- Faire cuire à feu doux pendant 12 min</li>
+                                    <li class="liRec">- Une fois cuit, l'étaler sur une assiette</li>
                                 </ul>
                             </ul>
                             
