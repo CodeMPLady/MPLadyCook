@@ -230,7 +230,7 @@
 .banner {
     display: flex;
     position: absolute;
-    background-image: url(../Images/Classique/pizza.jpg);
+    background-image: url(../Images/Classique/banner_classique.jpg);
     background-position: center;
     background-size: cover;
     height: 300px;

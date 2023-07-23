@@ -25,6 +25,7 @@
         background-image: url(../Images/Viande/bg_viande_big.svg);
         display: grid;
         background-position:center;
+        background-size:cover;
         margin-top: 300px;
         height: auto;
 

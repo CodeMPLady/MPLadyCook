@@ -153,10 +153,11 @@
     .BigBox .ulIng, .BigBox .ulPrep {
         padding-bottom: 20px;
         padding-right: 0px;
+        padding-left: 27px;
     }
     
     .box .ulIng, .box .ulPrep {
-        padding-left: 40px;
+        padding-left: 25px;
     }
 }
 
@@ -297,10 +298,11 @@
     .BigBox .ulIng, .BigBox .ulPrep {
         padding-bottom: 20px;
         padding-right: 0px;
+        padding-left: 27px;
     }
     
     .box .ulIng, .box .ulPrep {
-        padding-left: 40px;
+        padding-left: 25px;
     }
 }
 
@@ -416,6 +418,7 @@
     .ulRec {
         list-style: none;
         padding-left: 10px;
+        padding-top: 10px;
         font-size: 0.8em;
     }
 
@@ -470,12 +473,12 @@
     }
     
     .img {
-        height: 85px;
+        height: 120px;
         border-radius: 10px;
     }
 
     .BigImg {
-        height: 85px;
+        height: 100px;
         border-radius: 10px;
     }
 
