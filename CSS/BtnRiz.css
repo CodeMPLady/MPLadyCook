@@ -28,17 +28,58 @@
         height: fit-content;
         text-align: center;
     }
+
+    .HelpBtnRiz {
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+    }
+      
+    .HelpBtnRiz {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 8px 5px 8px;
+        cursor: pointer;
+        border: 1.5px solid black;
+        color: rgb(68, 68, 68);
+        font-size: 17px;
+        border-radius: 4px;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        box-shadow: 2px 2px 10px black;
+        background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        background-color:rgb(220, 219, 219);
+        background-size: 150%;
+        background-position: right;
+        transition: 1s;
+    }
+      
+    .HelpBtnRiz:hover {
+        background-position: left;
+        color: black;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+        box-shadow: 2px 2px 10px black;
+    }
+      
+    .HelpBtnRiz:focus {
+        outline: none;
+    }
 }
 
 @media (min-width:700px) and (max-width:1500px){
     .AstuceRiz {
-        width:50%;
+        width: 375px;
         height: fit-content;
         position:absolute;
         background-image: url("../Images/Classique/bg_astuce.png");
         background-attachment: fixed;
         background-size: cover;
         border-radius: 20px;
+        margin-left: -12px;
         z-index: 10;
         /* top: 71%;
         left: 20%; */
@@ -60,11 +101,51 @@
         height: fit-content;
         text-align: center;
     }
+
+    .HelpBtnRiz {
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+    }
+      
+    .HelpBtnRiz {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 8px 5px 8px;
+        cursor: pointer;
+        border: 1.5px solid black;
+        color: rgb(68, 68, 68);
+        font-size: 17px;
+        border-radius: 4px;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        box-shadow: 2px 2px 10px black;
+        background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        background-color:rgb(220, 219, 219);
+        background-size: 150%;
+        background-position: right;
+        transition: 1s;
+    }
+      
+    .HelpBtnRiz:hover {
+        background-position: left;
+        color: black;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+        box-shadow: 2px 2px 10px black;
+    }
+      
+    .HelpBtnRiz:focus {
+        outline: none;
+    }
 }
 
 @media (max-width:700px){
     .AstuceRiz {
-        width: 25%;
+        width: 280px;
         height: fit-content;
         position:absolute;
         background-image: url("../Images/Classique/bg_astuce.png");
@@ -76,6 +157,18 @@
         left: 20%; */
     }
 
+    .overlayBoutonRiz .ulRec {
+        padding: 15px 10px 5px 15px;
+    }
+
+    .overlayBoutonRiz .ulRec .ulIng, .overlayBoutonRiz .ulRec .ulPrep {
+        padding-left:3px;
+    }
+
+    .overlayBoutonRiz .liRec {
+        font-size: 12px;
+    }
+
     .closeHelpRiz {
         background-color: lightblue;
         border-radius: 20px;
@@ -83,13 +176,58 @@
         border: 2px solid black;
         height: fit-content;
         text-align: center;
+    }
+
+    .HelpBtnRiz {
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+    }
+      
+    .HelpBtnRiz {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 8px 5px 8px;
+        cursor: pointer;
+        border: 1.5px solid black;
+        color: rgb(68, 68, 68);
+        font-size: 14px;
+        border-radius: 4px;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        box-shadow: 2px 2px 10px black;
+        background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        background-color:rgb(220, 219, 219);
+        background-size: 150%;
+        background-position: right;
+        transition: 1s;
+    }
+      
+    .HelpBtnRiz:hover {
+        background-position: left;
+        color: black;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+        box-shadow: 2px 2px 10px black;
+    }
+      
+    .HelpBtnRiz:focus {
+        outline: none;
     }
 }
 
 @media (max-width:500px){
     .AstuceRiz {
-        width: 220px;
-        height: 235px;
+        width: 90%;
+        position:absolute;
+        background-image: url("../Images/Classique/bg_astuce.png");
+        background-attachment: fixed;
+        background-size: cover;
+        border-radius: 20px;
+        z-index: 10;
     }
 
     .closeHelpRiz {
@@ -99,6 +237,46 @@
         border: 2px solid black;
         height: fit-content;
         text-align: center;
+    }
+
+    .HelpBtnRiz {
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+    }
+      
+    .HelpBtnRiz {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 8px 5px 8px;
+        cursor: pointer;
+        border: 1.5px solid black;
+        color: rgb(68, 68, 68);
+        font-size: 14px;
+        border-radius: 4px;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        box-shadow: 2px 2px 10px black;
+        background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        background-color:rgb(220, 219, 219);
+        background-size: 150%;
+        background-position: right;
+        transition: 1s;
+    }
+      
+    .HelpBtnRiz:hover {
+        background-position: left;
+        color: black;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+        box-shadow: 2px 2px 10px black;
+    }
+      
+    .HelpBtnRiz:focus {
+        outline: none;
     }
 }
 
@@ -114,50 +292,3 @@
     border-radius: 20px;
     border: 3px solid rgb(58, 58, 58);
 }
-
-.HelpBtnRiz {
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-          -webkit-tap-highlight-color: transparent;
-}
-  
-.HelpBtnRiz {
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px 8px 5px 8px;
-    cursor: pointer;
-    border: 1.5px solid black;
-    color: rgb(68, 68, 68);
-    font-size: 17px;
-    border-radius: 4px;
-    box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
-    box-shadow: 2px 2px 10px black;
-    background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
-    background-color:rgb(220, 219, 219);
-    background-size: 150%;
-    background-position: right;
-    transition: 1s;
-}
-  
-.HelpBtnRiz:hover {
-    background-position: left;
-    color: black;
-    box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
-    box-shadow: 2px 2px 10px black;
-}
-  
-.HelpBtnRiz:focus {
-    outline: none;
-}
-
-/* @media (max-width: 1000px){
-    .AstuceRiz {
-        width: 240px;
-        height: 235px;
-    }
-} */
