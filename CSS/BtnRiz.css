@@ -12,18 +12,16 @@
         left: 20%; */
     }
 
-    .overlayBoutonRiz {
-        display: none;
-        justify-content: center;
-        background-color: rgba(241, 240, 240, 0.5);
-        border-radius: 20px;
-        border: 3px solid rgb(58, 58, 58);
+    .overlayBoutonRiz .ulRec {
+        padding: 25px 10px 5px 15px;
     }
 
-    .overlayBoutonRiz {
-        display: none;
-        justify-content: center;
-        background-color: rgba(241, 240, 240, 0.5);
+    .overlayBoutonRiz .ulRec .ulIng, .overlayBoutonRiz .ulRec .ulPrep {
+        padding-left:3px;
+    }
+
+    .closeHelpRiz {
+        background-color: lightblue;
         border-radius: 20px;
         font-weight: 800;
         border: 2px solid black;
@@ -31,16 +29,6 @@
         text-align: center;
     }
 
-    .HelpBtnRiz {
-        -webkit-touch-callout: none;
-          -webkit-user-select: none;
-           -khtml-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-              -webkit-tap-highlight-color: transparent;
-    }
-      
     .HelpBtnRiz {
         margin: auto;
         width: fit-content;
@@ -72,27 +60,17 @@
     }
 }
 
-@media (min-width:920px) and (max-width:1500px){
+@media (min-width:900px) and (max-width:1500px){
     .AstuceRiz {
-        width:450px;
+        width: 530px;
         height: fit-content;
         position:absolute;
         background-image: url("../Images/Classique/bg_astuce.png");
         background-attachment: fixed;
         background-size: cover;
         border-radius: 20px;
-        margin-left: -12px;
+        margin-left: -17px;
         z-index: 10;
-        /* top: 71%;
-        left: 20%; */
-    }
-
-    .overlayBoutonRiz {
-        display: none;
-        justify-content: center;
-        background-color: rgba(241, 240, 240, 0.5);
-        border-radius: 20px;
-        border: 3px solid rgb(58, 58, 58);
     }
 
     .overlayBoutonRiz .ulRec {
@@ -113,16 +91,6 @@
     }
 
     .HelpBtnRiz {
-        -webkit-touch-callout: none;
-          -webkit-user-select: none;
-           -khtml-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-              -webkit-tap-highlight-color: transparent;
-    }
-      
-    .HelpBtnRiz {
         margin: auto;
         width: fit-content;
         height: fit-content;
@@ -153,9 +121,9 @@
     }
 }
 
-@media (min-width:920px) and (max-width:1500px){
+@media (max-width:900px){
     .AstuceRiz {
-        width: 280px;
+        width: 290px;
         height: fit-content;
         position:absolute;
         background-image: url("../Images/Classique/bg_astuce.png");
@@ -163,8 +131,6 @@
         background-size: cover;
         border-radius: 20px;
         z-index: 10;
-        /* top: 71%;
-        left: 20%; */
     }
 
     .overlayBoutonRiz .ulRec {
@@ -186,16 +152,6 @@
         border: 2px solid black;
         height: fit-content;
         text-align: center;
-    }
-
-    .HelpBtnRiz {
-        -webkit-touch-callout: none;
-          -webkit-user-select: none;
-           -khtml-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-              -webkit-tap-highlight-color: transparent;
     }
       
     .HelpBtnRiz {
@@ -229,7 +185,7 @@
     }
 }
 
-@media (max-width:920px){
+@media (max-width:510px){
     .AstuceRiz {
         width: 90%;
         position:absolute;
@@ -240,6 +196,10 @@
         z-index: 10;
     }
 
+    .overlayBoutonRiz .ulRec .ulIng, .overlayBoutonRiz .ulRec .ulPrep {
+        padding-left:3px;
+    }
+
     .closeHelpRiz {
         background-color: lightblue;
         border-radius: 20px;
@@ -247,16 +207,6 @@
         border: 2px solid black;
         height: fit-content;
         text-align: center;
-    }
-
-    .HelpBtnRiz {
-        -webkit-touch-callout: none;
-          -webkit-user-select: none;
-           -khtml-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-              -webkit-tap-highlight-color: transparent;
     }
       
     .HelpBtnRiz {
@@ -301,4 +251,14 @@
     background-color: rgba(241, 240, 240, 0.5);
     border-radius: 20px;
     border: 3px solid rgb(58, 58, 58);
+}
+
+.HelpBtnRiz {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
 }
