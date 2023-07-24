@@ -12,16 +12,10 @@
         left: 20%; */
     }
 
-    .overlayBoutonRiz .ulRec {
-        padding: 25px 10px 5px 15px;
-    }
-
-    .overlayBoutonRiz .ulRec .ulIng, .overlayBoutonRiz .ulRec .ulPrep {
-        padding-left:3px;
-    }
-
-    .closeHelpRiz {
-        background-color: lightblue;
+    .overlayBoutonRiz {
+        display: none;
+        justify-content: center;
+        background-color: rgba(241, 240, 240, 0.5);
         border-radius: 20px;
         font-weight: 800;
         border: 2px solid black;
@@ -143,7 +137,7 @@
     }
 }
 
-@media (max-width:700px){
+@media (min-width:920px) and (max-width:1500px){
     .AstuceRiz {
         width: 280px;
         height: fit-content;
@@ -219,7 +213,7 @@
     }
 }
 
-@media (max-width:500px){
+@media (max-width:920px){
     .AstuceRiz {
         width: 90%;
         position:absolute;

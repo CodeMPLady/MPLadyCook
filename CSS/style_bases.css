@@ -188,7 +188,7 @@
     }
 
     .box:hover,.BigBox:hover, #BigBoxRiz:hover {
-        transform: scale(1.01);
+        /* transform: scale(1.01); */
         border-radius:10px;
         box-shadow: 5px 5px 20px black;
     }
@@ -422,6 +422,7 @@
     .containerLI{
         display: inline-flex;
         margin: 40px 30px 0 30px;
+        justify-content: center;
     }
 
     .img {
@@ -429,6 +430,48 @@
         border-radius: 10px;
     }
 
+    #BigBoxRiz {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 20% 30% 50%;
+        padding: 0px 20px 20px 0px;
+        background: rgb(250, 236, 211);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 20px black;
+        width: 90%;
+        align-items: center;
+    }
+
+    #BigImgTopRiz {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        margin-top: 10px;
+    }
+    #BigImgBotRiz {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #BigTitleRiz {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 10px;
+    }
+
+    #divBtnRiz {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+
+    #BigRecetteRiz {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
     .BigImg {
         height: 115px;
         margin-left: 10px;
@@ -570,7 +613,7 @@
 
     .liRec{
         list-style: none;
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 18px;
         padding-right: 40px;
     }
@@ -604,7 +647,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
     h1 {
         text-align: center;
         padding: 20px 50px 20px 50px;
@@ -752,7 +795,10 @@
         list-style: none;
         padding-left: 10px;
         font-size: 0.8em;
+        padding-inline-start: 10px;
     }
+
+    
 
     .liRec{
         list-style: none;
