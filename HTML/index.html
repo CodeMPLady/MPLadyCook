@@ -5,6 +5,7 @@
         <link href="../CSS/style_index.css" rel="stylesheet">
         <link href="../CSS/square.css" rel="stylesheet">
         <link href="../CSS/IndexGrid.css" rel="stylesheet">
+        <link rel="stylesheet" href="formulaire.css">
         <link rel="shortcut icon" type="image/png" href="../Images/mini_mplady_logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,6 +78,29 @@
             <div class="result">
             
             </div>
+            <section id="formulaire">
+                <div class="formContainer">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="pseudonyme">Pseudonyme</label>
+                            <input type="text" id="pseudonyme" name="pseudonyme">
+                        </div>
+                        <div class="form-group">
+                            <label for="recetteName">Nom de la recette</label>
+                            <input type="text" id="recetteName" name="recetteName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="recette">Recette</label>
+                            <textarea name="recette" id="recette" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
             <img src="../Images/mplady_logo.png" class="logo">

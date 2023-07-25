@@ -21,7 +21,7 @@ export function searchRecipes(query) {
         { name: "Limande du Nord", url: "PlatsMer.html", anchor: "limande"},
         { name: "Makis", url: "PlatsMer.html", anchor: "makis"},
         { name: "Pâte à pizza", url: "Bases.html", anchor: "patePizza" },
-        { name: "Riz vinaigré", url: "Bases.html", anchor: "rizVinaigre"},
+        { name: "Riz japonais", url: "Bases.html", anchor: "BigTitleRiz"},
         { name: "Pâte brisée", url: "Bases.html", anchor: "pateBrisee"},
         { name: "Tortillas", url: "Bases.html", anchor: "tortillas"},
         { name: "Sauce yakiniku", url: "Bases.html", anchor: "yakiniku"},
