@@ -29,10 +29,11 @@
     }
 
     #search-input {
-        width: 300px;
+        width: 450px;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        border: 2px solid black;
     }
 
     #TxtFooter {
@@ -78,11 +79,12 @@
     }
 
     #search-input {
-        width: 300px;
+        width: 350px;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
         transform: scale(1.1);
+        border: 2px solid black;
     }
 
     #TxtFooter {
@@ -122,6 +124,7 @@
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        border: 2px solid black;
     }
 
     .result {

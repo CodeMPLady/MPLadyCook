@@ -150,7 +150,7 @@
     .liIng {
         list-style-type: square;
         text-align: left;
-        font-size: 1.3em;
+        font-size: 1.2em;
         line-height: 25px;
     }
 
@@ -250,6 +250,7 @@
         padding-bottom: 15px;
         list-style-type: none;
         text-align: left;
+        font-size: 1.2em;
     }
 
     .imgMer {

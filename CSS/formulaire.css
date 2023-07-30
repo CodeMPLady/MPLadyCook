@@ -122,7 +122,7 @@
     
     .formContainer {
         width: 100%;
-        max-width: 350px;
+        max-width: 400px;
         padding: 0px 20px 20px 20px;
         background-image: url(../Images/Accueil/bg_form.jpg);
         background-size: contain;
