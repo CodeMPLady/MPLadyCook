@@ -1,0 +1,451 @@
+@media (min-width:1000px){
+    #formulaire {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .formContainer {
+        width: 100%;
+        max-width: 450px;
+        padding: 0px 20px 20px 20px;
+        background-image: url(../Images/Accueil/bg_form.jpg);
+        background-size: contain;
+        box-shadow: 0px 0px 12px black;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        width: 97%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .labelRecette {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .textRecette {
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:10px;
+    }
+    
+    #pseudonyme, #recetteName, #email, #recette, #ingredients {
+        width: 100%;
+        padding:5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top: 5px;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+
+    label {
+        /* background-color: rgba(255, 255, 255, 0.3); */
+        color: white;
+        padding: 2px 5px 2px 5px;
+        border-radius: 3px;
+    }
+    
+    button {
+        width:100%;
+        border: none;
+        padding: 15px 20px 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+        color: black;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s ease background-color;
+    }
+    
+    button:hover {
+        background-color: white;
+    }
+    
+    #status {
+        width:50%;
+        max-width: 450px;
+        text-align: center;
+        padding:10px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    
+    #status.sucess {
+        background-color: #7ec771;
+        animation: status 4s ease forwards;
+    }
+    
+    #status.error {
+        background-color: #de7657;
+        animation: status 4s ease forwards;
+    }
+    
+    @keyframes status {
+        0%{
+            opacity: 0.5;
+            pointer-events: all;
+        }
+    
+        50%{
+            opacity: 1;
+            pointer-events: all;
+        }
+    
+        100%{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+@media (min-width:500px) and (max-width:1000px){
+    #formulaire {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .formContainer {
+        width: 100%;
+        max-width: 350px;
+        padding: 0px 20px 20px 20px;
+        background-image: url(../Images/Accueil/bg_form.jpg);
+        background-size: contain;
+        box-shadow: 0px 0px 12px black;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        width: 97%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .labelRecette {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .textRecette {
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:10px;
+    }
+    
+    #pseudonyme, #recetteName, #email, #recette, #ingredients {
+        width: 100%;
+        padding:5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top: 5px;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+
+    label {
+        /* background-color: rgba(255, 255, 255, 0.3); */
+        color: white;
+        padding: 2px 5px 2px 5px;
+        border-radius: 3px;
+    }
+    
+    button {
+        width:100%;
+        border: none;
+        padding: 15px 20px 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+        color: black;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s ease background-color;
+    }
+    
+    button:hover {
+        background-color: white;
+    }
+    
+    #status {
+        width:50%;
+        max-width: 450px;
+        text-align: center;
+        padding:10px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    
+    #status.sucess {
+        background-color: #7ec771;
+        animation: status 4s ease forwards;
+    }
+    
+    #status.error {
+        background-color: #de7657;
+        animation: status 4s ease forwards;
+    }
+    
+    @keyframes status {
+        0%{
+            opacity: 0.5;
+            pointer-events: all;
+        }
+    
+        50%{
+            opacity: 1;
+            pointer-events: all;
+        }
+    
+        100%{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+@media (min-width:400px) and (max-width:500px){
+    #formulaire {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .formContainer {
+        width: 100%;
+        max-width: 360px;
+        padding: 0px 20px 20px 20px;
+        background-image: url(../Images/Accueil/bg_form.jpg);
+        background-size: cover;
+        box-shadow: 0px 0px 12px black;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        width: 97%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .labelRecette {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .textRecette {
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:10px;
+    }
+    
+    #pseudonyme, #recetteName, #email, #recette, #ingredients {
+        width: 100%;
+        padding:5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top: 5px;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+
+    label {
+        /* background-color: rgba(255, 255, 255, 0.3); */
+        color: white;
+        padding: 2px 5px 2px 5px;
+        border-radius: 3px;
+    }
+    
+    button {
+        width:100%;
+        border: none;
+        padding: 15px 20px 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+        color: black;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s ease background-color;
+    }
+    
+    button:hover {
+        background-color: white;
+    }
+    
+    #status {
+        width:50%;
+        max-width: 450px;
+        text-align: center;
+        padding:10px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    
+    #status.sucess {
+        background-color: #7ec771;
+        animation: status 4s ease forwards;
+    }
+    
+    #status.error {
+        background-color: #de7657;
+        animation: status 4s ease forwards;
+    }
+    
+    @keyframes status {
+        0%{
+            opacity: 0.5;
+            pointer-events: all;
+        }
+    
+        50%{
+            opacity: 1;
+            pointer-events: all;
+        }
+    
+        100%{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+@media (max-width:400px){
+    #formulaire {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .formContainer {
+        width: 100%;
+        max-width: 300px;
+        padding: 0px 20px 20px 20px;
+        background-image: url(../Images/Accueil/bg_form.jpg);
+        background-size: cover;
+        box-shadow: 0px 0px 12px black;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        width: 97%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .labelRecette {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .textRecette {
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:10px;
+    }
+    
+    #pseudonyme, #recetteName, #email, #recette, #ingredients {
+        width: 100%;
+        padding:5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top: 5px;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+
+    label {
+        /* background-color: rgba(255, 255, 255, 0.3); */
+        color: white;
+        padding: 2px 5px 2px 5px;
+        border-radius: 3px;
+    }
+    
+    button {
+        width:100%;
+        border: none;
+        padding: 15px 20px 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+        color: black;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s ease background-color;
+    }
+    
+    button:hover {
+        background-color: white;
+    }
+    
+    #status {
+        width:50%;
+        max-width: 450px;
+        text-align: center;
+        padding:10px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    
+    #status.sucess {
+        background-color: #7ec771;
+        animation: status 4s ease forwards;
+    }
+    
+    #status.error {
+        background-color: #de7657;
+        animation: status 4s ease forwards;
+    }
+    
+    @keyframes status {
+        0%{
+            opacity: 0.5;
+            pointer-events: all;
+        }
+    
+        50%{
+            opacity: 1;
+            pointer-events: all;
+        }
+    
+        100%{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}

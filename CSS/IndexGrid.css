@@ -1,8 +1,8 @@
 @media (min-width: 1000px) {
     body {
-        background-image: url(../Images/Accueil/bg_accueil_compressed.jpg);
+        background-image: url(../Images/Accueil/bg_accueil_compressed2_big.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-attachment: fixed;
         overflow-x: hidden;
     }
 
@@ -78,9 +78,10 @@
 
 @media (min-width: 500px) and (max-width: 1000px) {
     body {
-        background-image: url(../Images/Accueil/bg_index_small.jpg);
+        background-image: url(../Images/Accueil/bg_accueil_compressed2_medium.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
         overflow-x: hidden;
     }
 
@@ -156,8 +157,9 @@
     body {
         background-image: url(../Images/Accueil/bg_index_small.jpg);
         background-size: cover;
-        background-position: top;
+        /* background-position: left; */
         background-repeat: no-repeat;
+        background-attachment: fixed;
         overflow-x: hidden;
     }
 

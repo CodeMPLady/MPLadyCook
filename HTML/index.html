@@ -5,13 +5,19 @@
         <link href="../CSS/style_index.css" rel="stylesheet">
         <link href="../CSS/square.css" rel="stylesheet">
         <link href="../CSS/IndexGrid.css" rel="stylesheet">
-        <link rel="stylesheet" href="formulaire.css">
+        <link rel="stylesheet" href="../CSS/formulaire.css">
         <link rel="shortcut icon" type="image/png" href="../Images/mini_mplady_logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap" rel="stylesheet">
         <meta charset="utf-8">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <title>MPLadyCook</title>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("GDzoCCgQXqdRQ79no");
+            })();
+        </script>
     </head>
     <body> 
         <header>
@@ -80,7 +86,6 @@
             </div>
             <section id="formulaire">
                 <div class="formContainer">
-                    <form action="">
                         <div class="form-group">
                             <label for="pseudonyme">Pseudonyme</label>
                             <input type="text" id="pseudonyme" name="pseudonyme">
@@ -91,15 +96,20 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
+                            <input type="text" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
+                        <div class="labelRecette">
+                            <label for="ingredients">Ingrédients</label>
                             <label for="recette">Recette</label>
+                        </div>
+                        <div class="textRecette">
+                            <textarea name="ingredients" id="ingredients" cols="30" rows="10"></textarea>
                             <textarea name="recette" id="recette" cols="30" rows="10"></textarea>
                         </div>
-                        <button type="submit">Envoyer</button>
-                    </form>
+                        <button type="submit" onclick="sendMail()" id="boutton">Envoyer</button>
                 </div>
+                <div id="status"></div>
+                <script src="../Script/formulaire.js"></script>
             </section>
         </main>
         <footer>
