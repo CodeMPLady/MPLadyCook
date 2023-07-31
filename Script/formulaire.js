@@ -12,6 +12,8 @@ function sendMail(){
         alert("Les champs \"Nom de la recette\", \"Ingrédients\" et \"Recette\" doivent être remplis");
         checkErrorForm = true;
         return;
+    } else {
+        checkErrorForm = false;
     }
 
     const serviceID = "service_1779go3";
@@ -33,11 +35,17 @@ function sendMail(){
 window.addEventListener("DOMContentLoaded", function() {
     var button = this.document.getElementById("boutton")
     var status = this.document.getElementById("status");
+    var delay = 3400;
     
     button.addEventListener("click", function() {
+        console.log(checkErrorForm);
         if (checkErrorForm === false){
             status.classList.add("sucess");
+            console.log("Youpi");
             status.innerHTML = "Merci !";
+            setTimeout(function() {
+                window.location.reload();
+            }, delay);
         }
     })
 });
