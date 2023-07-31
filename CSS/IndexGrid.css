@@ -87,7 +87,7 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 501px) and (max-width: 1000px) {
     body {
         background-image: url(../Images/Accueil/bg_accueil_compressed2_medium.jpg);
         background-size: cover;
@@ -175,7 +175,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 501px) {
     body {
         background-image: url(../Images/Accueil/bg_index_small3.jpg);
         overflow-x: hidden;
