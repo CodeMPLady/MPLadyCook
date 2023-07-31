@@ -1,3 +1,5 @@
+var checkErrorForm = false;
+
 function sendMail(){
     var parametres = {
         pseudonyme: document.getElementById("pseudonyme").value,
@@ -6,18 +8,9 @@ function sendMail(){
         ingredients: document.getElementById("ingredients").value,
         recette: document.getElementById("recette").value,
     };
-    if (document.getElementById("recetteName").value == "") {
+    if (document.getElementById("recetteName").value == "" || document.getElementById("recette").value == "" || document.getElementById("ingredients").value == "") {
         alert("Les champs \"Nom de la recette\", \"Ingrédients\" et \"Recette\" doivent être remplis");
-        return;
-    }
-    
-    if (document.getElementById("recette").value == "") {
-        alert("Les champs \"Nom de la recette\", \"Ingrédients\" et \"Recette\" doivent être remplis");
-        return;
-    }
-
-    if (document.getElementById("ingredients").value == "") {
-        alert("Les champs \"Nom de la recette\", \"Ingrédients\" et \"Recette\" doivent être remplis");
+        checkErrorForm = true;
         return;
     }
 
@@ -42,33 +35,9 @@ window.addEventListener("DOMContentLoaded", function() {
     var status = this.document.getElementById("status");
     
     button.addEventListener("click", function() {
+        if (checkErrorForm === false){
             status.classList.add("sucess");
-            console.log("click")
             status.innerHTML = "Merci !";
+        }
     })
 });
-
-
-
-// window.addEventListener("DOMContentLoaded", function() {
-//     var form = document.getElementById("form");
-//     var status = this.document.getElementById("status");
-
-//     function success() {
-//         form.reset()
-//         status.classList.add("success");
-//         status.innerHTML = "Merci !";
-//     }
-
-//     function error () {
-//         status.classList.add("error");
-//         status.innerHTML = "Oups, un problème est survenu";
-//     }
-    
-//     form.addEventListener("submit"), function(ev) {
-//         ev.preventDefault();
-//         var data = new FormData(form);
-//         ajax(form.method, form.action, data, success, error);
-//     }
-// });
-
