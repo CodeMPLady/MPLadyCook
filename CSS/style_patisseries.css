@@ -1,9 +1,9 @@
-body {
-    background-image:  url("../Images/Patisserie/Shiny\ Overlay.svg");
-    background-size: cover;
-}
-
-@media (min-width: 700px) {
+@media (min-width: 800px) {
+    body {
+        background-image:  url("../Images/Patisserie/Shiny\ Overlay.svg");
+        background-size: cover;
+    }
+    
     h1 {
         background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
         width: fit-content;
@@ -20,11 +20,10 @@ body {
     .olcards, .olcards {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
     
     .olcards {
-        /* counter-reset: cardCount; */
         display: flex;
         flex-direction: column;
         --cardsGap: 1.5rem;
@@ -34,9 +33,11 @@ body {
     }
 
     .container {
-        display: flex;
-        gap: 7em;
+        display: grid;
+        grid-template-columns: 30% 70%;
         margin-top: 20px;
+        width: 90%;
+        justify-items: center;
     }
 
     .TIng {
@@ -48,20 +49,23 @@ body {
 
     .ingredients {
         display: flex;
-        margin-left: 50px;
+        margin-left: 10px;
         align-items: center;
     }
     
     .preparation {
         background-color: white;
-        padding: 0px 80px 30px 20px;
+        padding: 0px 0px 30px 20px;
         border-radius: 6px;
         border: 2px black solid;
         box-shadow: 6px 6px 20px;
+        width: 80%;
     }
     
     .content {
         display: grid;
+        width: 100%;
+        justify-content: start;
         background-color: var(--cardColor);
         --inlinePadding: -5em;
         --boxPadding: 0.5em;
@@ -87,6 +91,7 @@ body {
         --labelOffset: 6rem;
         --arrowClipSize: 1.5rem;
         margin-top: var(--labelOffset);
+        width: 90%;
     }
 
     .icon {
@@ -103,8 +108,9 @@ body {
     
     .text {
         grid-area: text;
-        width: 1000px;
+        width: fit-content;
         font-size: 1.1em;
+        padding-right: 20px;
     }
 
     .Eximg {
@@ -124,7 +130,13 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+    body {
+        background-image:  url("../Images/Patisserie/Shiny\ Overlay.svg");
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    
     h1 {
         background: radial-gradient(circle, rgb(150, 196, 255) 35%, rgb(88, 125, 173) 100%);
         width: fit-content;
@@ -266,15 +278,33 @@ body {
 }   
 
 .tdpat, .thpat {
-    padding: 15px 20px 15px 20px;
+    padding: 15px 10px 15px 10px;
 }
 
-#theadpat .thpat{ 
+#thpatRecette {
+    background: #d6cfae;
+    font-size:16px;
+    text-align: center;
+    padding: 15px;
+}
+
+#theadpat .thpat { 
     background: #d6cfae;
     font-size:16px;
     text-align: left;
     padding: 15px;
 }
+
+.breakTD {
+    background-color: rgb(234, 234, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    padding: 2px 5px 2px 5px;
+    margin: auto;
+}
+
 
 #tbodypat tr {
     border-bottom:1px solid rgba(196, 196, 196, 0.402) ;
@@ -306,12 +336,18 @@ body {
     }
 }
 
+.breakTD a:hover {
+    font-size: 1.05em;
+}
+
+.breakTD:hover {
+    background-color: white;
+}
+
 #Tpat a:link, a:visited {
     text-decoration: none;
     color: rgb(82, 27, 27);
-    background-color: rgb(241, 241, 254);
-    border: 1px solid black;
-    border-radius: 5px;
+    
     padding: 2px 5px 2px 5px;
 }
 

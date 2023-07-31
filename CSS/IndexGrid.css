@@ -177,11 +177,7 @@
 
 @media (max-width: 500px) {
     body {
-        background-image: url(../Images/Accueil/bg_index_small_resized.jpg);
-        background-size: cover;
-        /* background-position: left; */
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-image: url(../Images/Accueil/bg_index_small3.jpg);
         overflow-x: hidden;
     }
 

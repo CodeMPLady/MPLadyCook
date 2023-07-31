@@ -51,7 +51,7 @@ function genererBalise(IDdiv, BigTxt, Smalltxt, activateur) {
         let parentElement = document.getElementById(IDdiv);
         let largeurEcran = window.innerWidth;
 
-        if (largeurEcran > 770) {
+        if (largeurEcran > 800) {
             nouvelElementP.textContent = BigTxt;
         } else {
             nouvelElementP.textContent = Smalltxt;
