@@ -7,10 +7,11 @@ let activateurBrioche = true;
 let activateurTiramisu = true;
 let activateurMeringues = true;
 let activateurRoule = true;
+let activateurBrownie = true;
 
 let IDGateauChoc = "IDGateauChoc";
-let BigTxtChoc = "Un gâteau gourmand, classique et polyvalent qui se marie très bien avec de la chantilly maison";
-let SmallTxtChoc = "Un gâteau gourmand, classique et polyvalent !";
+let BigTxtChoc = "Un gâteau classique et polyvalent qui se marie très bien avec de la chantilly maison";
+let SmallTxtChoc = "Un gâteau classique et polyvalent !";
 
 let IDCookies = "IDCookies";
 let BigTxtCookies = "Gourmandise simple et réconfortante à partager à tout moment de la journée";
@@ -44,6 +45,10 @@ let IDRoule = "IDRoule";
 let BigTxtRoule = "Un gâteau roulé élégant et savoureux, délicieusement garni";
 let SmallTxtRoule = "Un tourbillon de saveurs dans chaque tranche";
 
+let IDBrownie = "IDBrownie";
+let BigTxtBrownie = "Un indispensable pour les gourmands du chocolat, qui peut être complété par de la chantilly maison";
+let SmallTxtBrownie = "Un indispensable pour les gourmands du chocolat";
+
 
 function genererBalise(IDdiv, BigTxt, Smalltxt, activateur) {
     if (activateur) {
@@ -70,6 +75,7 @@ window.onload = function () {
     genererBalise(IDTiramisu, BigTxtTiramisu, SmallTxtTiramisu, activateurTiramisu);
     genererBalise(IDMeringues, BigTxtMeringues, SmallTxtMeringues, activateurMeringues);
     genererBalise(IDRoule, BigTxtRoule, SmallTxtRoule, activateurRoule);
+    genererBalise(IDBrownie, BigTxtBrownie, SmallTxtBrownie, activateurBrownie);
 };
 
 window.onresize = function () {
@@ -82,6 +88,7 @@ window.onresize = function () {
     let parentElement7 = document.getElementById(IDTiramisu);
     let parentElement8 = document.getElementById(IDMeringues);
     let parentElement9 = document.getElementById(IDRoule);
+    let parentElement10 = document.getElementById(IDBrownie);
 
     parentElement1.innerHTML = "";
     parentElement2.innerHTML = "";
@@ -92,6 +99,7 @@ window.onresize = function () {
     parentElement7.innerHTML = "";
     parentElement8.innerHTML = "";
     parentElement9.innerHTML = "";
+    parentElement10.innerHTML = "";
 
     activateurGatChoc = true;
     activateurCookie = true;
@@ -102,6 +110,7 @@ window.onresize = function () {
     activateurPancakes = true;
     activateurRoule = true;
     activateurTiramisu = true;
+    activateurBrownie = true;
 
     genererBalise(IDGateauChoc, BigTxtChoc, SmallTxtChoc, activateurGatChoc);
     genererBalise(IDCookies, BigTxtCookies, SmalltxtCookies, activateurCookie);
@@ -112,4 +121,5 @@ window.onresize = function () {
     genererBalise(IDTiramisu, BigTxtTiramisu, SmallTxtTiramisu, activateurTiramisu);
     genererBalise(IDMeringues, BigTxtMeringues, SmallTxtMeringues, activateurMeringues);
     genererBalise(IDRoule, BigTxtRoule, SmallTxtRoule, activateurRoule);
+    genererBalise(IDBrownie, BigTxtBrownie, SmallTxtBrownie, activateurBrownie);
 };
