@@ -12,6 +12,7 @@ export function searchRecipes(query) {
         { name: "Meringues", url: "Pages/Patisseries.html", anchor: "meringues"},
         { name: "Gâteau roulé", url: "Pages/Patisseries.html", anchor: "roule"},
         { name: "Brownie", url: "Pages/Patisseries.html", anchor: "brownie"},
+        { name: "Biscuits sablés", url: "Pages/Patisseries.html", anchor: "biscuits"},
         { name: "Boeuf lok lak", url: "Pages/PlatsViande.html", anchor: "loklak" },
         { name: "Nouilles sautées au boeuf", url: "Pages/PlatsViande.html", anchor: "nouillesBoeuf"},
         { name: "Poulet mariné au citron", url: "Pages/PlatsViande.html", anchor: "pouletCitron"},
