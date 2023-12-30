@@ -52,7 +52,7 @@ let SmallTxtBrownie = "Un indispensable pour les gourmands du chocolat";
 
 let IDBiscuits = "IDBiscuits";
 let BigTxtBiscuits = "Des sablés à la cannelle croustillants et délicieux à savourer au petit déjeuner comme au goûter";
-let SmallTxtBiscuits = "Des sablés craquants à la cannelle, un incontournable de Noël";
+let SmallTxtBiscuits = "Des sablés craquants à la cannelle, un incontournable";
 
 
 function genererBalise(IDdiv, BigTxt, Smalltxt, activateur) {
