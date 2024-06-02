@@ -31,7 +31,7 @@ let BigTxtMuffins = "Des muffins gourmands, idéals à tout moment de la journé
 let SmallTxtMuffins = "Gourmandise en format individuel";
 
 let IDBrioche = "IDBrioche";
-let BigTxtBrioche = "Un classique d'une douceur subtile parfait pour accompagner les goûters";
+let BigTxtBrioche = "Un classique d'une douceur subtile, parfait pour accompagner les goûters";
 let SmallTxtBrioche = "Un classique doux et doré";
 
 let IDTiramisu = "IDTiramisu";
