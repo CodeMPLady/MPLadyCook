@@ -35,7 +35,8 @@ export function searchRecipes(query) {
         { name: "Pizza", url: "Pages/PlatsClassiques.html", anchor: "pizza" },
         { name: "Quiche courgettes chèvre", url: "Pages/PlatsClassiques.html", anchor: "quicheCC"},
         { name: "Onigiri", url: "Pages/PlatsClassiques.html", anchor: "onigiri"},
-        { name: "Croquettes de patates", url: "Pages/PlatsClassiques.html", anchor: "croquettes"}
+        { name: "Croquettes de patates", url: "Pages/PlatsClassiques.html", anchor: "croquettes"},
+        { name: "Quiche jambon épinards", url: "Pages/PlatsClassiques.html", anchor: "quicheJambonEpinards"}
     ];
 
     return recipes.filter(function (recipe) {
