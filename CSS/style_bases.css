@@ -15,6 +15,11 @@
         border-radius: 10px;
     }
 
+    .imgFin {
+        height: 400px;
+        border-radius: 10px;
+    }
+
     .BigImg {
         height: 200px;
         border-radius: 10px;
@@ -260,6 +265,11 @@
         border-radius: 10px;
     }
 
+    .imgFin {
+        height: 350px;
+        border-radius: 10px;
+    }
+
     .BigImg {
         height: 190px;
         border-radius: 10px;
@@ -426,6 +436,11 @@
 
     .img {
         height: 125px;
+        border-radius: 10px;
+    }
+
+    .imgFin {
+        height: 250px;
         border-radius: 10px;
     }
 
@@ -626,6 +641,11 @@
     
     .img {
         height: 120px;
+        border-radius: 10px;
+    }
+
+    .imgFin {
+        height: 200px;
         border-radius: 10px;
     }
 
