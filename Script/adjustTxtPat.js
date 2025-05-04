@@ -9,6 +9,7 @@ let activateurMeringues = true;
 let activateurRoule = true;
 let activateurBrownie = true;
 let activateurBiscuits = true;
+let activateurNougat = true;
 
 let IDGateauChoc = "IDGateauChoc";
 let BigTxtChoc = "Un gâteau classique et polyvalent qui se marie très bien avec de la chantilly maison";
@@ -54,6 +55,11 @@ let IDBiscuits = "IDBiscuits";
 let BigTxtBiscuits = "Des sablés à la cannelle croustillants et délicieux à savourer au petit déjeuner comme au goûter";
 let SmallTxtBiscuits = "Des sablés craquants à la cannelle, un incontournable";
 
+let IDNougat = "IDNougat";
+let BigTxtNougat = "Un nougat goutu et croquant ! N'hésitez pas à le personnaliser avec les fruits secs de votre choix !";  
+let SmallTxtNougat = "Un nougat goutu et croquant, parfait pour les amateurs de sucreries";
+
+
 
 function genererBalise(IDdiv, BigTxt, Smalltxt, activateur) {
     if (activateur) {
@@ -82,6 +88,7 @@ window.onload = function () {
     genererBalise(IDRoule, BigTxtRoule, SmallTxtRoule, activateurRoule);
     genererBalise(IDBrownie, BigTxtBrownie, SmallTxtBrownie, activateurBrownie);
     genererBalise(IDBiscuits, BigTxtBiscuits, SmallTxtBiscuits, activateurBiscuits);
+    genererBalise(IDNougat, BigTxtNougat, SmallTxtNougat, activateurNougat);
 };
 
 window.onresize = function () {
@@ -96,6 +103,7 @@ window.onresize = function () {
     let parentElement9 = document.getElementById(IDRoule);
     let parentElement10 = document.getElementById(IDBrownie);
     let parentElement11 = document.getElementById(IDBiscuits);
+    let parentElement12 = document.getElementById(IDNougat);
 
     parentElement1.innerHTML = "";
     parentElement2.innerHTML = "";
@@ -108,6 +116,7 @@ window.onresize = function () {
     parentElement9.innerHTML = "";
     parentElement10.innerHTML = "";
     parentElement11.innerHTML = "";
+    parentElement12.innerHTML = "";
 
     activateurGatChoc = true;
     activateurCookie = true;
@@ -120,6 +129,7 @@ window.onresize = function () {
     activateurTiramisu = true;
     activateurBrownie = true;
     activateurBiscuits = true;
+    activateurNougat = true;
 
     genererBalise(IDGateauChoc, BigTxtChoc, SmallTxtChoc, activateurGatChoc);
     genererBalise(IDCookies, BigTxtCookies, SmalltxtCookies, activateurCookie);
@@ -132,4 +142,5 @@ window.onresize = function () {
     genererBalise(IDRoule, BigTxtRoule, SmallTxtRoule, activateurRoule);
     genererBalise(IDBrownie, BigTxtBrownie, SmallTxtBrownie, activateurBrownie);
     genererBalise(IDBiscuits, BigTxtBiscuits, SmallTxtBiscuits, activateurBiscuits);
+    genererBalise(IDNougat, BigTxtNougat, SmallTxtNougat, activateurNougat);
 };
