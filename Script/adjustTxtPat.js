@@ -56,8 +56,8 @@ let BigTxtBiscuits = "Des sablés à la cannelle croustillants et délicieux à 
 let SmallTxtBiscuits = "Des sablés craquants à la cannelle, un incontournable";
 
 let IDNougat = "IDNougat";
-let BigTxtNougat = "Un nougat goutu et croquant ! N'hésitez pas à le personnaliser avec les fruits secs de votre choix !";  
-let SmallTxtNougat = "Un nougat goutu et croquant, parfait pour les amateurs de sucreries";
+let BigTxtNougat = "Un nougat goûtu et croquant ! N'hésitez pas à le personnaliser avec les fruits secs de votre choix !";  
+let SmallTxtNougat = "Un nougat goûtu et croquant, parfait pour les amateurs de sucreries";
 
 
 
