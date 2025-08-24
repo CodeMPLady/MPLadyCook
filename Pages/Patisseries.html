@@ -1,566 +1,776 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Patisseries</title>
-        <link rel="canonical" href="https://mpladycook.fr/Pages/Patisseries.html" />
-        <link rel="shortcut icon" type="image/png" href="../Images/mini_mplady_logo.png"/>
-        <link href="../CSS/style_patisseries.css" rel="stylesheet">
-        <link href="../CSS/nav.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
-        <script src="../Script/adjustTxtPat.js"></script>
 
-    </head>
-    <body>
-        <nav>
-            <label for="touch"><span>MENU</span></label>               
-            <input type="checkbox" id="touch"> 
-            <div class="slide">
-                <p class="liNav"><a href="../index.html"  class="aNav">Accueil</a></p>
-                <p class="liNav"><a href="/Pages/Bases.html"  class="aNav">Les bases culinaires</a></p> 
-                <p class="liNav"><a href="/Pages/PlatsClassiques.html"  class="aNav">Les plats classiques</a></p>
-                <p class="liNav"><a href="/Pages/PlatsViande.html"  class="aNav">Les plats à base de viande</a></p>
-                <p class="liNav"><a href="/Pages/PlatsMer.html"  class="aNav">Les plats de la mer</a></p>
-                <p class="liNav"><a href="/Pages/Patisseries.html"  class="aNav">Les pâtisseries</a></p>
-            </div>
-            
-        </nav>
-        
-        <h1>Les pâtisseries</h1>
-        <table id="Tpat">
-                <thead id="theadpat">
-                    <tr>
-                        <th id="thpatRecette">Recettes</th>
-                        <th class="thpat">Difficulté</th>
-                        <th class="thpat">Temps de préparation</th>
-                    </tr>
-                </thead>
-                <tbody id="tbodypat">
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#gateauChoc">Gâteau au chocolat</a></div></td>
-                        <td class="tdpat">Moyen</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#cookies">Cookies</a></div></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#tiramisu">Tiramisu</a></div></td>
-                        <td class="tdpat">Difficile</td>
-                        <td class="tdpat">⏳⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#muffins">Muffins</a></div></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#meringues">Meringues</a></div></td>
-                        <td class="tdpat">Moyen</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#roule">Gâteau roulé</a></div></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">⏳⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#crepes">Crêpes</a></div></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#pancakes">Pancakes</a></div></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#brioche">Brioche</a></div></td>
-                        <td class="tdpat">Difficile</td>
-                        <td class="tdpat">⏳⏳⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#brownie">Brownie</a></div></td>
-                        <td class="tdpat">Moyen</td>
-                        <td class="tdpat">⏳⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#biscuits">Biscuits sablés</a></div></td>
-                        <td class="tdpat">Facile</td>
-                        <td class="tdpat">⏳⏳</td>
-                    </tr>
-                    <tr>
-                        <td class="tdpat"><div class="breakTD"><a href="#nougat">Nougat</a></div></td>
-                        <td class="tdpat">Moyen</td>
-                        <td class="tdpat">⏳</td>
-                    </tr>
-                </tbody>
-                
-        </table>
-        <ol class="olcards">
-            <li style="--cardColor: #BA3C3C" class="licard">
-                <div class="content">
-                    <div class="icon" id="gateauChoc"><img src="../Images/Patisserie/gateau_chocolat.jpg" class="Eximg"></div>
-                    <div class="title">Gâteau au chocolat</div>
-                    <div class="text" id="IDGateauChoc"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#BA3C3C">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">200g de chocolat</td></tr>
-                            <tr><td class="tdIng">2 oeufs</td></tr>
-                            <tr><td class="tdIng">100g de sucre</td></tr>
-                            <tr><td class="tdIng">120g de farine</td><tr>
-                            <tr><td class="tdIng">80g de beurre</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Faire fondre le beurre et le chocolat au bain-marie tout en mélangeant</li>
-                        <li class="liPrep">Mélanger les oeufs, le sucre et la farine</li>
-                        <li class="liPrep">Ajouter le mélange chocolat/beurre</li>
-                        <li class="liPrep">Faire cuire 20 à 25 minutes à 180°C</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#36aeb3" class="licard">
-                <div class="content">
-                    <div class="icon" id="cookies"><img src="../Images/Patisserie/cookies.jpg" class="Eximg"></div>
-                    <div class="title">Cookies</div>
-                    <div class="text" id="IDCookies"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#36aeb3">
-                            <tr><th class="thIng">Ingrédients (6 à 8 cookies)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">90g de beurre</td></tr>
-                            <tr><td class="tdIng">80g de sucre</td></tr>
-                            <tr><td class="tdIng">1 oeuf</td></tr>
-                            <tr><td class="tdIng">160g de farine</td></tr>
-                            <tr><td class="tdIng">2g de levure</td></tr>
-                            <tr><td class="tdIng">Pépites de chocolat</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Mélanger le beurre pommade avec le sucre</li>
-                        <li class="liPrep">Ajouter l'oeuf, la farine et la levure</li>
-                        <li class="liPrep">Mélanger et ajouter les pépites</li>
-                        <li class="liPrep">Former des petits tas de pâte sur une feuille de papier cuisson</li>
-                        <li class="liPrep">Les aplatir légèrement avec le dos d'une fourchette</li>
-                        <li class="liPrep">Faire cuire 10 minutes à 180°C</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#bfb78e" class="licard">
-                <div class="content">
-                    <div class="icon" id="tiramisu"><img src="../Images/Patisserie/tiramisu.jpg" class="Eximg"></div>
-                    <div class="title">Tiramisu</div>
-                    <div class="text" id="IDTiramisu"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#bfb78e">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">500g de mascarpone</td></tr>
-                            <tr><td class="tdIng">4 oeufs</td></tr>
-                            <tr><td class="tdIng">200ml de lait</td></tr>
-                            <tr><td class="tdIng">5 cuillères à soupe de sucre</td></tr>
-                            <tr><td class="tdIng">Biscuits cuiller</td></tr>
-                            <tr><td class="tdIng">8 carrés de chocolat au lait</td></tr>
-                            <tr><td class="tdIng">Cacao en poudre ou café</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation de la mousse :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Séparer les blancs et les jaunes d'oeufs</li>
-                        <li class="liPrep">Mélanger le mascarpone, le sucre et les jaunes</li>
-                        <li class="liPrep">Monter les blancs en neige et les incorporer délicatement au mélange</li>
-                    </ul>
-                    <p class="titrePrep">Préparation de la sauce au chocolat :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Mettre le chocolat et le lait dans une casserole</li>
-                        <li class="liPrep">Faire fondre le mélange à feu doux</li>
-                    </ul>
-                    <p class="titrePrep">Le dressage :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Tremper rapidement les biscuits dans la sauce au chocolat</li>
-                        <li class="liPrep">Les disposer au fond du plat</li>
-                        <li class="liPrep">Recouvrir de mousse</li>
-                        <li class="liPrep">Reproduire ces étapes une seconde fois</li>
-                        <li class="liPrep">Saupoudrer légérement de cacao ou de café</li>
-                        <li class="liPrep">Laisser le plat au moins 4h au frigo avant de déguster</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#A33C3C" class="licard">
-                <div class="content">
-                    <div class="icon" id="muffins"><img src="../Images/Patisserie/muffins.jpg" class="Eximg"></div>
-                    <div class="title">Muffins</div>
-                    <div class="text" id="IDMuffins"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#A33C3C">
-                            <tr><th class="thIng">Ingrédients (4 muffins)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">150g de farine</td></tr>
-                            <tr><td class="tdIng">75g de sucre</td></tr>
-                            <tr><td class="tdIng">0,5 sachet de levure</td></tr>
-                            <tr><td class="tdIng">50g de beurre</td></tr>
-                            <tr><td class="tdIng">1 pincée de sel</td></tr>
-                            <tr><td class="tdIng">4 cuillères à soupe de lait</td></tr>
-                            <tr><td class="tdIng">1 oeuf</td></tr>
-                            <tr><td class="tdIng">Chocolat pour les pépites</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Faire fondre le beurre</li>
-                        <li class="liPrep">Ajouter le lait et l'oeuf battu</li>
-                        <li class="liPrep">Mélanger la farine, le sucre, le sel et la levure dans un saladier</li>
-                        <li class="liPrep">Incorporer la préparation liquide</li>
-                        <li class="liPrep">Bien mélanger jusqu'à l'obtention d'une pâte bien lisse</li>
-                        <li class="liPrep">Ajouter les pépites de chocolat</li>
-                        <li class="liPrep">Faire cuire 18 minutes à 200°C</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#489c70" class="licard">
-                <div class="content">
-                    <div class="icon" id="meringues"><img src="../Images/Patisserie/meringues.jpg" class="Eximg"></div>
-                    <div class="title">Meringues</div>
-                    <div class="text" id="IDMeringues"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#489c70">
-                            <tr><th class="thIng">Ingrédients (8 meringues)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">125g de sucre</td></tr>
-                            <tr><td class="tdIng">2 pincées de sel</td></tr>
-                            <tr><td class="tdIng">2 blancs d'oeufs</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Sortir les oeufs du frigo 10 minutes avant de commencer la recette</li>
-                        <li class="liPrep">Séparer les blancs d'oeufs des jaunes</li>
-                        <li class="liPrep">Ajouter une pincée de sel aux blancs</li>
-                        <li class="liPrep">Monter les blancs en neige</li>
-                        <li class="liPrep">Incorporer progressivement le sucre en continuant de monter les blancs</li>
-                        <li class="liPrep">Préchauffer le four à 120°C</li>
-                        <li class="liPrep">Faire des petits tas de meringues</li>
-                        <li class="liPrep">Cuire entre 30 minutes et 1h à 120°C (selon votre préférence)</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#c97947" class="licard">
-                <div class="content">
-                    <div class="icon" id="roule"><img src="../Images/Patisserie/roule.jpeg" class="Eximg"></div>
-                    <div class="title">Gâteau roulé</div>
-                    <div class="text" id="IDRoule"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#c97947">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">125g de sucre</td></tr>
-                            <tr><td class="tdIng">125g de farine</td></tr>
-                            <tr><td class="tdIng">1 cuillère à café de levure</td></tr>
-                            <tr><td class="tdIng">2 sachets de sucre vanillé</td></tr>
-                            <tr><td class="tdIng">4 oeufs</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Préchauffer le four à 210°C</li>
-                        <li class="liPrep">Séparer les blancs d'oeufs des jaunes</li>
-                        <li class="liPrep">Dans un saladier, mélanger les jaunes et le sucre</li>
-                        <li class="liPrep">Ajouter progressivement la farine tamisée, le sucre vanillé et la levure</li>
-                        <li class="liPrep">Monter les blancs en neige et les incorporer au mélange</li>
-                        <li class="liPrep">Verser la pâte sur la plaque du four recouverte de papier cuisson</li>
-                        <li class="liPrep">Faire cuire 10 minutes</li>
-                        <li class="liPrep">Rouler immédiatement le biscuit avec le papier</li>
-                        <li class="liPrep">Laisser refroidir, dérouler, et retirer le papier</li>
-                        <li class="liPrep">Étaler la confiture sur la pâte et rouler à nouveau le biscuit</li>
-                        <li class="liPrep">Saupoudrer de sucre glace</li>
-                    </ul>
-                </div>
-            </div>
-            <li style="--cardColor:#2c5fbf" class="licard">
-                <div class="content">
-                    <div class="icon" id="crepes"><img src="../Images/Patisserie/crepes.jpg" class="Eximg"></div>
-                    <div class="title">Crêpes </div>
-                    <div class="text" id="IDCrepes"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#2c5fbf">
-                            <tr><th class="thIng">Ingrédients (8 à 10 crêpes)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">125g de farine</td></tr>
-                            <tr><td class="tdIng">2 oeufs</td></tr>
-                            <tr><td class="tdIng">300ml de lait</td></tr>
-                            <tr><td class="tdIng">0,5 pincée de sel</td></tr>
-                            <tr><td class="tdIng">1 cuillère à soupe de sucre</td></tr>
-                            <tr><td class="tdIng">25g de beurre fondu</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Mettre la farine et le sel dans un saladier, mélanger et faire un puits</li>
-                        <li class="liPrep">Mettre les oeufs au centre et fouetter</li>
-                        <li class="liPrep">Mettre le sucre et le mélanger aux oeufs seulement</li>
-                        <li class="liPrep">Mélanger en incorporant la farine</li>
-                        <li class="liPrep">Ajouter le lait froid petit à petit</li>
-                        <li class="liPrep">Ajouter le beurre fondu</li>
-                        <li class="liPrep">Faire cuire 2-3 minutes sur une poêle préchauffée avec peu voire pas de matière grasse</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patisseries</title>
+    <link rel="canonical" href="https://mpladycook.fr/Pages/Patisseries.html" />
+    <link rel="shortcut icon" type="image/png" href="../Images/mini_mplady_logo.png" />
+    <link href="../CSS/style_patisseries.css" rel="stylesheet">
+    <link href="../CSS/nav.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="../Script/adjustTxtPat.js"></script>
 
-                    </ul>
+</head>
+
+<body>
+    <nav>
+        <label for="touch"><span>MENU</span></label>
+        <input type="checkbox" id="touch">
+        <div class="slide">
+            <p class="liNav"><a href="../index.html" class="aNav">Accueil</a></p>
+            <p class="liNav"><a href="/Pages/Bases.html" class="aNav">Les bases culinaires</a></p>
+            <p class="liNav"><a href="/Pages/PlatsClassiques.html" class="aNav">Les plats classiques</a></p>
+            <p class="liNav"><a href="/Pages/PlatsViande.html" class="aNav">Les plats à base de viande</a></p>
+            <p class="liNav"><a href="/Pages/PlatsMer.html" class="aNav">Les plats de la mer</a></p>
+            <p class="liNav"><a href="/Pages/Patisseries.html" class="aNav">Les pâtisseries</a></p>
+        </div>
+
+    </nav>
+
+    <h1>Les pâtisseries</h1>
+    <table id="Tpat">
+        <thead id="theadpat">
+            <tr>
+                <th id="thpatRecette">Recettes</th>
+                <th class="thpat">Difficulté</th>
+                <th class="thpat">Temps de préparation</th>
+            </tr>
+        </thead>
+        <tbody id="tbodypat">
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#gateauChoc">Gâteau au chocolat</a></div>
+                </td>
+                <td class="tdpat">Moyen</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#cookies">Cookies</a></div>
+                </td>
+                <td class="tdpat">Facile</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#tiramisu">Tiramisu</a></div>
+                </td>
+                <td class="tdpat">Difficile</td>
+                <td class="tdpat">⏳⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#muffins">Muffins</a></div>
+                </td>
+                <td class="tdpat">Facile</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#meringues">Meringues</a></div>
+                </td>
+                <td class="tdpat">Moyen</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#roule">Gâteau roulé</a></div>
+                </td>
+                <td class="tdpat">Facile</td>
+                <td class="tdpat">⏳⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#crepes">Crêpes</a></div>
+                </td>
+                <td class="tdpat">Facile</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#pancakes">Pancakes</a></div>
+                </td>
+                <td class="tdpat">Facile</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#brioche">Brioche</a></div>
+                </td>
+                <td class="tdpat">Difficile</td>
+                <td class="tdpat">⏳⏳⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#brownie">Brownie</a></div>
+                </td>
+                <td class="tdpat">Moyen</td>
+                <td class="tdpat">⏳⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#biscuits">Biscuits sablés</a></div>
+                </td>
+                <td class="tdpat">Facile</td>
+                <td class="tdpat">⏳⏳</td>
+            </tr>
+            <tr>
+                <td class="tdpat">
+                    <div class="breakTD"><a href="#nougat">Nougat</a></div>
+                </td>
+                <td class="tdpat">Moyen</td>
+                <td class="tdpat">⏳</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <ol class="olcards">
+        <li style="--cardColor: #BA3C3C" class="licard">
+            <div class="content">
+                <div class="icon" id="gateauChoc"><img src="../Images/Patisserie/gateau_chocolat.jpg" class="Eximg">
                 </div>
+                <div class="title">Gâteau au chocolat</div>
+                <div class="text" id="IDGateauChoc"></div>
             </div>
-            <li style="--cardColor:#2BA837" class="licard">
-                <div class="content">
-                    <div class="icon" id="pancakes"><img src="../Images/Patisserie/pancakes.jpg" class="Eximg"></div>
-                    <div class="title">Pancakes</div>
-                    <div class="text" id="IDPancakes"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#2BA837">
-                            <tr><th class="thIng">Ingrédients (~15 portions)</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">250g de farine</td></tr>
-                            <tr><td class="tdIng">30g de sucre</td></tr>
-                            <tr><td class="tdIng">1 sachet de levure</td></tr>
-                            <tr><td class="tdIng">65g de beurre</td></tr>
-                            <tr><td class="tdIng">300ml de lait</td></tr>
-                            <tr><td class="tdIng">2 oeufs</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Faire fondre le beurre</li>
-                        <li class="liPrep">Mettre la farine, la levure et le sucre dans un saladier</li>
-                        <li class="liPrep">Mélanger et creuser un puits</li>
-                        <li class="liPrep">Ajouter les oeufs et mélanger</li>
-                        <li class="liPrep">Incorporer le beurre fondu</li>
-                        <li class="liPrep">Délayer progressivement avec le lait</li>
-                        <li class="liPrep">Laisser reposer une heure au frigo</li>
-                    </ul>
-                </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#BA3C3C">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">200g de chocolat</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2 oeufs</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">100g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">120g de farine</td>
+                        <tr>
+                        <tr>
+                            <td class="tdIng">80g de beurre</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <li style="--cardColor:#C3AC3E" class="licard">
-                <div class="content">
-                    <div class="icon" id="brioche"><img src="../Images/Patisserie/brioche.jpg" class="Eximg"></div>
-                    <div class="title">Brioche</div>
-                    <div class="text" id="IDBrioche"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#C3AC3E">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">100ml de lait</td></tr>
-                            <tr><td class="tdIng">2 oeufs</td></tr>
-                            <tr><td class="tdIng">80g de sucre</td></tr>
-                            <tr><td class="tdIng">250g de farine</td></tr>
-                            <tr><td class="tdIng">0,5 cuillière à café de sel</td></tr>
-                            <tr><td class="tdIng">10g de levure fraîche</td></tr>
-                            <tr><td class="tdIng">40g de beurre</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Battre un oeuf, le lait, le sucre et le sel</li>
-                        <li class="liPrep">Ajouter la farine et la levure</li>
-                        <li class="liPrep">Pétrir pendant 20 minutes</li>
-                        <li class="liPrep">Incorporer le beurre mou</li>
-                        <li class="liPrep">Laisser lever 30 minutes à température ambiante</li>
-                        <li class="liPrep">Dégazer la pâte</li>
-                        <li class="liPrep">Laisser reposer 1h30 ou plus au frais dans un saladier filmé</li>
-                        <li class="liPrep">Rompre la pâte et façonner la brioche</li>
-                        <li class="liPrep">Laisser pousser à couvert pendant une heure à température ambiante</li>
-                        <li class="liPrep">Utiliser le deuxième oeuf pour dorer et faire cuire 20 à 30 minutes à 180°C</li>
-                    </ul>
-                </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Faire fondre le beurre et le chocolat au bain-marie tout en mélangeant</li>
+                    <li class="liPrep">Mélanger les oeufs, le sucre et la farine</li>
+                    <li class="liPrep">Ajouter le mélange chocolat/beurre</li>
+                    <li class="liPrep">Faire cuire 20 à 25 minutes à 180°C</li>
+                </ul>
             </div>
-            <li style="--cardColor:#a65d35" class="licard">
-                <div class="content">
-                    <div class="icon" id="brownie"><img src="../Images/Patisserie/brownie.jpg" class="Eximg"></div>
-                    <div class="title">Brownie</div>
-                    <div class="text" id="IDBrownie"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#a65d35">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">230g de chocolat au lait</td></tr>
-                            <tr><td class="tdIng">120g de beurre</td></tr>
-                            <tr><td class="tdIng">50g de sucre blanc</td></tr>
-                            <tr><td class="tdIng">100g de sucre roux</td></tr>
-                            <tr><td class="tdIng">3 oeufs</td></tr>
-                            <tr><td class="tdIng">100g de farine</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Beurrer un plat rectangulaire</li>
-                        <li class="liPrep">Découper du papier cuisson pour faire en sorte de recouvrir la largeur et la longueur du plat</li>
-                        <li class="liPrep">Beurrer le papier cuisson</li>
-                        <li class="liPrep">Faire fondre 200g de chocolat et le beurre au bain-marie</li>
-                        <li class="liPrep">Laisser refroidir le mélange</li>
-                        <li class="liPrep">Dans un autre bol, mélanger les sucres</li>
-                        <li class="liPrep">Ajouter les oeufs un à un et mélanger après chaque ajout</li>
-                        <li class="liPrep">Ajouter le mélange beurre/chocolat</li>
-                        <li class="liPrep">Ajouter la farine en la tamisant</li>
-                        <li class="liPrep">Bien mélanger</li>
-                        <li class="liPrep">Rajouter les 30g de chocolat restants coupés en petits morceaux</li>
-                        <li class="liPrep">Verser la pâte dans le plat préalablement préparé</li>
-                        <li class="liPrep">Faire cuire 30 à 35 minutes à 180°C</li>
-                        <li class="liPrep">Bien laisser refroidir avant de déguster</li>
-                        <li class="liPrep">Pour réaliser la crème chantilly, rendez-vous sur <a href="Bases.html#chantilly" target="_blank" class="hoverLink">les bases culinaires</a> !</li>
-                    </ul>
-                </div>
+        </div>
+        <li style="--cardColor:#36aeb3" class="licard">
+            <div class="content">
+                <div class="icon" id="cookies"><img src="../Images/Patisserie/cookies.jpg" class="Eximg"></div>
+                <div class="title">Cookies</div>
+                <div class="text" id="IDCookies"></div>
             </div>
-            <li style="--cardColor:#8a6c41" class="licard">
-                <div class="content">
-                    <div class="icon" id="biscuits"><img src="../Images/Patisserie/biscuits_sables.jpg" class="Eximg"></div>
-                    <div class="title">Biscuits sablés</div>
-                    <div class="text" id="IDBiscuits"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#8a6c41">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">420g de farine</td></tr>
-                            <tr><td class="tdIng">150g de sucre glace</td></tr>
-                            <tr><td class="tdIng">200g de beurre</td></tr>
-                            <tr><td class="tdIng">1 oeuf</td></tr>
-                            <tr><td class="tdIng">1 pincée de sel</td></tr>
-                            <tr><td class="tdIng">1 à 2 cuillères à café de cannelle</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Mélanger le beurre pommade et le sucre glace</li>
-                        <li class="liPrep">Ajouter l'oeuf et mélanger</li>
-                        <li class="liPrep">Tamiser la farine en mélangeant progressivement</li>
-                        <li class="liPrep">Ajouter le sel</li>
-                        <li class="liPrep">Ajouter la cannelle et mélanger</li>
-                        <li class="liPrep">Etaler la pâte sur un plan de travail fariné</li>
-                        <li class="liPrep">Former les biscuits avec des emporte-pièces ou en utilisant un rouleau à motifs</li>
-                        <li class="liPrep">Faire cuire les biscuits à 180°C pendant 8 à 12 minutes selon leur épaisseur</li>
-                    </ul>
-                </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#36aeb3">
+                        <tr>
+                            <th class="thIng">Ingrédients (6 à 8 cookies)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">90g de beurre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">80g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 oeuf</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">160g de farine</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2g de levure</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">Pépites de chocolat</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Mélanger le beurre pommade avec le sucre</li>
+                    <li class="liPrep">Ajouter l'oeuf, la farine et la levure</li>
+                    <li class="liPrep">Mélanger et ajouter les pépites</li>
+                    <li class="liPrep">Former des petits tas de pâte sur une feuille de papier cuisson</li>
+                    <li class="liPrep">Les aplatir légèrement avec le dos d'une fourchette</li>
+                    <li class="liPrep">Faire cuire 10 minutes à 180°C</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#bfb78e" class="licard">
+            <div class="content">
+                <div class="icon" id="tiramisu"><img src="../Images/Patisserie/tiramisu.jpg" class="Eximg"></div>
+                <div class="title">Tiramisu</div>
+                <div class="text" id="IDTiramisu"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#bfb78e">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">500g de mascarpone</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">4 oeufs</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">200ml de lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">5 cuillères à soupe de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">Biscuits cuiller</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">8 carrés de chocolat au lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">Cacao en poudre ou café</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation de la mousse :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Séparer les blancs et les jaunes d'oeufs</li>
+                    <li class="liPrep">Mélanger le mascarpone, le sucre et les jaunes</li>
+                    <li class="liPrep">Monter les blancs en neige et les incorporer délicatement au mélange</li>
+                </ul>
+                <p class="titrePrep">Préparation de la sauce au chocolat :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Mettre le chocolat et le lait dans une casserole</li>
+                    <li class="liPrep">Faire fondre le mélange à feu doux</li>
+                </ul>
+                <p class="titrePrep">Le dressage :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Tremper rapidement les biscuits dans la sauce au chocolat</li>
+                    <li class="liPrep">Les disposer au fond du plat</li>
+                    <li class="liPrep">Recouvrir de mousse</li>
+                    <li class="liPrep">Reproduire ces étapes une seconde fois</li>
+                    <li class="liPrep">Saupoudrer légérement de cacao ou de café</li>
+                    <li class="liPrep">Laisser le plat au moins 4h au frigo avant de déguster</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#A33C3C" class="licard">
+            <div class="content">
+                <div class="icon" id="muffins"><img src="../Images/Patisserie/muffins.jpg" class="Eximg"></div>
+                <div class="title">Muffins</div>
+                <div class="text" id="IDMuffins"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#A33C3C">
+                        <tr>
+                            <th class="thIng">Ingrédients (4 muffins)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">150g de farine</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">75g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">0,5 sachet de levure</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">50g de beurre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 pincée de sel</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">4 cuillères à soupe de lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 oeuf</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">Chocolat pour les pépites</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Faire fondre le beurre</li>
+                    <li class="liPrep">Ajouter le lait et l'oeuf battu</li>
+                    <li class="liPrep">Mélanger la farine, le sucre, le sel et la levure dans un saladier</li>
+                    <li class="liPrep">Incorporer la préparation liquide</li>
+                    <li class="liPrep">Bien mélanger jusqu'à l'obtention d'une pâte bien lisse</li>
+                    <li class="liPrep">Ajouter les pépites de chocolat</li>
+                    <li class="liPrep">Faire cuire 18 minutes à 200°C</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#489c70" class="licard">
+            <div class="content">
+                <div class="icon" id="meringues"><img src="../Images/Patisserie/meringues.jpg" class="Eximg"></div>
+                <div class="title">Meringues</div>
+                <div class="text" id="IDMeringues"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#489c70">
+                        <tr>
+                            <th class="thIng">Ingrédients (8 meringues)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">125g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2 pincées de sel</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2 blancs d'oeufs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Sortir les oeufs du frigo 10 minutes avant de commencer la recette</li>
+                    <li class="liPrep">Séparer les blancs d'oeufs des jaunes</li>
+                    <li class="liPrep">Ajouter une pincée de sel aux blancs</li>
+                    <li class="liPrep">Monter les blancs en neige</li>
+                    <li class="liPrep">Incorporer progressivement le sucre en continuant de monter les blancs</li>
+                    <li class="liPrep">Préchauffer le four à 120°C</li>
+                    <li class="liPrep">Faire des petits tas de meringues</li>
+                    <li class="liPrep">Cuire entre 30 minutes et 1h à 120°C (selon votre préférence)</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#c97947" class="licard">
+            <div class="content">
+                <div class="icon" id="roule"><img src="../Images/Patisserie/roule.jpeg" class="Eximg"></div>
+                <div class="title">Gâteau roulé</div>
+                <div class="text" id="IDRoule"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#c97947">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">125g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">125g de farine</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 cuillère à café de levure</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2 sachets de sucre vanillé</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">4 oeufs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Préchauffer le four à 210°C</li>
+                    <li class="liPrep">Séparer les blancs d'oeufs des jaunes</li>
+                    <li class="liPrep">Dans un saladier, mélanger les jaunes et le sucre</li>
+                    <li class="liPrep">Ajouter progressivement la farine tamisée, le sucre vanillé et la levure</li>
+                    <li class="liPrep">Monter les blancs en neige et les incorporer au mélange</li>
+                    <li class="liPrep">Verser la pâte sur la plaque du four recouverte de papier cuisson</li>
+                    <li class="liPrep">Faire cuire 10 minutes</li>
+                    <li class="liPrep">Rouler immédiatement le biscuit avec le papier</li>
+                    <li class="liPrep">Laisser refroidir, dérouler, et retirer le papier</li>
+                    <li class="liPrep">Étaler la confiture sur la pâte et rouler à nouveau le biscuit</li>
+                    <li class="liPrep">Saupoudrer de sucre glace</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#2c5fbf" class="licard">
+            <div class="content">
+                <div class="icon" id="crepes"><img src="../Images/Patisserie/crepes.jpg" class="Eximg"></div>
+                <div class="title">Crêpes </div>
+                <div class="text" id="IDCrepes"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#2c5fbf">
+                        <tr>
+                            <th class="thIng">Ingrédients (8 à 10 crêpes)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">125g de farine</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2 oeufs</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">300ml de lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">0,5 pincée de sel</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 cuillère à soupe de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">25g de beurre fondu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Mettre la farine et le sel dans un saladier, mélanger et faire un puits</li>
+                    <li class="liPrep">Mettre les oeufs au centre et fouetter</li>
+                    <li class="liPrep">Mettre le sucre et le mélanger aux oeufs seulement</li>
+                    <li class="liPrep">Mélanger en incorporant la farine</li>
+                    <li class="liPrep">Ajouter le lait froid petit à petit</li>
+                    <li class="liPrep">Ajouter le beurre fondu</li>
+                    <li class="liPrep">Faire cuire 2-3 minutes sur une poêle préchauffée avec peu voire pas de matière
+                        grasse</li>
+
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#2BA837" class="licard">
+            <div class="content">
+                <div class="icon" id="pancakes"><img src="../Images/Patisserie/pancakes.jpg" class="Eximg"></div>
+                <div class="title">Pancakes</div>
+                <div class="text" id="IDPancakes"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#2BA837">
+                        <tr>
+                            <th class="thIng">Ingrédients (~15 portions)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">250g de farine</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">30g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 sachet de levure</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">65g de beurre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">300ml de lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">2 oeufs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Faire fondre le beurre</li>
+                    <li class="liPrep">Mettre la farine, la levure et le sucre dans un saladier</li>
+                    <li class="liPrep">Mélanger et creuser un puits</li>
+                    <li class="liPrep">Ajouter les oeufs et mélanger</li>
+                    <li class="liPrep">Incorporer le beurre fondu</li>
+                    <li class="liPrep">Délayer progressivement avec le lait</li>
+                    <li class="liPrep">Laisser reposer une heure au frigo</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#C3AC3E" class="licard">
+            <div class="content">
+                <div class="icon" id="brioche"><img src="../Images/Patisserie/brioche.jpg" class="Eximg"></div>
+                <div class="title">Brioche</div>
+                <div class="text" id="IDBrioche"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#C3AC3E">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">300g de farine (T45)</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1/2 cuillière à café de sel (6g)</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">40g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">12g de levure fraîche ou 6g de levure sèche</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">90g d'oeufs</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">90g de lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">90g de beurre</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Rassembler les ingrédients secs et liquides dans deux bols séparés en mettant de
+                        coté le beurre</li>
+                    <li class="liPrep">Verser les ingrédients liquides dans les ingrédients secs</li>
+                    <li class="liPrep">Pétrir pendant 10 minutes jusqu'à l'obtention d'une pâte un peu collante (ajuster
+                        avec de la farine si elle colle trop)</li>
+                    <li class="liPrep">Incorporer le beurre mou en pétrissant de nouveau jusqu'à l'obtention d'une pâte
+                        lisse et légèrement collante</li>
+                    <li class="liPrep">Laisser reposer 30 minutes à température ambiante</li>
+                    <li class="liPrep">Rabattre les extrémités de la pate vers l'intérieur</li>
+                    <li class="liPrep">Laisser reposer au frigo 10 heures au minimum dans un saladier filmé</li>
+                    <li class="liPrep">Façonner la brioche à votre envie, pour faire une brioche tressée, séparer la
+                        pâte en 3 parties égales</li>
+                    <li class="liPrep">Faire 3 boudins de longeur égale et laisser reposer 10 minutes à température
+                        ambiante</li>
+                    <li class="liPrep">Tresser les 3 boudins et déposer la brioche sur une plaque avec papier cuisson
+                    </li>
+                    <li class="liPrep">Mettre 1h30 à l'étuve, dans le four éteint avec un bol d'eau bouillante (changer
+                        l'eau au bout de 45 minutes)</li>
+                    <li class="liPrep">Utiliser un oeuf entier pour dorer et faire cuire 16-18 minutes à 180°C</li>
+                    <li class="liPrep">Faire reposer la brioche sur une grille pendant 30 minutes avant dégustation</li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#a65d35" class="licard">
+            <div class="content">
+                <div class="icon" id="brownie"><img src="../Images/Patisserie/brownie.jpg" class="Eximg"></div>
+                <div class="title">Brownie</div>
+                <div class="text" id="IDBrownie"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#a65d35">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">230g de chocolat au lait</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">120g de beurre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">50g de sucre blanc</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">100g de sucre roux</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">3 oeufs</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">100g de farine</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Beurrer un plat rectangulaire</li>
+                    <li class="liPrep">Découper du papier cuisson pour faire en sorte de recouvrir la largeur et la
+                        longueur du plat</li>
+                    <li class="liPrep">Beurrer le papier cuisson</li>
+                    <li class="liPrep">Faire fondre 200g de chocolat et le beurre au bain-marie</li>
+                    <li class="liPrep">Laisser refroidir le mélange</li>
+                    <li class="liPrep">Dans un autre bol, mélanger les sucres</li>
+                    <li class="liPrep">Ajouter les oeufs un à un et mélanger après chaque ajout</li>
+                    <li class="liPrep">Ajouter le mélange beurre/chocolat</li>
+                    <li class="liPrep">Ajouter la farine en la tamisant</li>
+                    <li class="liPrep">Bien mélanger</li>
+                    <li class="liPrep">Rajouter les 30g de chocolat restants coupés en petits morceaux</li>
+                    <li class="liPrep">Verser la pâte dans le plat préalablement préparé</li>
+                    <li class="liPrep">Faire cuire 30 à 35 minutes à 180°C</li>
+                    <li class="liPrep">Bien laisser refroidir avant de déguster</li>
+                    <li class="liPrep">Pour réaliser la crème chantilly, rendez-vous sur <a href="Bases.html#chantilly"
+                            target="_blank" class="hoverLink">les bases culinaires</a> !</li>
+                </ul>
+            </div>
+        </div>
+        <li style="--cardColor:#8a6c41" class="licard">
+            <div class="content">
+                <div class="icon" id="biscuits"><img src="../Images/Patisserie/biscuits_sables.jpg" class="Eximg"></div>
+                <div class="title">Biscuits sablés</div>
+                <div class="text" id="IDBiscuits"></div>
+            </div>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#8a6c41">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">420g de farine</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">150g de sucre glace</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">200g de beurre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 oeuf</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 pincée de sel</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 à 2 cuillères à café de cannelle</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Mélanger le beurre pommade et le sucre glace</li>
+                    <li class="liPrep">Ajouter l'oeuf et mélanger</li>
+                    <li class="liPrep">Tamiser la farine en mélangeant progressivement</li>
+                    <li class="liPrep">Ajouter le sel</li>
+                    <li class="liPrep">Ajouter la cannelle et mélanger</li>
+                    <li class="liPrep">Etaler la pâte sur un plan de travail fariné</li>
+                    <li class="liPrep">Former les biscuits avec des emporte-pièces ou en utilisant un rouleau à motifs
+                    </li>
+                    <li class="liPrep">Faire cuire les biscuits à 180°C pendant 8 à 12 minutes selon leur épaisseur</li>
+                </ul>
+            </div>
+        </div>
 
 
-            <li style="--cardColor:#8a6c41" class="licard">
-                <div class="content">
-                    <div class="icon" id="nougat"><img src="../Images/Patisserie/nougat.jpg" class="Eximg"></div>
-                    <div class="title">Nougat</div>
-                    <div class="text" id="IDNougat"></div>
-                </div>
-            </li>
-            <div class="container">
-                <div class="ingredients">
-                    <table class="TIng">
-                        <thead class="theadIng" style="--thcolor:#8a6c41">
-                            <tr><th class="thIng">Ingrédients</th></tr>
-                        </thead>
-                        <tbody class="tbodyIng">
-                            <tr><td class="tdIng">100g d'amandes</td></tr>
-                            <tr><td class="tdIng">150g de sucre</td></tr>
-                            <tr><td class="tdIng">150g de miel (de lavande de préférence)</td></tr>
-                            <tr><td class="tdIng">1 blanc d'oeuf</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="preparation">
-                    <p class="titrePrep">Préparation :</p>
-                    <ul class="ulPrep">
-                        <li class="liPrep">Faire bouillir les amandes 5 minutes dans une petite casserole</li>
-                        <li class="liPrep">Peler et étaler les amandes sur une plaque, préchauffer le four à 170°C et faire sécher 10 minutes</li>
-                        <li class="liPrep">Pendant ce temps, monter le blanc en neige</li>
-                        <li class="liPrep">Sur une poêle, mélanger à feu doux le sucre et le miel à l'aide d'une marise</li>
-                        <li class="liPrep">Une fois le sucre totalement dissout, ajouter le blanc en neige en 4 fois</li>
-                        <li class="liPrep">Mélanger avec une marise, une fois le blanc réparti en petits morceaux mélanger avec le fouet </li>
-                        <li class="liPrep">Une fois le mélange homogène rajouter les amandes</li>
-                        <li class="liPrep">Faire chauffer à feu moyen et mélanger jusqu'à ce que le tout soit un minimum compact</li>
-                        <li class="liPrep">Mettre le tout dans un moule et laisser reposer au congélateur pendant 12h </li>
-                    </ul>
-                </div>
+        <li style="--cardColor:#8a6c41" class="licard">
+            <div class="content">
+                <div class="icon" id="nougat"><img src="../Images/Patisserie/nougat.jpg" class="Eximg"></div>
+                <div class="title">Nougat</div>
+                <div class="text" id="IDNougat"></div>
             </div>
-        </ol>
-        <img src="../Images/mplady_logo.png" id="logo">    
-    </body>
+        </li>
+        <div class="container">
+            <div class="ingredients">
+                <table class="TIng">
+                    <thead class="theadIng" style="--thcolor:#8a6c41">
+                        <tr>
+                            <th class="thIng">Ingrédients</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyIng">
+                        <tr>
+                            <td class="tdIng">100g d'amandes</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">150g de sucre</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">150g de miel (de lavande de préférence)</td>
+                        </tr>
+                        <tr>
+                            <td class="tdIng">1 blanc d'oeuf</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="preparation">
+                <p class="titrePrep">Préparation :</p>
+                <ul class="ulPrep">
+                    <li class="liPrep">Faire bouillir les amandes 5 minutes dans une petite casserole</li>
+                    <li class="liPrep">Peler et étaler les amandes sur une plaque, préchauffer le four à 170°C et faire
+                        sécher 10 minutes</li>
+                    <li class="liPrep">Pendant ce temps, monter le blanc en neige</li>
+                    <li class="liPrep">Sur une poêle, mélanger à feu doux le sucre et le miel à l'aide d'une marise</li>
+                    <li class="liPrep">Une fois le sucre totalement dissout, ajouter le blanc en neige en 4 fois</li>
+                    <li class="liPrep">Mélanger avec une marise, une fois le blanc réparti en petits morceaux mélanger
+                        avec le fouet </li>
+                    <li class="liPrep">Une fois le mélange homogène rajouter les amandes</li>
+                    <li class="liPrep">Faire chauffer à feu moyen et mélanger jusqu'à ce que le tout soit un minimum
+                        compact</li>
+                    <li class="liPrep">Mettre le tout dans un moule et laisser reposer au congélateur pendant 12h </li>
+                </ul>
+            </div>
+        </div>
+    </ol>
+    <img src="../Images/mplady_logo.png" id="logo">
+</body>
+
 </html>
