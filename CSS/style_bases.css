@@ -173,10 +173,17 @@
         padding-left: 0;
     }
 
-    .liRec{
+    .liIng{
         list-style: none;
         font-size: 18px;
         line-height: 25px;
+    }
+
+    .liPrep{
+        list-style: none;
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 10px;
     }
 
     .titleRecPart {
@@ -380,10 +387,17 @@
         list-style: none;
     }
 
-    .liRec{
+    .liIng{
         list-style: none;
         font-size: 18px;
         line-height: 25px;
+    }
+
+    .liPrep{
+        list-style: none;
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 10px;
     }
 
     .titleRecPart {
@@ -557,7 +571,7 @@
     }
     
     .imgFrais {
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         grid-row: 1 / 2;
         justify-self: center;
         margin-top: 20px;
@@ -584,14 +598,22 @@
         font-size: 0.8em;
     }
 
-    .liRec{
+    .liIng{
         list-style: none;
         font-size: 1.1em;
         line-height: 18px;
         padding-right: 40px;
     }
 
-    #BigBoxRiz .liRec {
+    .liPrep{
+        list-style: none;
+        font-size: 1.1em;
+        line-height: 18px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+    }
+
+    #BigBoxRiz .liIng .liPrep {
         padding-right: 0;
     }
 
@@ -749,7 +771,7 @@
     }
     
     .imgFrais {
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         grid-row: 1 / 2;
         justify-self: center;
         align-self: baseline;
@@ -778,14 +800,22 @@
 
     
 
-    .liRec{
+    .liIng{
         list-style: none;
         font-size: 1.1em;
         line-height: 18px;
         padding-right: 20px;
     }
 
-    #BigBoxRiz .liRec {
+    .liPrep{
+        list-style: none;
+        font-size: 1.1em;
+        line-height: 18px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    #BigBoxRiz .liIng .liPrep {
         padding-right: 0;
     }
 
