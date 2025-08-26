@@ -31,7 +31,6 @@ document.getElementById('search-form').addEventListener('submit', function (even
             createA.appendChild(recipeName);
             createA.classList.add("linkResult");
             createA.href = recipeUrl;
-            createA.target = "_blank";
             selectDiv.appendChild(createA);
         }
     } else if (matchingRecipes.length === 0) {

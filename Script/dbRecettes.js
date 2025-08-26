@@ -28,6 +28,8 @@ export function searchRecipes(query) {
         { name: "Pâte brisée", url: "Pages/Bases.html", anchor: "pateBrisee"},
         { name: "Tortillas", url: "Pages/Bases.html", anchor: "tortillas"},
         { name: "Sauce yakiniku", url: "Pages/Bases.html", anchor: "yakiniku"},
+        { name: "Fond de volaille", url: "Pages/Bases.html", anchor: "fond_volaille"},
+        { name: "Poulet rôti", url: "Pages/PlatsViande.html", anchor: "pouletRoti"},
         { name: "Herbes de Provence", url: "Pages/Bases.html", anchor:"herbesPro"},
         { name: "Sauce teriyaki", url: "Pages/Bases.html", anchor: "teriyaki"},
         { name: "Sauce lok lak", url: "Pages/Bases.html", anchor: "sauceLoklak"},
