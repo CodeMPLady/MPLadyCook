@@ -14,6 +14,7 @@ export function searchRecipes(query) {
         { name: "Brownie", url: "Pages/Patisseries.html", anchor: "brownie"},
         { name: "Biscuits sablés", url: "Pages/Patisseries.html", anchor: "biscuits"},
         { name: "Nougat", url: "Pages/Patisseries.html", anchor: "nougat"},
+        { name: "Gâteau au yaourt", url: "Pages/Patisseries.html", anchor: "gateau_yaourt"},
         { name: "Boeuf lok lak", url: "Pages/PlatsViande.html", anchor: "loklak" },
         { name: "Nouilles sautées au boeuf", url: "Pages/PlatsViande.html", anchor: "nouillesBoeuf"},
         { name: "Poulet mariné au citron", url: "Pages/PlatsViande.html", anchor: "pouletCitron"},
