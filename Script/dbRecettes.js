@@ -36,6 +36,7 @@ export function searchRecipes(query) {
         { name: "Sauce teriyaki", url: "Pages/Bases.html", anchor: "teriyaki"},
         { name: "Sauce lok lak", url: "Pages/Bases.html", anchor: "sauceLoklak"},
         { name: "Chantilly", url: "Pages/Bases.html", anchor: "chantilly"},
+        { name: "Pains burgers", url: "Pages/Bases.html", anchor: "painBurger"},
         { name: "Gnocchis", url: "Pages/PlatsClassiques.html", anchor: "gnocchis" },
         { name: "Pizza", url: "Pages/PlatsClassiques.html", anchor: "pizza" },
         { name: "Quiche courgettes chèvre", url: "Pages/PlatsClassiques.html", anchor: "quicheCC"},
