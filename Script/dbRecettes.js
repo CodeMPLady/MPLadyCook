@@ -21,9 +21,7 @@ export function searchRecipes(query) {
         { name: "Poulet mariné au citron", url: "Pages/PlatsViande.html", anchor: "pouletCitron"},
         { name: "Poulet grillé à la thaï", url: "Pages/PlatsViande.html", anchor: "pouletThai"},
         { name: "Chirashi au poulet", url: "Pages/PlatsViande.html", anchor: "chirashiPoulet"},
-        { name: "Saumon teriyaki", url: "Pages/PlatsMer.html", anchor: "saumonTeriyaki" },
         { name: "Pavés de saumon", url: "Pages/PlatsMer.html", anchor: "pavesSaumon"},
-        { name: "Limande du Nord", url: "Pages/PlatsMer.html", anchor: "limande"},
         { name: "Makis", url: "Pages/PlatsMer.html", anchor: "makis"},
         { name: "Pâte à pizza", url: "Pages/Bases.html", anchor: "patePizza" },
         { name: "Riz japonais", url: "Pages/Bases.html", anchor: "BigTitleRiz"},
@@ -33,7 +31,6 @@ export function searchRecipes(query) {
         { name: "Fond de volaille", url: "Pages/Bases.html", anchor: "fond_volaille"},
         { name: "Poulet rôti", url: "Pages/PlatsViande.html", anchor: "pouletRoti"},
         { name: "Herbes de Provence", url: "Pages/Bases.html", anchor:"herbesPro"},
-        { name: "Sauce teriyaki", url: "Pages/Bases.html", anchor: "teriyaki"},
         { name: "Sauce lok lak", url: "Pages/Bases.html", anchor: "sauceLoklak"},
         { name: "Chantilly", url: "Pages/Bases.html", anchor: "chantilly"},
         { name: "Pains burgers", url: "Pages/Bases.html", anchor: "painBurger"},
@@ -43,7 +40,7 @@ export function searchRecipes(query) {
         { name: "Onigiri", url: "Pages/PlatsClassiques.html", anchor: "onigiri"},
         { name: "Croquettes de patates", url: "Pages/PlatsClassiques.html", anchor: "croquettes"},
         { name: "Quiche jambon épinards", url: "Pages/PlatsClassiques.html", anchor: "quicheJambonEpinards"},
-        { name: "Crevettes persillade", url: "Pages/PlatsClassiques.html", anchor: "crevette_persillade"}
+        { name: "Crevettes persillade", url: "Pages/PlatsMer.html", anchor: "crevette_persillade"}
     ];
 
     return recipes.filter(function (recipe) {
