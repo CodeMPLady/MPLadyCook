@@ -42,7 +42,8 @@ export function searchRecipes(query) {
         { name: "Quiche courgettes chèvre", url: "Pages/PlatsClassiques.html", anchor: "quicheCC"},
         { name: "Onigiri", url: "Pages/PlatsClassiques.html", anchor: "onigiri"},
         { name: "Croquettes de patates", url: "Pages/PlatsClassiques.html", anchor: "croquettes"},
-        { name: "Quiche jambon épinards", url: "Pages/PlatsClassiques.html", anchor: "quicheJambonEpinards"}
+        { name: "Quiche jambon épinards", url: "Pages/PlatsClassiques.html", anchor: "quicheJambonEpinards"},
+        { name: "Crevettes persillade", url: "Pages/PlatsClassiques.html", anchor: "crevette_persillade"}
     ];
 
     return recipes.filter(function (recipe) {
