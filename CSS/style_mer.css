@@ -8,10 +8,9 @@
         width: fit-content;
         margin: auto;
     }
-
     .banner {
         display: flex;
-        position: absolute;
+        position: relative;
         background-image: url(../Images/Mer/seaBanner.jpg);
         background-position: bottom;
         background-size: cover;
@@ -26,7 +25,8 @@
         display: grid;
         background-image: url(../Images/Mer/bg_mer_big.svg);
         background-size:cover;
-        margin-top: 300px;
+        background-position: center;
+        min-height: 100vh;
     }
 
     .liMer {
